@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DataBase\CustomerRepo.cs" />
     <Compile Include="DataBase\product_repo.cs" />
+    <Compile Include="DataBase\SalesRepo.cs" />
     <Compile Include="Forms\product_register.cs">
       <SubType>Form</SubType>
     </Compile>

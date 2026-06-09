@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using SaleManage.DataBase;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using System.Windows.Forms;
 
 namespace SaleManage
@@ -15,6 +12,15 @@ namespace SaleManage
         public sale_list()
         {
             InitializeComponent();
+        }
+        private void LoadCustomer()
+        {
+           
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

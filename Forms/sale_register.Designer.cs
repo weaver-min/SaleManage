@@ -37,30 +37,30 @@ namespace SaleManage
             this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Label2 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
-            this.DateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.Label3 = new System.Windows.Forms.Label();
-            this.ComboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCustomer = new System.Windows.Forms.ComboBox();
             this.TableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.Label4 = new System.Windows.Forms.Label();
             this.Panel2 = new System.Windows.Forms.Panel();
-            this.ComboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbGoods = new System.Windows.Forms.ComboBox();
             this.Label7 = new System.Windows.Forms.Label();
-            this.txtamount = new System.Windows.Forms.TextBox();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
             this.Label8 = new System.Windows.Forms.Label();
             this.TableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.Label5 = new System.Windows.Forms.Label();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
             this.Label9 = new System.Windows.Forms.Label();
             this.Label10 = new System.Windows.Forms.Label();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
             this.Label11 = new System.Windows.Forms.Label();
             this.TableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.Label6 = new System.Windows.Forms.Label();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
+            this.txtNote = new System.Windows.Forms.TextBox();
             this.TableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
@@ -195,23 +195,23 @@ namespace SaleManage
             // 
             // Panel1
             // 
-            this.Panel1.Controls.Add(this.DateTimePicker1);
+            this.Panel1.Controls.Add(this.dtpDate);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(143, 3);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(278, 39);
             this.Panel1.TabIndex = 1;
             // 
-            // DateTimePicker1
+            // dtpDate
             // 
-            this.DateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtpDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.DateTimePicker1.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.DateTimePicker1.Location = new System.Drawing.Point(7, 7);
-            this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(241, 22);
-            this.DateTimePicker1.TabIndex = 0;
+            this.dtpDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtpDate.Location = new System.Drawing.Point(7, 7);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(241, 22);
+            this.dtpDate.TabIndex = 0;
             // 
             // TableLayoutPanel4
             // 
@@ -222,7 +222,7 @@ namespace SaleManage
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.07117F));
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.270463F));
             this.TableLayoutPanel4.Controls.Add(this.Label3, 1, 0);
-            this.TableLayoutPanel4.Controls.Add(this.ComboBox1, 2, 0);
+            this.TableLayoutPanel4.Controls.Add(this.cmbCustomer, 2, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 216);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
@@ -243,15 +243,15 @@ namespace SaleManage
             this.Label3.Text = "顧客名　：";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ComboBox1
+            // cmbCustomer
             // 
-            this.ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ComboBox1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.ComboBox1.FormattingEnabled = true;
-            this.ComboBox1.Location = new System.Drawing.Point(139, 3);
-            this.ComboBox1.Name = "ComboBox1";
-            this.ComboBox1.Size = new System.Drawing.Size(694, 31);
-            this.ComboBox1.TabIndex = 1;
+            this.cmbCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cmbCustomer.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmbCustomer.FormattingEnabled = true;
+            this.cmbCustomer.Location = new System.Drawing.Point(139, 3);
+            this.cmbCustomer.Name = "cmbCustomer";
+            this.cmbCustomer.Size = new System.Drawing.Size(694, 31);
+            this.cmbCustomer.TabIndex = 1;
             // 
             // TableLayoutPanel5
             // 
@@ -265,7 +265,7 @@ namespace SaleManage
             this.TableLayoutPanel5.Controls.Add(this.Label4, 1, 0);
             this.TableLayoutPanel5.Controls.Add(this.Panel2, 2, 0);
             this.TableLayoutPanel5.Controls.Add(this.Label7, 3, 0);
-            this.TableLayoutPanel5.Controls.Add(this.txtamount, 4, 0);
+            this.TableLayoutPanel5.Controls.Add(this.txtUnitPrice, 4, 0);
             this.TableLayoutPanel5.Controls.Add(this.Label8, 5, 0);
             this.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel5.Location = new System.Drawing.Point(3, 282);
@@ -289,22 +289,23 @@ namespace SaleManage
             // 
             // Panel2
             // 
-            this.Panel2.Controls.Add(this.ComboBox2);
+            this.Panel2.Controls.Add(this.cmbGoods);
             this.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel2.Location = new System.Drawing.Point(142, 3);
             this.Panel2.Name = "Panel2";
             this.Panel2.Size = new System.Drawing.Size(357, 39);
             this.Panel2.TabIndex = 1;
             // 
-            // ComboBox2
+            // cmbGoods
             // 
-            this.ComboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbGoods.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ComboBox2.FormattingEnabled = true;
-            this.ComboBox2.Location = new System.Drawing.Point(5, 11);
-            this.ComboBox2.Name = "ComboBox2";
-            this.ComboBox2.Size = new System.Drawing.Size(332, 23);
-            this.ComboBox2.TabIndex = 0;
+            this.cmbGoods.FormattingEnabled = true;
+            this.cmbGoods.Location = new System.Drawing.Point(5, 11);
+            this.cmbGoods.Name = "cmbGoods";
+            this.cmbGoods.Size = new System.Drawing.Size(332, 23);
+            this.cmbGoods.TabIndex = 0;
+            this.cmbGoods.SelectedIndexChanged += new System.EventHandler(this.cmbGoods_SelectedIndexChanged);
             // 
             // Label7
             // 
@@ -318,17 +319,17 @@ namespace SaleManage
             this.Label7.Text = "単価　：";
             this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtamount
+            // txtUnitPrice
             // 
-            this.txtamount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtamount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtamount.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtamount.Location = new System.Drawing.Point(663, 3);
-            this.txtamount.Multiline = true;
-            this.txtamount.Name = "txtamount";
-            this.txtamount.Size = new System.Drawing.Size(140, 39);
-            this.txtamount.TabIndex = 3;
-            this.txtamount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUnitPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUnitPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtUnitPrice.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtUnitPrice.Location = new System.Drawing.Point(663, 3);
+            this.txtUnitPrice.Multiline = true;
+            this.txtUnitPrice.Name = "txtUnitPrice";
+            this.txtUnitPrice.Size = new System.Drawing.Size(140, 39);
+            this.txtUnitPrice.TabIndex = 3;
+            this.txtUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label8
             // 
@@ -353,10 +354,10 @@ namespace SaleManage
             this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.98174F));
             this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.990868F));
             this.TableLayoutPanel6.Controls.Add(this.Label5, 1, 0);
-            this.TableLayoutPanel6.Controls.Add(this.TextBox1, 2, 0);
+            this.TableLayoutPanel6.Controls.Add(this.txtQuantity, 2, 0);
             this.TableLayoutPanel6.Controls.Add(this.Label9, 3, 0);
             this.TableLayoutPanel6.Controls.Add(this.Label10, 6, 0);
-            this.TableLayoutPanel6.Controls.Add(this.TextBox2, 5, 0);
+            this.TableLayoutPanel6.Controls.Add(this.txtAmount, 5, 0);
             this.TableLayoutPanel6.Controls.Add(this.Label11, 4, 0);
             this.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel6.Location = new System.Drawing.Point(3, 348);
@@ -378,16 +379,17 @@ namespace SaleManage
             this.Label5.Text = "個数：";
             this.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TextBox1
+            // txtQuantity
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox1.Location = new System.Drawing.Point(147, 3);
-            this.TextBox1.Multiline = true;
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(165, 39);
-            this.TextBox1.TabIndex = 1;
-            this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQuantity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtQuantity.Location = new System.Drawing.Point(147, 3);
+            this.txtQuantity.Multiline = true;
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(165, 39);
+            this.txtQuantity.TabIndex = 1;
+            this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
             // 
             // Label9
             // 
@@ -413,16 +415,16 @@ namespace SaleManage
             this.Label10.Text = "円";
             this.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TextBox2
+            // txtAmount
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox2.Location = new System.Drawing.Point(666, 3);
-            this.TextBox2.Multiline = true;
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(134, 39);
-            this.TextBox2.TabIndex = 4;
-            this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAmount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtAmount.Location = new System.Drawing.Point(666, 3);
+            this.txtAmount.Multiline = true;
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(134, 39);
+            this.txtAmount.TabIndex = 4;
+            this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label11
             // 
@@ -444,7 +446,7 @@ namespace SaleManage
             this.TableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.01605F));
             this.TableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.012841F));
             this.TableLayoutPanel7.Controls.Add(this.Label6, 1, 0);
-            this.TableLayoutPanel7.Controls.Add(this.TextBox3, 2, 0);
+            this.TableLayoutPanel7.Controls.Add(this.txtNote, 2, 0);
             this.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel7.Location = new System.Drawing.Point(3, 414);
             this.TableLayoutPanel7.Name = "TableLayoutPanel7";
@@ -465,15 +467,16 @@ namespace SaleManage
             this.Label6.Text = "備考：";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TextBox3
+            // txtNote
             // 
-            this.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox3.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TextBox3.Location = new System.Drawing.Point(141, 3);
-            this.TextBox3.Multiline = true;
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(695, 39);
-            this.TextBox3.TabIndex = 1;
+            this.txtNote.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNote.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtNote.Location = new System.Drawing.Point(141, 3);
+            this.txtNote.Multiline = true;
+            this.txtNote.Name = "txtNote";
+            this.txtNote.Size = new System.Drawing.Size(695, 39);
+            this.txtNote.TabIndex = 1;
+            this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
             // 
             // TableLayoutPanel8
             // 
@@ -483,8 +486,8 @@ namespace SaleManage
             this.TableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.TableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.TableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.TableLayoutPanel8.Controls.Add(this.Button1, 1, 0);
-            this.TableLayoutPanel8.Controls.Add(this.Button2, 3, 0);
+            this.TableLayoutPanel8.Controls.Add(this.btnClose, 1, 0);
+            this.TableLayoutPanel8.Controls.Add(this.btnRegister, 3, 0);
             this.TableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel8.Location = new System.Drawing.Point(3, 480);
             this.TableLayoutPanel8.Name = "TableLayoutPanel8";
@@ -494,29 +497,30 @@ namespace SaleManage
             this.TableLayoutPanel8.Size = new System.Drawing.Size(876, 45);
             this.TableLayoutPanel8.TabIndex = 7;
             // 
-            // Button1
+            // btnClose
             // 
-            this.Button1.BackColor = System.Drawing.Color.DarkGray;
-            this.Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Button1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Button1.Location = new System.Drawing.Point(564, 3);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(99, 39);
-            this.Button1.TabIndex = 0;
-            this.Button1.Text = "閉じる";
-            this.Button1.UseVisualStyleBackColor = false;
+            this.btnClose.BackColor = System.Drawing.Color.DarkGray;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnClose.Location = new System.Drawing.Point(564, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(99, 39);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "閉じる";
+            this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // Button2
+            // btnRegister
             // 
-            this.Button2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.Button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Button2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Button2.Location = new System.Drawing.Point(724, 3);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(98, 39);
-            this.Button2.TabIndex = 1;
-            this.Button2.Text = "登録";
-            this.Button2.UseVisualStyleBackColor = false;
+            this.btnRegister.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRegister.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnRegister.Location = new System.Drawing.Point(724, 3);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(98, 39);
+            this.btnRegister.TabIndex = 1;
+            this.btnRegister.Text = "登録";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // sale_register
             // 
@@ -529,6 +533,7 @@ namespace SaleManage
             this.Name = "sale_register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "sale_register";
+            this.Load += new System.EventHandler(this.sale_register_Load);
             this.TableLayoutPanel1.ResumeLayout(false);
             this.TableLayoutPanel1.PerformLayout();
             this.TableLayoutPanel2.ResumeLayout(false);
@@ -560,29 +565,29 @@ namespace SaleManage
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.DateTimePicker DateTimePicker1;
+        internal System.Windows.Forms.DateTimePicker dtpDate;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel4;
         internal System.Windows.Forms.Label Label3;
-        internal System.Windows.Forms.ComboBox ComboBox1;
+        internal System.Windows.Forms.ComboBox cmbCustomer;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel5;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Panel Panel2;
-        internal System.Windows.Forms.ComboBox ComboBox2;
+        internal System.Windows.Forms.ComboBox cmbGoods;
         internal System.Windows.Forms.Label Label7;
-        internal System.Windows.Forms.TextBox txtamount;
+        internal System.Windows.Forms.TextBox txtUnitPrice;
         internal System.Windows.Forms.Label Label8;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel6;
         internal System.Windows.Forms.Label Label5;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox txtQuantity;
         internal System.Windows.Forms.Label Label9;
         internal System.Windows.Forms.Label Label10;
-        internal System.Windows.Forms.TextBox TextBox2;
+        internal System.Windows.Forms.TextBox txtAmount;
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel7;
         internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.TextBox TextBox3;
+        internal System.Windows.Forms.TextBox txtNote;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel8;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.Button Button2;
+        internal System.Windows.Forms.Button btnClose;
+        internal System.Windows.Forms.Button btnRegister;
     }
 }
