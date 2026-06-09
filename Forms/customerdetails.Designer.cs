@@ -196,6 +196,7 @@ namespace SaleManage
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "削除";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -208,6 +209,7 @@ namespace SaleManage
             this.btnEdit.TabIndex = 9;
             this.btnEdit.Text = "編集";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnClose
             // 
@@ -220,6 +222,7 @@ namespace SaleManage
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // Panel2
             // 
@@ -419,6 +422,7 @@ namespace SaleManage
             this.Name = "customerdetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "customerdetails2";
+            this.Load += new System.EventHandler(this.customerdetails_Load);
             this.TableLayoutPanel1.ResumeLayout(false);
             this.Panel1.ResumeLayout(false);
             this.TableLayoutPanel2.ResumeLayout(false);
@@ -462,12 +466,12 @@ namespace SaleManage
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.DataGridView dgvCustomerDetails;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colDate;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colGoods_name;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colPer_price;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colCount;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colAmount;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colRemark;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGoods_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPer_price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRemark;
     }
 }

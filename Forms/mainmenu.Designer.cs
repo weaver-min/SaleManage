@@ -55,7 +55,7 @@ namespace SaleManage
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1087, 701);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1157, 889);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -75,11 +75,10 @@ namespace SaleManage
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.5F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.5F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1081, 695);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.05263F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.47368F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.47368F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1151, 883);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // btnSystem
@@ -87,48 +86,52 @@ namespace SaleManage
             this.btnSystem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSystem.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSystem.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSystem.Location = new System.Drawing.Point(768, 483);
+            this.btnSystem.Location = new System.Drawing.Point(838, 627);
             this.btnSystem.Name = "btnSystem";
             this.btnSystem.Size = new System.Drawing.Size(249, 161);
             this.btnSystem.TabIndex = 6;
             this.btnSystem.Text = "システム設定";
             this.btnSystem.UseVisualStyleBackColor = true;
+            this.btnSystem.Click += new System.EventHandler(this.btnSystem_Click);
             // 
             // btnSaleRegist
             // 
             this.btnSaleRegist.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSaleRegist.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSaleRegist.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSaleRegist.Location = new System.Drawing.Point(411, 483);
+            this.btnSaleRegist.Location = new System.Drawing.Point(481, 627);
             this.btnSaleRegist.Name = "btnSaleRegist";
             this.btnSaleRegist.Size = new System.Drawing.Size(226, 161);
             this.btnSaleRegist.TabIndex = 5;
             this.btnSaleRegist.Text = "販売登録";
             this.btnSaleRegist.UseVisualStyleBackColor = true;
+            this.btnSaleRegist.Click += new System.EventHandler(this.btnSaleRegist_Click);
             // 
             // btnGoods
             // 
             this.btnGoods.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGoods.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnGoods.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnGoods.Location = new System.Drawing.Point(59, 483);
+            this.btnGoods.Location = new System.Drawing.Point(94, 627);
             this.btnGoods.Name = "btnGoods";
             this.btnGoods.Size = new System.Drawing.Size(226, 161);
             this.btnGoods.TabIndex = 4;
             this.btnGoods.Text = "商品マスタ";
             this.btnGoods.UseVisualStyleBackColor = true;
+            this.btnGoods.Click += new System.EventHandler(this.btnGoods_Click);
             // 
             // btnInvoice
             // 
             this.btnInvoice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnInvoice.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnInvoice.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnInvoice.Location = new System.Drawing.Point(763, 222);
+            this.btnInvoice.Location = new System.Drawing.Point(833, 278);
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Size = new System.Drawing.Size(258, 161);
             this.btnInvoice.TabIndex = 3;
             this.btnInvoice.Text = "請求書";
             this.btnInvoice.UseVisualStyleBackColor = true;
+            this.btnInvoice.Click += new System.EventHandler(this.btnInvoice_Click);
             // 
             // lblmain_menu
             // 
@@ -142,7 +145,7 @@ namespace SaleManage
             this.lblmain_menu.Location = new System.Drawing.Point(3, 0);
             this.lblmain_menu.Name = "lblmain_menu";
             this.lblmain_menu.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblmain_menu.Size = new System.Drawing.Size(1075, 173);
+            this.lblmain_menu.Size = new System.Drawing.Size(1145, 185);
             this.lblmain_menu.TabIndex = 0;
             this.lblmain_menu.Text = "販売管理システム";
             this.lblmain_menu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,30 +156,32 @@ namespace SaleManage
             this.btnCustomerMaster.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCustomerMaster.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnCustomerMaster.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCustomerMaster.Location = new System.Drawing.Point(59, 222);
+            this.btnCustomerMaster.Location = new System.Drawing.Point(94, 278);
             this.btnCustomerMaster.Name = "btnCustomerMaster";
             this.btnCustomerMaster.Size = new System.Drawing.Size(226, 161);
             this.btnCustomerMaster.TabIndex = 1;
             this.btnCustomerMaster.Text = "顧客マスタ";
             this.btnCustomerMaster.UseVisualStyleBackColor = true;
+            this.btnCustomerMaster.Click += new System.EventHandler(this.btnCustomerMaster_Click);
             // 
             // btnSalelst
             // 
             this.btnSalelst.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSalelst.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSalelst.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSalelst.Location = new System.Drawing.Point(411, 222);
+            this.btnSalelst.Location = new System.Drawing.Point(481, 278);
             this.btnSalelst.Name = "btnSalelst";
             this.btnSalelst.Size = new System.Drawing.Size(226, 161);
             this.btnSalelst.TabIndex = 2;
             this.btnSalelst.Text = "販売一覧";
             this.btnSalelst.UseVisualStyleBackColor = true;
+            this.btnSalelst.Click += new System.EventHandler(this.btnSalelst_Click);
             // 
             // mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 701);
+            this.ClientSize = new System.Drawing.Size(1157, 889);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -184,7 +189,6 @@ namespace SaleManage
             this.Name = "mainmenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainmenu";
-            this.Load += new System.EventHandler(this.mainmenu_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();

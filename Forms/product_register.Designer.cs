@@ -1,5 +1,5 @@
 ﻿
-namespace SaleManage
+namespace SaleManage.Forms
 {
     partial class product_register
     {
@@ -36,14 +36,14 @@ namespace SaleManage
             this.lblGoodsName = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.txtGoodsPrice = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.TableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.TextBox2 = new System.Windows.Forms.TextBox();
-            this.TextBox3 = new System.Windows.Forms.TextBox();
+            this.txtGoodsId = new System.Windows.Forms.TextBox();
+            this.txtGoodsName = new System.Windows.Forms.TextBox();
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.Button1 = new System.Windows.Forms.Button();
-            this.Button2 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
@@ -98,7 +98,7 @@ namespace SaleManage
             this.TableLayoutPanel2.Controls.Add(this.Label3, 1, 4);
             this.TableLayoutPanel2.Controls.Add(this.TableLayoutPanel3, 2, 4);
             this.TableLayoutPanel2.Controls.Add(this.TableLayoutPanel5, 2, 0);
-            this.TableLayoutPanel2.Controls.Add(this.TextBox3, 2, 2);
+            this.TableLayoutPanel2.Controls.Add(this.txtGoodsName, 2, 2);
             this.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 88);
             this.TableLayoutPanel2.Name = "TableLayoutPanel2";
@@ -152,7 +152,7 @@ namespace SaleManage
             this.TableLayoutPanel3.ColumnCount = 2;
             this.TableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.77235F));
             this.TableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.22764F));
-            this.TableLayoutPanel3.Controls.Add(this.TextBox1, 0, 0);
+            this.TableLayoutPanel3.Controls.Add(this.txtGoodsPrice, 0, 0);
             this.TableLayoutPanel3.Controls.Add(this.Label2, 1, 0);
             this.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel3.Location = new System.Drawing.Point(169, 183);
@@ -162,16 +162,17 @@ namespace SaleManage
             this.TableLayoutPanel3.Size = new System.Drawing.Size(623, 67);
             this.TableLayoutPanel3.TabIndex = 3;
             // 
-            // TextBox1
+            // txtGoodsPrice
             // 
-            this.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox1.Location = new System.Drawing.Point(3, 3);
-            this.TextBox1.Multiline = true;
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(466, 61);
-            this.TextBox1.TabIndex = 0;
-            this.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtGoodsPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGoodsPrice.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtGoodsPrice.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtGoodsPrice.Location = new System.Drawing.Point(3, 3);
+            this.txtGoodsPrice.Multiline = true;
+            this.txtGoodsPrice.Name = "txtGoodsPrice";
+            this.txtGoodsPrice.Size = new System.Drawing.Size(466, 61);
+            this.txtGoodsPrice.TabIndex = 0;
+            this.txtGoodsPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Label2
             // 
@@ -190,7 +191,7 @@ namespace SaleManage
             this.TableLayoutPanel5.ColumnCount = 2;
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.TableLayoutPanel5.Controls.Add(this.TextBox2, 0, 0);
+            this.TableLayoutPanel5.Controls.Add(this.txtGoodsId, 0, 0);
             this.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel5.Location = new System.Drawing.Point(169, 3);
             this.TableLayoutPanel5.Name = "TableLayoutPanel5";
@@ -199,27 +200,29 @@ namespace SaleManage
             this.TableLayoutPanel5.Size = new System.Drawing.Size(623, 52);
             this.TableLayoutPanel5.TabIndex = 4;
             // 
-            // TextBox2
+            // txtGoodsId
             // 
-            this.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox2.Location = new System.Drawing.Point(3, 3);
-            this.TextBox2.Multiline = true;
-            this.TextBox2.Name = "TextBox2";
-            this.TextBox2.Size = new System.Drawing.Size(180, 46);
-            this.TextBox2.TabIndex = 0;
-            this.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtGoodsId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGoodsId.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtGoodsId.Location = new System.Drawing.Point(3, 3);
+            this.txtGoodsId.Multiline = true;
+            this.txtGoodsId.Name = "txtGoodsId";
+            this.txtGoodsId.ReadOnly = true;
+            this.txtGoodsId.Size = new System.Drawing.Size(180, 46);
+            this.txtGoodsId.TabIndex = 0;
+            this.txtGoodsId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TextBox3
+            // txtGoodsName
             // 
-            this.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox3.Location = new System.Drawing.Point(169, 87);
-            this.TextBox3.Multiline = true;
-            this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(623, 48);
-            this.TextBox3.TabIndex = 5;
-            this.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtGoodsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGoodsName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtGoodsName.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtGoodsName.Location = new System.Drawing.Point(169, 87);
+            this.txtGoodsName.Multiline = true;
+            this.txtGoodsName.Name = "txtGoodsName";
+            this.txtGoodsName.Size = new System.Drawing.Size(623, 48);
+            this.txtGoodsName.TabIndex = 5;
+            this.txtGoodsName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TableLayoutPanel4
             // 
@@ -229,8 +232,8 @@ namespace SaleManage
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.703992F));
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.07572F));
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.866911F));
-            this.TableLayoutPanel4.Controls.Add(this.Button1, 1, 0);
-            this.TableLayoutPanel4.Controls.Add(this.Button2, 3, 0);
+            this.TableLayoutPanel4.Controls.Add(this.btnClose, 1, 0);
+            this.TableLayoutPanel4.Controls.Add(this.btnRegister, 3, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 456);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
@@ -239,29 +242,31 @@ namespace SaleManage
             this.TableLayoutPanel4.Size = new System.Drawing.Size(876, 77);
             this.TableLayoutPanel4.TabIndex = 2;
             // 
-            // Button1
+            // btnClose
             // 
-            this.Button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Button1.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Button1.Location = new System.Drawing.Point(487, 3);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(126, 71);
-            this.Button1.TabIndex = 0;
-            this.Button1.Text = "閉じる";
-            this.Button1.UseVisualStyleBackColor = false;
+            this.btnClose.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnClose.Location = new System.Drawing.Point(487, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(126, 71);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "閉じる";
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // Button2
+            // btnRegister
             // 
-            this.Button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.Button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Button2.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Button2.Location = new System.Drawing.Point(660, 3);
-            this.Button2.Name = "Button2";
-            this.Button2.Size = new System.Drawing.Size(126, 71);
-            this.Button2.TabIndex = 1;
-            this.Button2.Text = "登録";
-            this.Button2.UseVisualStyleBackColor = false;
+            this.btnRegister.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnRegister.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRegister.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnRegister.Location = new System.Drawing.Point(660, 3);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(126, 71);
+            this.btnRegister.TabIndex = 1;
+            this.btnRegister.Text = "登録";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // product_register
             // 
@@ -272,7 +277,6 @@ namespace SaleManage
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "product_register";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "product_register";
             this.TableLayoutPanel1.ResumeLayout(false);
             this.TableLayoutPanel1.PerformLayout();
@@ -296,13 +300,13 @@ namespace SaleManage
         internal System.Windows.Forms.Label lblGoodsName;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox txtGoodsPrice;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel5;
-        internal System.Windows.Forms.TextBox TextBox2;
-        internal System.Windows.Forms.TextBox TextBox3;
+        internal System.Windows.Forms.TextBox txtGoodsId;
+        internal System.Windows.Forms.TextBox txtGoodsName;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel4;
-        internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.Button Button2;
+        internal System.Windows.Forms.Button btnClose;
+        internal System.Windows.Forms.Button btnRegister;
     }
 }
