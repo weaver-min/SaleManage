@@ -16,7 +16,7 @@ namespace SaleManage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new sale_register());
+            Application.Run(new productmain());
         }
     }
 }

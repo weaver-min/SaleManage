@@ -34,14 +34,14 @@ namespace SaleManage
             this.TableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDate = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
-            this.dgvCustomer = new System.Windows.Forms.DateTimePicker();
+            this.dtpSa_lDate = new System.Windows.Forms.DateTimePicker();
             this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.lblCustomerName = new System.Windows.Forms.Label();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.DataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSale = new System.Windows.Forms.DataGridView();
             this.colId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,7 +55,7 @@ namespace SaleManage
             this.Panel1.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
             this.TableLayoutPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
             this.SuspendLayout();
             // 
             // TableLayoutPanel1
@@ -127,21 +127,21 @@ namespace SaleManage
             // 
             this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Panel1.Controls.Add(this.dgvCustomer);
+            this.Panel1.Controls.Add(this.dtpSa_lDate);
             this.Panel1.Location = new System.Drawing.Point(245, 3);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(274, 30);
             this.Panel1.TabIndex = 1;
             // 
-            // dgvCustomer
+            // dtpSa_lDate
             // 
-            this.dgvCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dtpSa_lDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCustomer.CalendarFont = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dgvCustomer.Location = new System.Drawing.Point(3, 14);
-            this.dgvCustomer.Name = "dgvCustomer";
-            this.dgvCustomer.Size = new System.Drawing.Size(271, 22);
-            this.dgvCustomer.TabIndex = 0;
+            this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtpSa_lDate.Location = new System.Drawing.Point(0, 9);
+            this.dtpSa_lDate.Name = "dtpSa_lDate";
+            this.dtpSa_lDate.Size = new System.Drawing.Size(271, 22);
+            this.dtpSa_lDate.TabIndex = 0;
             // 
             // TableLayoutPanel3
             // 
@@ -221,7 +221,7 @@ namespace SaleManage
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.TableLayoutPanel4.Controls.Add(this.DataGridView1, 1, 0);
+            this.TableLayoutPanel4.Controls.Add(this.dgvSale, 1, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 239);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
@@ -231,11 +231,11 @@ namespace SaleManage
             this.TableLayoutPanel4.Size = new System.Drawing.Size(1300, 425);
             this.TableLayoutPanel4.TabIndex = 3;
             // 
-            // DataGridView1
+            // dgvSale
             // 
-            this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSale.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSale.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colId,
             this.colDate,
             this.colCustomerName,
@@ -244,13 +244,13 @@ namespace SaleManage
             this.colAmount,
             this.colTotalprice,
             this.colRemark});
-            this.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DataGridView1.Location = new System.Drawing.Point(68, 3);
-            this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.RowHeadersWidth = 51;
-            this.DataGridView1.RowTemplate.Height = 24;
-            this.DataGridView1.Size = new System.Drawing.Size(1164, 419);
-            this.DataGridView1.TabIndex = 0;
+            this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvSale.Location = new System.Drawing.Point(68, 3);
+            this.dgvSale.Name = "dgvSale";
+            this.dgvSale.RowHeadersWidth = 51;
+            this.dgvSale.RowTemplate.Height = 24;
+            this.dgvSale.Size = new System.Drawing.Size(1164, 419);
+            this.dgvSale.TabIndex = 0;
             // 
             // colId
             // 
@@ -319,7 +319,7 @@ namespace SaleManage
             this.TableLayoutPanel3.ResumeLayout(false);
             this.TableLayoutPanel3.PerformLayout();
             this.TableLayoutPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -331,14 +331,14 @@ namespace SaleManage
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel2;
         internal System.Windows.Forms.Label lblDate;
         internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.DateTimePicker dgvCustomer;
+        internal System.Windows.Forms.DateTimePicker dtpSa_lDate;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
         internal System.Windows.Forms.Label lblCustomerName;
         internal System.Windows.Forms.TextBox txtCustomerName;
         internal System.Windows.Forms.Button btnSearch;
         internal System.Windows.Forms.Button btnClose;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel4;
-        internal System.Windows.Forms.DataGridView DataGridView1;
+        internal System.Windows.Forms.DataGridView dgvSale;
         internal System.Windows.Forms.DataGridViewTextBoxColumn colId;
         internal System.Windows.Forms.DataGridViewTextBoxColumn colDate;
         internal System.Windows.Forms.DataGridViewTextBoxColumn colCustomerName;

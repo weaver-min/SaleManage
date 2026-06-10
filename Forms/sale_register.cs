@@ -249,10 +249,5 @@ namespace SaleManage
         {
             CalculateAmount();
         }
-
-        private void txtNote_TextChanged(object sender, EventArgs e)
-        {
-             
-        }
     }
 }

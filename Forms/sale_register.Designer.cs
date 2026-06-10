@@ -476,7 +476,6 @@ namespace SaleManage
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(695, 39);
             this.txtNote.TabIndex = 1;
-            this.txtNote.TextChanged += new System.EventHandler(this.txtNote_TextChanged);
             // 
             // TableLayoutPanel8
             // 

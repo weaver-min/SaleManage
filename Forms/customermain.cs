@@ -12,73 +12,90 @@ namespace SaleManage
         {
             InitializeComponent();
         }
+
         private void LoadCustomer()
         {
             CustomerRepo repo = new CustomerRepo();
-            dgvCustomer.DataSource =
-                repo.GetAllCustomers();
+            DataTable dt = repo.GetAllCustomers();
+            dgvCustomer.Rows.Clear();
+            foreach (DataRow row in dt.Rows)
+            {
+                dgvCustomer.Rows.Add(
+                    row["customer_id"],
+                    row["customer_name"],
+                    row["customer_furigana"]
+                );
+            }
         }
 
         private void customermain_Load(object sender, EventArgs e)
         {
             dgvCustomer.EnableHeadersVisualStyles = false;
-
             dgvCustomer.Font = new Font("Yu Gothic UI", 10);
-
             dgvCustomer.ColumnHeadersDefaultCellStyle.Font =
                 new Font("Yu Gothic UI", 14, FontStyle.Bold);
-
             dgvCustomer.ColumnHeadersHeight = 35;
+            dgvCustomer.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCustomer.MultiSelect = false;
+            dgvCustomer.AllowUserToAddRows = false;
+
             LoadCustomer();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-                CustomerRepo repo = new CustomerRepo();
+            CustomerRepo repo = new CustomerRepo();
+            DataTable dt = repo.SearchCustomer(txtSearch.Text.Trim());
 
-                DataTable dt =
-                    repo.SearchCustomer(txtSearch.Text.Trim());
-
-                if (dt.Rows.Count == 0)
-                {
-                    MessageBox.Show("顧客が見つかりません。");
-                    return;
-                }
-
-                dgvCustomer.DataSource = dt;
+            if (dt.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                    "顧客が見つかりません。",
+                    "検索結果なし",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
             }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            dgvCustomer.Rows.Clear();
+            foreach (DataRow row in dt.Rows)
+            {
+                dgvCustomer.Rows.Add(
+                    row["customer_id"],
+                    row["customer_name"],
+                    row["customer_furigana"]
+                );
+            }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
             customerdetails frm = new customerdetails();
-
-            if (frm.ShowDialog() == DialogResult.OK)
-            {
-                LoadCustomer(); // refresh grid
-            }
-        }
-        private void OpenCustomerDetails()
-        {
-            if (dgvCustomer.CurrentRow == null)
-                return;
-            customerdetails frm = new customerdetails();
-            frm.CustomerID = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 LoadCustomer();
             }
-
         }
+
+        private void OpenCustomerDetails()
+        {
+            if (dgvCustomer.CurrentRow == null)
+                return;
+
+            string customerId = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
+            customerdetails frm = new customerdetails(customerId);
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                LoadCustomer();
+            }
+        }
+
         private void dgvCustomer_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex < 0)
+                return;
             OpenCustomerDetails();
-            }
+        }
 
         private void dgvCustomer_KeyDown(object sender, KeyEventArgs e)
         {
@@ -86,12 +103,13 @@ namespace SaleManage
             {
                 e.Handled = true;
                 e.SuppressKeyPress = true;
-
                 OpenCustomerDetails();
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
-    }
-
-
-
+}
