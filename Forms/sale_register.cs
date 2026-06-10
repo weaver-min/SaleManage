@@ -10,17 +10,34 @@ namespace SaleManage
         public string SalesID { get; set; }
         private bool _isEditMode = false;
 
-        // ← store original values for cancel
         private string _originalCustomerID;
         private string _originalGoodsID;
-        private string _originalDate;
-        private string _originalQuantity;
-        private string _originalNote;
+        private DateTime _originalDate;
+        private string _originalUnitsSold;
+        private string _originalRemarks;
 
         public sale_register(string salesId ="")
         {
             InitializeComponent();
             SalesID = salesId;
+            txtID.ReadOnly = true;
+            txtUnitPrice.ReadOnly = true;
+            txtAmount.ReadOnly = true;
+
+            LoadCustomerList();
+            LoadGoodsList();
+
+            if (!string.IsNullOrEmpty(SalesID))
+            {
+                LoadSalesData();
+                SetViewMode();
+            }
+            else
+            {
+                txtID.Text = "自動採番";
+                dtpSa_lDate.Value = DateTime.Today;
+                SetNewMode();
+            }
         }
         private void LoadCustomerList()
         {
@@ -50,20 +67,21 @@ namespace SaleManage
             if (dt.Rows.Count > 0)
             {
                 txtID.Text = dt.Rows[0]["sales_id"].ToString();
-                dtpDate.Value = Convert.ToDateTime(dt.Rows[0]["purchase_date"]);
+                dtpSa_lDate.Value = Convert.ToDateTime(dt.Rows[0]["purchase_date"]);
                 cmbCustomer.SelectedValue = dt.Rows[0]["customer_id"];
                 cmbGoods.SelectedValue = dt.Rows[0]["goods_id"];
                 txtUnitPrice.Text = dt.Rows[0]["goods_price"].ToString();
                 txtQuantity.Text = dt.Rows[0]["units_sold"].ToString();
                 txtAmount.Text = dt.Rows[0]["amount"].ToString();
-                txtNote.Text = dt.Rows[0]["remarks"].ToString();
+                txtRemarks.Text = dt.Rows[0]["remarks"].ToString();
+
 
                 // ← save original values for cancel
                 _originalCustomerID = dt.Rows[0]["customer_id"].ToString();
                 _originalGoodsID = dt.Rows[0]["goods_id"].ToString();
-                _originalDate = dt.Rows[0]["purchase_date"].ToString();
-                _originalQuantity = dt.Rows[0]["units_sold"].ToString();
-                _originalNote = dt.Rows[0]["remarks"].ToString();
+                _originalDate = Convert.ToDateTime(dt.Rows[0]["purchase_date"]);
+                _originalUnitsSold = dt.Rows[0]["units_sold"].ToString();
+                _originalRemarks = dt.Rows[0]["remarks"].ToString();
             }
         }
         private void SetViewMode()
@@ -72,11 +90,11 @@ namespace SaleManage
             btnRegister.Text = "編集";
             btnClose.Text = "閉じる";
 
-            dtpDate.Enabled = false;
+            dtpSa_lDate.Enabled = false;
             cmbCustomer.Enabled = false;
             cmbGoods.Enabled = false;
             txtQuantity.ReadOnly = true;
-            txtNote.ReadOnly = true;
+            txtRemarks.ReadOnly = true;
         }
 
         // ← edit mode: 登録→完了, 閉じる→キャンセル
@@ -86,11 +104,11 @@ namespace SaleManage
             btnRegister.Text = "完了";
             btnClose.Text = "キャンセル";
 
-            dtpDate.Enabled = true;
+            dtpSa_lDate.Enabled = true;
             cmbCustomer.Enabled = true;
             cmbGoods.Enabled = true;
             txtQuantity.ReadOnly = false;
-            txtNote.ReadOnly = false;
+            txtRemarks.ReadOnly = false;
         }
 
         // ← new registration mode
@@ -100,11 +118,11 @@ namespace SaleManage
             btnRegister.Text = "登録";
             btnClose.Text = "閉じる";
 
-            dtpDate.Enabled = true;
+            dtpSa_lDate.Enabled = true;
             cmbCustomer.Enabled = true;
             cmbGoods.Enabled = true;
             txtQuantity.ReadOnly = false;
-            txtNote.ReadOnly = false;
+            txtRemarks.ReadOnly = false;
         }
 
         private void CalculateAmount()
@@ -161,19 +179,20 @@ namespace SaleManage
                 SetEditMode();
                 return;
             }
-
+            if (!ValidateInput())
+                return;
 
             SalesRepo repo = new SalesRepo();
 
             if (string.IsNullOrEmpty(SalesID)) // ← INSERT
             {
                 repo.InsertSales(
-                    dtpDate.Value,
+                    dtpSa_lDate.Value,
                     cmbCustomer.SelectedValue.ToString(),
                     cmbGoods.SelectedValue.ToString(),
                     int.Parse(txtQuantity.Text),
                     int.Parse(txtAmount.Text),
-                    txtNote.Text.Trim());
+                    txtRemarks.Text.Trim());
 
                 MessageBox.Show(
                     "登録が完了しました。",
@@ -185,12 +204,12 @@ namespace SaleManage
             {
                 repo.UpdateSales(
                     SalesID,
-                    dtpDate.Value,
+                    dtpSa_lDate.Value,
                     cmbCustomer.SelectedValue.ToString(),
                     cmbGoods.SelectedValue.ToString(),
                     int.Parse(txtQuantity.Text),
                     int.Parse(txtAmount.Text),
-                    txtNote.Text.Trim());
+                    txtRemarks.Text.Trim());
 
                 MessageBox.Show(
                     "更新が完了しました。",
@@ -223,7 +242,7 @@ namespace SaleManage
             {
                 // ← new registration mode
                 txtID.Text = "自動採番";
-                dtpDate.Value = DateTime.Today;
+                dtpSa_lDate.Value = DateTime.Today;
                 SetNewMode();
             }
 
@@ -248,6 +267,25 @@ namespace SaleManage
         private void txtQuantity_TextChanged(object sender, EventArgs e)
         {
             CalculateAmount();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            if (_isEditMode && !string.IsNullOrEmpty(SalesID))
+            {
+                // ← restore original values
+                cmbCustomer.SelectedValue = _originalCustomerID;
+                cmbGoods.SelectedValue = _originalGoodsID;
+                dtpSa_lDate.Value = _originalDate;
+                txtQuantity.Text = _originalUnitsSold;
+                txtRemarks.Text = _originalRemarks;
+                CalculateAmount();
+                SetViewMode();
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }

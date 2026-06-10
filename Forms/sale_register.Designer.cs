@@ -37,7 +37,7 @@ namespace SaleManage
             this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.Label2 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
-            this.dtpDate = new System.Windows.Forms.DateTimePicker();
+            this.dtpSa_lDate = new System.Windows.Forms.DateTimePicker();
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.Label3 = new System.Windows.Forms.Label();
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
@@ -57,7 +57,7 @@ namespace SaleManage
             this.Label11 = new System.Windows.Forms.Label();
             this.TableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.Label6 = new System.Windows.Forms.Label();
-            this.txtNote = new System.Windows.Forms.TextBox();
+            this.txtRemarks = new System.Windows.Forms.TextBox();
             this.TableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -195,23 +195,23 @@ namespace SaleManage
             // 
             // Panel1
             // 
-            this.Panel1.Controls.Add(this.dtpDate);
+            this.Panel1.Controls.Add(this.dtpSa_lDate);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(143, 3);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(278, 39);
             this.Panel1.TabIndex = 1;
             // 
-            // dtpDate
+            // dtpSa_lDate
             // 
-            this.dtpDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtpSa_lDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dtpDate.Location = new System.Drawing.Point(7, 7);
-            this.dtpDate.Name = "dtpDate";
-            this.dtpDate.Size = new System.Drawing.Size(241, 22);
-            this.dtpDate.TabIndex = 0;
+            this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtpSa_lDate.Location = new System.Drawing.Point(7, 7);
+            this.dtpSa_lDate.Name = "dtpSa_lDate";
+            this.dtpSa_lDate.Size = new System.Drawing.Size(241, 22);
+            this.dtpSa_lDate.TabIndex = 0;
             // 
             // TableLayoutPanel4
             // 
@@ -248,9 +248,9 @@ namespace SaleManage
             this.cmbCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbCustomer.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmbCustomer.FormattingEnabled = true;
-            this.cmbCustomer.Location = new System.Drawing.Point(139, 3);
+            this.cmbCustomer.Location = new System.Drawing.Point(174, 4);
             this.cmbCustomer.Name = "cmbCustomer";
-            this.cmbCustomer.Size = new System.Drawing.Size(694, 31);
+            this.cmbCustomer.Size = new System.Drawing.Size(868, 31);
             this.cmbCustomer.TabIndex = 1;
             // 
             // TableLayoutPanel5
@@ -446,7 +446,7 @@ namespace SaleManage
             this.TableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.01605F));
             this.TableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.012841F));
             this.TableLayoutPanel7.Controls.Add(this.Label6, 1, 0);
-            this.TableLayoutPanel7.Controls.Add(this.txtNote, 2, 0);
+            this.TableLayoutPanel7.Controls.Add(this.txtRemarks, 2, 0);
             this.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel7.Location = new System.Drawing.Point(3, 414);
             this.TableLayoutPanel7.Name = "TableLayoutPanel7";
@@ -467,15 +467,15 @@ namespace SaleManage
             this.Label6.Text = "備考：";
             this.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtNote
+            // txtRemarks
             // 
-            this.txtNote.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNote.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtNote.Location = new System.Drawing.Point(141, 3);
-            this.txtNote.Multiline = true;
-            this.txtNote.Name = "txtNote";
-            this.txtNote.Size = new System.Drawing.Size(695, 39);
-            this.txtNote.TabIndex = 1;
+            this.txtRemarks.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRemarks.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtRemarks.Location = new System.Drawing.Point(141, 3);
+            this.txtRemarks.Multiline = true;
+            this.txtRemarks.Name = "txtRemarks";
+            this.txtRemarks.Size = new System.Drawing.Size(695, 39);
+            this.txtRemarks.TabIndex = 1;
             // 
             // TableLayoutPanel8
             // 
@@ -507,6 +507,7 @@ namespace SaleManage
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnRegister
             // 
@@ -564,7 +565,7 @@ namespace SaleManage
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Panel Panel1;
-        internal System.Windows.Forms.DateTimePicker dtpDate;
+        internal System.Windows.Forms.DateTimePicker dtpSa_lDate;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel4;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.ComboBox cmbCustomer;
@@ -584,7 +585,7 @@ namespace SaleManage
         internal System.Windows.Forms.Label Label11;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel7;
         internal System.Windows.Forms.Label Label6;
-        internal System.Windows.Forms.TextBox txtNote;
+        internal System.Windows.Forms.TextBox txtRemarks;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel8;
         internal System.Windows.Forms.Button btnClose;
         internal System.Windows.Forms.Button btnRegister;

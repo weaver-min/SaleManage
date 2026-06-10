@@ -78,7 +78,7 @@ namespace SaleManage
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 63F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.TableLayoutPanel1.Size = new System.Drawing.Size(1306, 705);
+            this.TableLayoutPanel1.Size = new System.Drawing.Size(1289, 692);
             this.TableLayoutPanel1.TabIndex = 1;
             // 
             // lblTitle
@@ -89,7 +89,7 @@ namespace SaleManage
             this.lblTitle.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblTitle.Location = new System.Drawing.Point(3, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1300, 68);
+            this.lblTitle.Size = new System.Drawing.Size(1283, 67);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "販売一覧";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,11 +104,11 @@ namespace SaleManage
             this.TableLayoutPanel2.Controls.Add(this.lblDate, 1, 0);
             this.TableLayoutPanel2.Controls.Add(this.Panel1, 2, 0);
             this.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 111);
+            this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 110);
             this.TableLayoutPanel2.Name = "TableLayoutPanel2";
             this.TableLayoutPanel2.RowCount = 1;
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel2.Size = new System.Drawing.Size(1300, 48);
+            this.TableLayoutPanel2.Size = new System.Drawing.Size(1283, 47);
             this.TableLayoutPanel2.TabIndex = 1;
             // 
             // lblDate
@@ -116,9 +116,9 @@ namespace SaleManage
             this.lblDate.AutoSize = true;
             this.lblDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDate.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblDate.Location = new System.Drawing.Point(71, 0);
+            this.lblDate.Location = new System.Drawing.Point(70, 0);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(168, 48);
+            this.lblDate.Size = new System.Drawing.Size(166, 47);
             this.lblDate.TabIndex = 0;
             this.lblDate.Text = "日付：";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,9 +128,9 @@ namespace SaleManage
             this.Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Panel1.Controls.Add(this.dtpSa_lDate);
-            this.Panel1.Location = new System.Drawing.Point(245, 3);
+            this.Panel1.Location = new System.Drawing.Point(242, 3);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(274, 30);
+            this.Panel1.Size = new System.Drawing.Size(270, 30);
             this.Panel1.TabIndex = 1;
             // 
             // dtpSa_lDate
@@ -138,9 +138,11 @@ namespace SaleManage
             this.dtpSa_lDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtpSa_lDate.Checked = false;
             this.dtpSa_lDate.Location = new System.Drawing.Point(0, 9);
             this.dtpSa_lDate.Name = "dtpSa_lDate";
-            this.dtpSa_lDate.Size = new System.Drawing.Size(271, 22);
+            this.dtpSa_lDate.ShowCheckBox = true;
+            this.dtpSa_lDate.Size = new System.Drawing.Size(267, 22);
             this.dtpSa_lDate.TabIndex = 0;
             // 
             // TableLayoutPanel3
@@ -159,12 +161,12 @@ namespace SaleManage
             this.TableLayoutPanel3.Controls.Add(this.btnSearch, 4, 0);
             this.TableLayoutPanel3.Controls.Add(this.btnClose, 6, 0);
             this.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel3.Location = new System.Drawing.Point(3, 185);
+            this.TableLayoutPanel3.Location = new System.Drawing.Point(3, 183);
             this.TableLayoutPanel3.Name = "TableLayoutPanel3";
             this.TableLayoutPanel3.RowCount = 1;
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.TableLayoutPanel3.Size = new System.Drawing.Size(1300, 48);
+            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.TableLayoutPanel3.Size = new System.Drawing.Size(1283, 47);
             this.TableLayoutPanel3.TabIndex = 2;
             // 
             // lblCustomerName
@@ -174,7 +176,7 @@ namespace SaleManage
             this.lblCustomerName.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblCustomerName.Location = new System.Drawing.Point(64, 0);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(179, 48);
+            this.lblCustomerName.Size = new System.Drawing.Size(177, 47);
             this.lblCustomerName.TabIndex = 0;
             this.lblCustomerName.Text = "顧客名：";
             this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -183,10 +185,10 @@ namespace SaleManage
             // 
             this.txtCustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtCustomerName.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtCustomerName.Location = new System.Drawing.Point(249, 3);
+            this.txtCustomerName.Location = new System.Drawing.Point(247, 3);
             this.txtCustomerName.Multiline = true;
             this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(365, 42);
+            this.txtCustomerName.Size = new System.Drawing.Size(360, 41);
             this.txtCustomerName.TabIndex = 1;
             this.txtCustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -195,9 +197,9 @@ namespace SaleManage
             this.btnSearch.BackColor = System.Drawing.Color.YellowGreen;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSearch.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnSearch.Location = new System.Drawing.Point(681, 3);
+            this.btnSearch.Location = new System.Drawing.Point(674, 3);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(117, 42);
+            this.btnSearch.Size = new System.Drawing.Size(116, 41);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "検索";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -208,12 +210,13 @@ namespace SaleManage
             this.btnClose.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnClose.Location = new System.Drawing.Point(1113, 3);
+            this.btnClose.Location = new System.Drawing.Point(1101, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(117, 42);
+            this.btnClose.Size = new System.Drawing.Size(116, 41);
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // TableLayoutPanel4
             // 
@@ -223,12 +226,12 @@ namespace SaleManage
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.TableLayoutPanel4.Controls.Add(this.dgvSale, 1, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 239);
+            this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 236);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
             this.TableLayoutPanel4.RowCount = 1;
             this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 509F));
-            this.TableLayoutPanel4.Size = new System.Drawing.Size(1300, 425);
+            this.TableLayoutPanel4.Size = new System.Drawing.Size(1283, 417);
             this.TableLayoutPanel4.TabIndex = 3;
             // 
             // dgvSale
@@ -245,72 +248,84 @@ namespace SaleManage
             this.colTotalprice,
             this.colRemark});
             this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvSale.Location = new System.Drawing.Point(68, 3);
+            this.dgvSale.Location = new System.Drawing.Point(67, 3);
             this.dgvSale.Name = "dgvSale";
+            this.dgvSale.ReadOnly = true;
             this.dgvSale.RowHeadersWidth = 51;
             this.dgvSale.RowTemplate.Height = 24;
-            this.dgvSale.Size = new System.Drawing.Size(1164, 419);
+            this.dgvSale.Size = new System.Drawing.Size(1148, 411);
             this.dgvSale.TabIndex = 0;
+            this.dgvSale.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSale_CellDoubleClick_1);
+            this.dgvSale.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvSale_KeyDown_1);
             // 
             // colId
             // 
             this.colId.HeaderText = "ID";
             this.colId.MinimumWidth = 6;
             this.colId.Name = "colId";
+            this.colId.ReadOnly = true;
             // 
             // colDate
             // 
             this.colDate.HeaderText = "日付";
             this.colDate.MinimumWidth = 6;
             this.colDate.Name = "colDate";
+            this.colDate.ReadOnly = true;
             // 
             // colCustomerName
             // 
             this.colCustomerName.HeaderText = "顧客名";
             this.colCustomerName.MinimumWidth = 6;
             this.colCustomerName.Name = "colCustomerName";
+            this.colCustomerName.ReadOnly = true;
             // 
             // colGoods_name
             // 
             this.colGoods_name.HeaderText = "商品名";
             this.colGoods_name.MinimumWidth = 6;
             this.colGoods_name.Name = "colGoods_name";
+            this.colGoods_name.ReadOnly = true;
             // 
             // colPrice
             // 
             this.colPrice.HeaderText = "単価";
             this.colPrice.MinimumWidth = 6;
             this.colPrice.Name = "colPrice";
+            this.colPrice.ReadOnly = true;
             // 
             // colAmount
             // 
             this.colAmount.HeaderText = "個数";
             this.colAmount.MinimumWidth = 6;
             this.colAmount.Name = "colAmount";
+            this.colAmount.ReadOnly = true;
             // 
             // colTotalprice
             // 
             this.colTotalprice.HeaderText = "金額";
             this.colTotalprice.MinimumWidth = 6;
             this.colTotalprice.Name = "colTotalprice";
+            this.colTotalprice.ReadOnly = true;
             // 
             // colRemark
             // 
             this.colRemark.HeaderText = "備考";
             this.colRemark.MinimumWidth = 6;
             this.colRemark.Name = "colRemark";
+            this.colRemark.ReadOnly = true;
             // 
             // sale_list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1306, 705);
+            this.ClientSize = new System.Drawing.Size(1289, 692);
             this.Controls.Add(this.TableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "sale_list";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "sale_list";
+            this.Load += new System.EventHandler(this.sale_list_Load);
             this.TableLayoutPanel1.ResumeLayout(false);
             this.TableLayoutPanel1.PerformLayout();
             this.TableLayoutPanel2.ResumeLayout(false);
