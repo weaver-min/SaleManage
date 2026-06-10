@@ -137,5 +137,34 @@ namespace SaleManage.DataBase
                 cmd.ExecuteNonQuery();
             }
         }
+        public DataTable GetSalesByCustomerAndMonth(string customerId, DateTime billingMonth)
+        {
+            string sql = @"SELECT 
+                    s.sales_id,
+                    s.purchase_date,
+                    g.goods_name,
+                    g.goods_price,
+                    s.units_sold,
+                    s.amount,
+                    s.remarks
+                   FROM sales_information s
+                   INNER JOIN goods_information g
+                           ON s.goods_id = g.goods_id
+                   WHERE s.customer_id = @customerId
+                   AND YEAR(s.purchase_date)  = @year
+                   AND MONTH(s.purchase_date) = @month";
+
+            DataTable dt = new DataTable();
+            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@customerId", customerId);
+                cmd.Parameters.AddWithValue("@year", billingMonth.Year);
+                cmd.Parameters.AddWithValue("@month", billingMonth.Month);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            return dt;
+        }
     }
 }

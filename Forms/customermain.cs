@@ -76,11 +76,15 @@ namespace SaleManage
                 LoadCustomer();
             }
         }
+        public string SelectedCustomerID { get; set; }
 
         private void OpenCustomerDetails()
         {
             if (dgvCustomer.CurrentRow == null)
                 return;
+            SelectedCustomerID = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
+            this.DialogResult = DialogResult.OK;
+            this.Close();
 
             string customerId = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
             customerdetails frm = new customerdetails(customerId);

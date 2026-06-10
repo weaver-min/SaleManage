@@ -208,6 +208,7 @@ namespace SaleManage
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtpSa_lDate.CustomFormat = "\"yyyy年MM月dd日\"";
             this.dtpSa_lDate.Location = new System.Drawing.Point(7, 7);
             this.dtpSa_lDate.Name = "dtpSa_lDate";
             this.dtpSa_lDate.Size = new System.Drawing.Size(241, 22);
@@ -248,9 +249,9 @@ namespace SaleManage
             this.cmbCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbCustomer.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmbCustomer.FormattingEnabled = true;
-            this.cmbCustomer.Location = new System.Drawing.Point(174, 4);
+            this.cmbCustomer.Location = new System.Drawing.Point(139, 3);
             this.cmbCustomer.Name = "cmbCustomer";
-            this.cmbCustomer.Size = new System.Drawing.Size(868, 31);
+            this.cmbCustomer.Size = new System.Drawing.Size(694, 31);
             this.cmbCustomer.TabIndex = 1;
             // 
             // TableLayoutPanel5
