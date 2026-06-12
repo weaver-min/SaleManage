@@ -40,8 +40,10 @@ namespace SaleManage
             {
                 // ← open customer select
                 customermain frm = new customermain();
-                frm.ShowDialog();
-                // get selected customer
+                frm.IsInvoiceMode = true;
+                if (frm.ShowDialog() != DialogResult.OK)
+                    return;
+
                 if (string.IsNullOrEmpty(frm.SelectedCustomerID))
                 {
                     MessageBox.Show(
@@ -51,6 +53,7 @@ namespace SaleManage
                         MessageBoxIcon.Warning);
                     return;
                 }
+            
 
                 // check data exists
                 SalesRepo repo = new SalesRepo();
@@ -89,7 +92,7 @@ namespace SaleManage
                         MessageBoxIcon.Warning);
                     return;
                 }
-
+                bool found = false;
                 foreach (DataRow row in customers.Rows)
                 {
                     string customerId = row["customer_id"].ToString();
@@ -101,13 +104,21 @@ namespace SaleManage
 
                     if (dt.Rows.Count == 0)
                         continue; // ← skip customers with no sales
-
+                    found = true;
                     invoice1 inv = new invoice1(
                         customerId,
                         dtpDeliver.Value,
                         dtpBillingDate.Value,
                         dtpDeadline.Value);
                     inv.ShowDialog();
+                }
+                if (!found)
+                {
+                    MessageBox.Show(
+                        "対象のデータがありません。",
+                        "エラー",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
                 }
             }
         }

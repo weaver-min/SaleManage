@@ -209,9 +209,10 @@ namespace SaleManage
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpSa_lDate.CustomFormat = "\"yyyy年MM月dd日\"";
+            this.dtpSa_lDate.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpSa_lDate.Location = new System.Drawing.Point(7, 7);
             this.dtpSa_lDate.Name = "dtpSa_lDate";
-            this.dtpSa_lDate.Size = new System.Drawing.Size(241, 22);
+            this.dtpSa_lDate.Size = new System.Drawing.Size(215, 30);
             this.dtpSa_lDate.TabIndex = 0;
             // 
             // TableLayoutPanel4

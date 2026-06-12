@@ -80,6 +80,12 @@
     <Compile Include="DataBase\product_repo.cs" />
     <Compile Include="DataBase\SalesRepo.cs" />
     <Compile Include="DataBase\SystemRepo.cs" />
+    <Compile Include="Forms\invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\invoice.Designer.cs">
+      <DependentUpon>invoice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\InvoiceDataSet.cs">
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
     </Compile>
@@ -100,6 +106,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Forms\systemsetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\systemsetting.Designer.cs">
+      <DependentUpon>systemsetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Customer.cs" />
     <Compile Include="DataBase\connection.cs" />
     <Compile Include="Forms\customerdetails.cs">
@@ -115,12 +127,6 @@
       <DependentUpon>customermain.cs</DependentUpon>
     </Compile>
     <Compile Include="Common\GlobalVariable.cs" />
-    <Compile Include="Forms\invoice.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\invoice.Designer.cs">
-      <DependentUpon>invoice.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,9 +195,12 @@
     <EmbeddedResource Include="Forms\product_register.resx">
       <DependentUpon>product_register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\invoice.rdlc" />
+    <EmbeddedResource Include="Forms\invoice1.rdlc" />
     <EmbeddedResource Include="Forms\invoice1.resx">
       <DependentUpon>invoice1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\systemsetting.resx">
+      <DependentUpon>systemsetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -211,7 +220,6 @@
     <EmbeddedResource Include="Forms\user_register.resx">
       <DependentUpon>user_register.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\SaleManage.exe.config" />
     <None Include="Forms\InvoiceDataSet.xsc">
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
     </None>
@@ -251,8 +259,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Debug\SaleManage.exe" />
-    <Content Include="bin\Debug\SaleManage.pdb" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -269,6 +275,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

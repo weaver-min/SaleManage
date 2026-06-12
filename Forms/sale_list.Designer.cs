@@ -130,7 +130,7 @@ namespace SaleManage
             this.Panel1.Controls.Add(this.dtpSa_lDate);
             this.Panel1.Location = new System.Drawing.Point(242, 3);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(270, 30);
+            this.Panel1.Size = new System.Drawing.Size(270, 41);
             this.Panel1.TabIndex = 1;
             // 
             // dtpSa_lDate
@@ -139,10 +139,11 @@ namespace SaleManage
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpSa_lDate.Checked = false;
+            this.dtpSa_lDate.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpSa_lDate.Location = new System.Drawing.Point(0, 9);
             this.dtpSa_lDate.Name = "dtpSa_lDate";
             this.dtpSa_lDate.ShowCheckBox = true;
-            this.dtpSa_lDate.Size = new System.Drawing.Size(267, 22);
+            this.dtpSa_lDate.Size = new System.Drawing.Size(228, 30);
             this.dtpSa_lDate.TabIndex = 0;
             // 
             // TableLayoutPanel3

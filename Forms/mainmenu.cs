@@ -31,7 +31,8 @@ namespace SaleManage
 
         private void btnInvoice_Click(object sender, EventArgs e)
         {
-
+            invoice inv = new invoice();
+            inv.ShowDialog();
         }
 
         private void btnGoods_Click(object sender, EventArgs e)
@@ -48,7 +49,8 @@ namespace SaleManage
 
         private void btnSystem_Click(object sender, EventArgs e)
         {
-
+            Forms.systemsetting sym = new Forms.systemsetting();
+            sym.ShowDialog();
         }
     }
 }

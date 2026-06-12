@@ -155,9 +155,10 @@ namespace SaleManage
             // 
             // dtpBillingDate
             // 
+            this.dtpBillingDate.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpBillingDate.Location = new System.Drawing.Point(4, 29);
             this.dtpBillingDate.Name = "dtpBillingDate";
-            this.dtpBillingDate.Size = new System.Drawing.Size(261, 22);
+            this.dtpBillingDate.Size = new System.Drawing.Size(222, 30);
             this.dtpBillingDate.TabIndex = 1;
             // 
             // Panel3
@@ -171,9 +172,10 @@ namespace SaleManage
             // 
             // dtpDeadline
             // 
+            this.dtpDeadline.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpDeadline.Location = new System.Drawing.Point(1, 29);
             this.dtpDeadline.Name = "dtpDeadline";
-            this.dtpDeadline.Size = new System.Drawing.Size(258, 22);
+            this.dtpDeadline.Size = new System.Drawing.Size(213, 30);
             this.dtpDeadline.TabIndex = 2;
             // 
             // TableLayoutPanel4
@@ -266,9 +268,10 @@ namespace SaleManage
             // dtpDeliver
             // 
             this.dtpDeliver.CustomFormat = "\"yyyy年MM月dd日\"";
+            this.dtpDeliver.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpDeliver.Location = new System.Drawing.Point(3, 25);
             this.dtpDeliver.Name = "dtpDeliver";
-            this.dtpDeliver.Size = new System.Drawing.Size(261, 22);
+            this.dtpDeliver.Size = new System.Drawing.Size(221, 30);
             this.dtpDeliver.TabIndex = 0;
             // 
             // TableLayoutPanel5

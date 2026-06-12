@@ -77,14 +77,18 @@ namespace SaleManage
             }
         }
         public string SelectedCustomerID { get; set; }
-
+        public bool IsInvoiceMode { get; set; }
         private void OpenCustomerDetails()
         {
             if (dgvCustomer.CurrentRow == null)
                 return;
-            SelectedCustomerID = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            if (IsInvoiceMode)
+            {
+                SelectedCustomerID = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+                return;
+            }
 
             string customerId = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
             customerdetails frm = new customerdetails(customerId);
@@ -93,6 +97,7 @@ namespace SaleManage
                 LoadCustomer();
             }
         }
+       
 
         private void dgvCustomer_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
