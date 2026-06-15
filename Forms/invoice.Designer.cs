@@ -84,7 +84,7 @@ namespace SaleManage
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.923077F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.30769F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.923077F));
-            this.TableLayoutPanel1.Size = new System.Drawing.Size(882, 553);
+            this.TableLayoutPanel1.Size = new System.Drawing.Size(944, 643);
             this.TableLayoutPanel1.TabIndex = 1;
             // 
             // lblTitle
@@ -93,9 +93,9 @@ namespace SaleManage
             this.lblTitle.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 10);
+            this.lblTitle.Location = new System.Drawing.Point(3, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(876, 83);
+            this.lblTitle.Size = new System.Drawing.Size(938, 96);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "請求書作成、発行";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,12 +112,12 @@ namespace SaleManage
             this.TableLayoutPanel3.Controls.Add(this.Panel2, 1, 0);
             this.TableLayoutPanel3.Controls.Add(this.Panel3, 3, 0);
             this.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel3.Location = new System.Drawing.Point(3, 234);
+            this.TableLayoutPanel3.Location = new System.Drawing.Point(3, 272);
             this.TableLayoutPanel3.Name = "TableLayoutPanel3";
             this.TableLayoutPanel3.RowCount = 1;
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.TableLayoutPanel3.Size = new System.Drawing.Size(876, 89);
+            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.TableLayoutPanel3.Size = new System.Drawing.Size(938, 105);
             this.TableLayoutPanel3.TabIndex = 2;
             // 
             // Label3
@@ -125,9 +125,9 @@ namespace SaleManage
             this.Label3.AutoSize = true;
             this.Label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Label3.Location = new System.Drawing.Point(439, 0);
+            this.Label3.Location = new System.Drawing.Point(471, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(169, 89);
+            this.Label3.Size = new System.Drawing.Size(181, 105);
             this.Label3.TabIndex = 1;
             this.Label3.Text = "お支払期限：";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,7 +139,7 @@ namespace SaleManage
             this.Label2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label2.Location = new System.Drawing.Point(3, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(158, 89);
+            this.Label2.Size = new System.Drawing.Size(170, 105);
             this.Label2.TabIndex = 0;
             this.Label2.Text = "請求年月：";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,15 +148,16 @@ namespace SaleManage
             // 
             this.Panel2.Controls.Add(this.dtpBillingDate);
             this.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel2.Location = new System.Drawing.Point(167, 3);
+            this.Panel2.Location = new System.Drawing.Point(179, 3);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(266, 83);
+            this.Panel2.Size = new System.Drawing.Size(286, 99);
             this.Panel2.TabIndex = 1;
             // 
             // dtpBillingDate
             // 
+            this.dtpBillingDate.CustomFormat = "yyyy/MM/dd";
             this.dtpBillingDate.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dtpBillingDate.Location = new System.Drawing.Point(4, 29);
+            this.dtpBillingDate.Location = new System.Drawing.Point(5, 29);
             this.dtpBillingDate.Name = "dtpBillingDate";
             this.dtpBillingDate.Size = new System.Drawing.Size(222, 30);
             this.dtpBillingDate.TabIndex = 1;
@@ -165,13 +166,14 @@ namespace SaleManage
             // 
             this.Panel3.Controls.Add(this.dtpDeadline);
             this.Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel3.Location = new System.Drawing.Point(614, 3);
+            this.Panel3.Location = new System.Drawing.Point(658, 3);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(259, 83);
+            this.Panel3.Size = new System.Drawing.Size(277, 99);
             this.Panel3.TabIndex = 2;
             // 
             // dtpDeadline
             // 
+            this.dtpDeadline.CustomFormat = "yyyy/MM/dd";
             this.dtpDeadline.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpDeadline.Location = new System.Drawing.Point(1, 29);
             this.dtpDeadline.Name = "dtpDeadline";
@@ -187,12 +189,12 @@ namespace SaleManage
             this.TableLayoutPanel4.Controls.Add(this.Label4, 0, 0);
             this.TableLayoutPanel4.Controls.Add(this.Panel4, 1, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 339);
+            this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 395);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
             this.TableLayoutPanel4.RowCount = 1;
             this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.TableLayoutPanel4.Size = new System.Drawing.Size(876, 89);
+            this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.TableLayoutPanel4.Size = new System.Drawing.Size(938, 105);
             this.TableLayoutPanel4.TabIndex = 3;
             // 
             // Label4
@@ -202,7 +204,7 @@ namespace SaleManage
             this.Label4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label4.Location = new System.Drawing.Point(3, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(157, 89);
+            this.Label4.Size = new System.Drawing.Size(169, 105);
             this.Label4.TabIndex = 0;
             this.Label4.Text = "発行区分：";
             this.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,9 +213,9 @@ namespace SaleManage
             // 
             this.Panel4.Controls.Add(this.cmbGenerate);
             this.Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel4.Location = new System.Drawing.Point(166, 3);
+            this.Panel4.Location = new System.Drawing.Point(178, 3);
             this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(662, 83);
+            this.Panel4.Size = new System.Drawing.Size(709, 99);
             this.Panel4.TabIndex = 1;
             // 
             // cmbGenerate
@@ -224,7 +226,7 @@ namespace SaleManage
             this.cmbGenerate.FormattingEnabled = true;
             this.cmbGenerate.Location = new System.Drawing.Point(0, 22);
             this.cmbGenerate.Name = "cmbGenerate";
-            this.cmbGenerate.Size = new System.Drawing.Size(650, 35);
+            this.cmbGenerate.Size = new System.Drawing.Size(697, 35);
             this.cmbGenerate.TabIndex = 0;
             // 
             // TableLayoutPanel2
@@ -236,12 +238,12 @@ namespace SaleManage
             this.TableLayoutPanel2.Controls.Add(this.Label1, 0, 0);
             this.TableLayoutPanel2.Controls.Add(this.Panel1, 1, 0);
             this.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 129);
+            this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 149);
             this.TableLayoutPanel2.Name = "TableLayoutPanel2";
             this.TableLayoutPanel2.RowCount = 1;
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 89F));
-            this.TableLayoutPanel2.Size = new System.Drawing.Size(876, 89);
+            this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.TableLayoutPanel2.Size = new System.Drawing.Size(938, 105);
             this.TableLayoutPanel2.TabIndex = 4;
             // 
             // Label1
@@ -251,7 +253,7 @@ namespace SaleManage
             this.Label1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label1.Location = new System.Drawing.Point(3, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(160, 89);
+            this.Label1.Size = new System.Drawing.Size(171, 105);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "発行日：";
             this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -260,14 +262,14 @@ namespace SaleManage
             // 
             this.Panel1.Controls.Add(this.dtpDeliver);
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel1.Location = new System.Drawing.Point(169, 3);
+            this.Panel1.Location = new System.Drawing.Point(180, 3);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(265, 83);
+            this.Panel1.Size = new System.Drawing.Size(284, 99);
             this.Panel1.TabIndex = 1;
             // 
             // dtpDeliver
             // 
-            this.dtpDeliver.CustomFormat = "\"yyyy年MM月dd日\"";
+            this.dtpDeliver.CustomFormat = "yyyy/MM/dd";
             this.dtpDeliver.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpDeliver.Location = new System.Drawing.Point(3, 25);
             this.dtpDeliver.Name = "dtpDeliver";
@@ -285,11 +287,11 @@ namespace SaleManage
             this.TableLayoutPanel5.Controls.Add(this.btnClose, 1, 0);
             this.TableLayoutPanel5.Controls.Add(this.btnRecipe, 3, 0);
             this.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel5.Location = new System.Drawing.Point(3, 444);
+            this.TableLayoutPanel5.Location = new System.Drawing.Point(3, 518);
             this.TableLayoutPanel5.Name = "TableLayoutPanel5";
             this.TableLayoutPanel5.RowCount = 1;
             this.TableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel5.Size = new System.Drawing.Size(876, 89);
+            this.TableLayoutPanel5.Size = new System.Drawing.Size(938, 105);
             this.TableLayoutPanel5.TabIndex = 5;
             // 
             // btnClose
@@ -297,9 +299,9 @@ namespace SaleManage
             this.btnClose.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnClose.Location = new System.Drawing.Point(616, 3);
+            this.btnClose.Location = new System.Drawing.Point(659, 3);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(99, 83);
+            this.btnClose.Size = new System.Drawing.Size(106, 99);
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -310,9 +312,9 @@ namespace SaleManage
             this.btnRecipe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnRecipe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRecipe.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnRecipe.Location = new System.Drawing.Point(747, 3);
+            this.btnRecipe.Location = new System.Drawing.Point(799, 3);
             this.btnRecipe.Name = "btnRecipe";
-            this.btnRecipe.Size = new System.Drawing.Size(99, 83);
+            this.btnRecipe.Size = new System.Drawing.Size(106, 99);
             this.btnRecipe.TabIndex = 1;
             this.btnRecipe.Text = "出力";
             this.btnRecipe.UseVisualStyleBackColor = false;
@@ -322,11 +324,12 @@ namespace SaleManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 553);
+            this.ClientSize = new System.Drawing.Size(944, 643);
             this.Controls.Add(this.TableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "invoice";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "invoice";
             this.Load += new System.EventHandler(this.invoice_Load);
             this.TableLayoutPanel1.ResumeLayout(false);

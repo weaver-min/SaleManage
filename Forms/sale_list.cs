@@ -47,7 +47,8 @@ namespace SaleManage
             dgvSale.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSale.MultiSelect = false;
             dgvSale.AllowUserToAddRows = false;
-            
+            dtpSa_lDate.Format = DateTimePickerFormat.Custom;
+            dtpSa_lDate.CustomFormat = "yyyy/MM/dd";
 
             LoadSalesData();
         }

@@ -182,32 +182,40 @@ namespace SaleManage
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(CustomerID))
-                return;
+                if (string.IsNullOrEmpty(CustomerID))
+                    return;
 
-            DialogResult result = MessageBox.Show(
-                "この顧客を削除しますか？",
-                "確認",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
+                // ← check if sales exist for this customer
                 CustomerRepo repo = new CustomerRepo();
-                repo.DeleteCustomer(CustomerID);
+                DataTable salesCheck = repo.GetSalesByCustomerId(CustomerID);
 
-                MessageBox.Show(
-                    "削除が完了しました。",
-                    "完了",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                if (salesCheck.Rows.Count > 0)
+                {
+                    MessageBox.Show(
+                        "この顧客には販売履歴があるため削除できません。",
+                        "削除不可",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning);
+                    return;
+                }
 
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                DialogResult result = MessageBox.Show(
+                    "この顧客を削除しますか？",
+                    "確認",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    repo.DeleteCustomer(CustomerID);
+                    MessageBox.Show("削除が完了しました。", "完了",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
             }
-        }
 
-        private void btnClose_Click(object sender, EventArgs e)
+            private void btnClose_Click(object sender, EventArgs e)
         {
             if (_isEditMode && !string.IsNullOrEmpty(CustomerID))
             {

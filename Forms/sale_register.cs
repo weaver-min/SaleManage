@@ -33,8 +33,7 @@ namespace SaleManage
                 SetViewMode();
             }
             else
-            {
-                txtID.Text = "自動採番";
+            {   
                 dtpSa_lDate.Value = DateTime.Today;
                 SetNewMode();
             }
@@ -51,12 +50,15 @@ namespace SaleManage
 
         private void LoadGoodsList()
         {
+            cmbGoods.SelectedIndexChanged -= cmbGoods_SelectedIndexChanged;
             product_repo repo = new product_repo();
             DataTable dt = repo.GetAllGood();
             cmbGoods.DisplayMember = "goods_name";
             cmbGoods.ValueMember = "goods_id";
             cmbGoods.DataSource = dt;
             cmbGoods.SelectedIndex = -1;
+
+            cmbGoods.SelectedIndexChanged += cmbGoods_SelectedIndexChanged;
         }
 
         private void LoadSalesData()
@@ -231,17 +233,18 @@ namespace SaleManage
             txtID.ReadOnly = true;
             txtUnitPrice.ReadOnly = true;
             txtAmount.ReadOnly = true;
+            dtpSa_lDate.Format = DateTimePickerFormat.Custom;
+            dtpSa_lDate.CustomFormat = "yyyy/MM/dd";
 
             if (!string.IsNullOrEmpty(SalesID))
             {
-                // ← view mode from sales list
+                
                 LoadSalesData();
                 SetViewMode();
             }
             else
             {
-                // ← new registration mode
-                txtID.Text = "自動採番";
+
                 dtpSa_lDate.Value = DateTime.Today;
                 SetNewMode();
             }

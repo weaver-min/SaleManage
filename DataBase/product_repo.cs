@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace SaleManage.DataBase
 {
@@ -12,7 +13,8 @@ namespace SaleManage.DataBase
                             goods_id,
                             goods_name,
                             goods_price
-                           FROM goods_information";
+                           FROM goods_information
+                           WHERE delete_flg = 0";
 
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
@@ -30,7 +32,8 @@ namespace SaleManage.DataBase
                             goods_name,
                             goods_price
                            FROM goods_information
-                           WHERE goods_id = @goodsId";
+                           WHERE delete_flg = 0 
+                           AND goods_id = @goodsId";
 
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
@@ -79,8 +82,9 @@ namespace SaleManage.DataBase
 
         public void DeleteGoods(int goodsId)
         {
-            string sql = @"DELETE FROM goods_information 
-                           WHERE goods_id = @goodsId";
+            string sql = @"UPDATE goods_information
+                   SET delete_flg = 1
+                   WHERE goods_id = @goodsId";
 
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
             {
@@ -88,6 +92,7 @@ namespace SaleManage.DataBase
                 cmd.Parameters.AddWithValue("@goodsId", goodsId);
                 conn.Open();
                 cmd.ExecuteNonQuery();
+
             }
         }
     }

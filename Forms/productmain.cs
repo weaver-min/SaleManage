@@ -30,7 +30,14 @@ namespace SaleManage
 
         private void productmain_Load(object sender, EventArgs e)
         {
-           dgvProduct.ColumnHeadersHeight = 35;
+            dgvProduct.EnableHeadersVisualStyles = false;
+            dgvProduct.Font = new Font("Yu Gothic UI", 10);
+            dgvProduct.ColumnHeadersDefaultCellStyle.Font =
+                new Font("Yu Gothic UI", 14, FontStyle.Bold);
+            dgvProduct.ColumnHeadersHeight = 35;
+            dgvProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProduct.MultiSelect = false;
+            dgvProduct.AllowUserToAddRows = false;
             LoadGoodsData();
         }
 

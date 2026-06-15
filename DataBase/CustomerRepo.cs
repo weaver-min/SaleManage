@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Data.SqlClient;
 
+
 namespace SaleManage.DataBase
 {
     public class CustomerRepo
@@ -136,6 +137,7 @@ namespace SaleManage.DataBase
                 cmd.Parameters.AddWithValue("@id", id);
                 conn.Open();
                 cmd.ExecuteNonQuery();
+            
             }
         }
     }

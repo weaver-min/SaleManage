@@ -236,7 +236,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox17</rd:DefaultName>
-            <Top>12.88203cm</Top>
+            <Top>10.02453cm</Top>
             <Left>1.70603cm</Left>
             <Height>0.70583cm</Height>
             <Width>4.8349cm</Width>
@@ -383,7 +383,7 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox24</rd:DefaultName>
-            <Top>14.82937cm</Top>
+            <Top>11.33687cm</Top>
             <Left>1.70603cm</Left>
             <Height>0.889cm</Height>
             <Width>4.8349cm</Width>
@@ -457,7 +457,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -652,7 +651,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>4.29358cm</Height>
+                  <Height>1.39375cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -696,7 +695,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!purchase_date.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <Format>D</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -871,7 +872,7 @@
             <DataSetName>InvoiceDataset</DataSetName>
             <Top>6.9977cm</Top>
             <Left>1.70603cm</Left>
-            <Height>5.3275cm</Height>
+            <Height>2.42767cm</Height>
             <Width>15.69849cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
@@ -915,10 +916,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>6.39167in</Height>
+        <Height>5.35in</Height>
         <Style />
       </Body>
-      <Width>7.83643in</Width>
+      <Width>7.63643in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

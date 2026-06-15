@@ -40,14 +40,14 @@ namespace SaleManage
             this.lbltitle = new System.Windows.Forms.Label();
             this.TableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnRegister = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.colGoodsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colGoodsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
@@ -142,6 +142,47 @@ namespace SaleManage
             this.dgvProduct.TabIndex = 0;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
             // 
+            // colGoodsId
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colGoodsId.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colGoodsId.FillWeight = 41.88482F;
+            this.colGoodsId.HeaderText = "商品ID";
+            this.colGoodsId.MinimumWidth = 6;
+            this.colGoodsId.Name = "colGoodsId";
+            // 
+            // colGoodsName
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colGoodsName.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colGoodsName.FillWeight = 107.1011F;
+            this.colGoodsName.HeaderText = "商品名";
+            this.colGoodsName.MinimumWidth = 6;
+            this.colGoodsName.Name = "colGoodsName";
+            // 
+            // colPrice
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colPrice.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colPrice.FillWeight = 134.3463F;
+            this.colPrice.HeaderText = "単価";
+            this.colPrice.MinimumWidth = 6;
+            this.colPrice.Name = "colPrice";
+            // 
+            // colDelete
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Red;
+            this.colDelete.DefaultCellStyle = dataGridViewCellStyle6;
+            this.colDelete.FillWeight = 116.6677F;
+            this.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.colDelete.HeaderText = "削除";
+            this.colDelete.MinimumWidth = 6;
+            this.colDelete.Name = "colDelete";
+            this.colDelete.Text = "削除";
+            this.colDelete.UseColumnTextForButtonValue = true;
+            // 
             // TableLayoutPanel3
             // 
             this.TableLayoutPanel3.ColumnCount = 7;
@@ -202,47 +243,6 @@ namespace SaleManage
             this.btnEdit.Text = "編集";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
-            // 
-            // colGoodsId
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colGoodsId.DefaultCellStyle = dataGridViewCellStyle3;
-            this.colGoodsId.FillWeight = 41.88482F;
-            this.colGoodsId.HeaderText = "商品ID";
-            this.colGoodsId.MinimumWidth = 6;
-            this.colGoodsId.Name = "colGoodsId";
-            // 
-            // colGoodsName
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colGoodsName.DefaultCellStyle = dataGridViewCellStyle4;
-            this.colGoodsName.FillWeight = 107.1011F;
-            this.colGoodsName.HeaderText = "商品名";
-            this.colGoodsName.MinimumWidth = 6;
-            this.colGoodsName.Name = "colGoodsName";
-            // 
-            // colPrice
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colPrice.DefaultCellStyle = dataGridViewCellStyle5;
-            this.colPrice.FillWeight = 134.3463F;
-            this.colPrice.HeaderText = "単価";
-            this.colPrice.MinimumWidth = 6;
-            this.colPrice.Name = "colPrice";
-            // 
-            // colDelete
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Red;
-            this.colDelete.DefaultCellStyle = dataGridViewCellStyle6;
-            this.colDelete.FillWeight = 116.6677F;
-            this.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colDelete.HeaderText = "削除";
-            this.colDelete.MinimumWidth = 6;
-            this.colDelete.Name = "colDelete";
-            this.colDelete.Text = "削除";
-            this.colDelete.UseColumnTextForButtonValue = true;
             // 
             // productmain
             // 

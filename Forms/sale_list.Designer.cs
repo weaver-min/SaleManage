@@ -29,6 +29,10 @@ namespace SaleManage
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.TableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -238,6 +242,14 @@ namespace SaleManage
             // dgvSale
             // 
             this.dgvSale.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSale.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvSale.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSale.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colId,
@@ -248,10 +260,27 @@ namespace SaleManage
             this.colAmount,
             this.colTotalprice,
             this.colRemark});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.NullValue = null;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSale.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSale.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvSale.Location = new System.Drawing.Point(67, 3);
             this.dgvSale.Name = "dgvSale";
             this.dgvSale.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSale.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvSale.RowHeadersWidth = 51;
             this.dgvSale.RowTemplate.Height = 24;
             this.dgvSale.Size = new System.Drawing.Size(1148, 411);
@@ -261,6 +290,7 @@ namespace SaleManage
             // 
             // colId
             // 
+            this.colId.FillWeight = 42.78074F;
             this.colId.HeaderText = "ID";
             this.colId.MinimumWidth = 6;
             this.colId.Name = "colId";
@@ -268,6 +298,10 @@ namespace SaleManage
             // 
             // colDate
             // 
+            dataGridViewCellStyle2.Format = "D";
+            dataGridViewCellStyle2.NullValue = null;
+            this.colDate.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colDate.FillWeight = 108.1742F;
             this.colDate.HeaderText = "日付";
             this.colDate.MinimumWidth = 6;
             this.colDate.Name = "colDate";
@@ -275,6 +309,7 @@ namespace SaleManage
             // 
             // colCustomerName
             // 
+            this.colCustomerName.FillWeight = 108.1742F;
             this.colCustomerName.HeaderText = "顧客名";
             this.colCustomerName.MinimumWidth = 6;
             this.colCustomerName.Name = "colCustomerName";
@@ -282,6 +317,7 @@ namespace SaleManage
             // 
             // colGoods_name
             // 
+            this.colGoods_name.FillWeight = 108.1742F;
             this.colGoods_name.HeaderText = "商品名";
             this.colGoods_name.MinimumWidth = 6;
             this.colGoods_name.Name = "colGoods_name";
@@ -289,6 +325,7 @@ namespace SaleManage
             // 
             // colPrice
             // 
+            this.colPrice.FillWeight = 108.1742F;
             this.colPrice.HeaderText = "単価";
             this.colPrice.MinimumWidth = 6;
             this.colPrice.Name = "colPrice";
@@ -296,6 +333,7 @@ namespace SaleManage
             // 
             // colAmount
             // 
+            this.colAmount.FillWeight = 108.1742F;
             this.colAmount.HeaderText = "個数";
             this.colAmount.MinimumWidth = 6;
             this.colAmount.Name = "colAmount";
@@ -303,6 +341,7 @@ namespace SaleManage
             // 
             // colTotalprice
             // 
+            this.colTotalprice.FillWeight = 108.1742F;
             this.colTotalprice.HeaderText = "金額";
             this.colTotalprice.MinimumWidth = 6;
             this.colTotalprice.Name = "colTotalprice";
@@ -310,6 +349,7 @@ namespace SaleManage
             // 
             // colRemark
             // 
+            this.colRemark.FillWeight = 108.1742F;
             this.colRemark.HeaderText = "備考";
             this.colRemark.MinimumWidth = 6;
             this.colRemark.Name = "colRemark";
@@ -355,13 +395,13 @@ namespace SaleManage
         internal System.Windows.Forms.Button btnClose;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel4;
         internal System.Windows.Forms.DataGridView dgvSale;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colId;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colDate;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colCustomerName;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colGoods_name;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colAmount;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colTotalprice;
-        internal System.Windows.Forms.DataGridViewTextBoxColumn colRemark;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCustomerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGoods_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAmount;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTotalprice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRemark;
     }
 }
