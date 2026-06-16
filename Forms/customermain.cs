@@ -8,6 +8,13 @@ namespace SaleManage
 {
     public partial class customermain : Form
     {
+        private DataTable _allData = new DataTable();
+        private int _currentPage = 1;
+        private int _pageSize = 15;
+
+        private int TotalPages =>
+            (int)Math.Ceiling((double)_allData.Rows.Count / _pageSize);
+
         public customermain()
         {
             InitializeComponent();
@@ -16,15 +23,48 @@ namespace SaleManage
         private void LoadCustomer()
         {
             CustomerRepo repo = new CustomerRepo();
-            DataTable dt = repo.GetAllCustomers();
+            _allData = repo.GetAllCustomers();  // ← store all data
+            _currentPage = 1;
+            ShowPage();
+        }
+
+        private void ShowPage()
+        {
             dgvCustomer.Rows.Clear();
-            foreach (DataRow row in dt.Rows)
+
+            int start = (_currentPage - 1) * _pageSize;
+            int end = Math.Min(start + _pageSize, _allData.Rows.Count);
+
+            for (int i = start; i < end; i++)
             {
+                DataRow row = _allData.Rows[i];
                 dgvCustomer.Rows.Add(
                     row["customer_id"],
                     row["customer_name"],
                     row["customer_furigana"]
                 );
+            }
+
+            lblPage.Text = $"ページ {_currentPage} / {TotalPages}";
+            btnPrev.Enabled = _currentPage > 1;
+            btnNext.Enabled = _currentPage < TotalPages;
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            if (_currentPage > 1)
+            {
+                _currentPage--;
+                ShowPage();
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (_currentPage < TotalPages)
+            {
+                _currentPage++;
+                ShowPage();
             }
         }
 
@@ -38,16 +78,15 @@ namespace SaleManage
             dgvCustomer.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCustomer.MultiSelect = false;
             dgvCustomer.AllowUserToAddRows = false;
-
             LoadCustomer();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
             CustomerRepo repo = new CustomerRepo();
-            DataTable dt = repo.SearchCustomer(txtSearch.Text.Trim());
+            _allData = repo.SearchCustomer(txtSearch.Text.Trim());
 
-            if (dt.Rows.Count == 0)
+            if (_allData.Rows.Count == 0)
             {
                 MessageBox.Show(
                     "顧客が見つかりません。",
@@ -57,15 +96,8 @@ namespace SaleManage
                 return;
             }
 
-            dgvCustomer.Rows.Clear();
-            foreach (DataRow row in dt.Rows)
-            {
-                dgvCustomer.Rows.Add(
-                    row["customer_id"],
-                    row["customer_name"],
-                    row["customer_furigana"]
-                );
-            }
+            _currentPage = 1;
+            ShowPage();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -76,12 +108,15 @@ namespace SaleManage
                 LoadCustomer();
             }
         }
+
         public string SelectedCustomerID { get; set; }
         public bool IsInvoiceMode { get; set; }
+
         private void OpenCustomerDetails()
         {
             if (dgvCustomer.CurrentRow == null)
                 return;
+
             if (IsInvoiceMode)
             {
                 SelectedCustomerID = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
@@ -97,7 +132,6 @@ namespace SaleManage
                 LoadCustomer();
             }
         }
-       
 
         private void dgvCustomer_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

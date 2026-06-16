@@ -2,6 +2,7 @@
 using SaleManage.DataBase;
 using System.Data;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace SaleManage
 {
@@ -176,52 +177,56 @@ namespace SaleManage
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            // ← this stays at the top, outside try/catch
             if (!_isEditMode && !string.IsNullOrEmpty(SalesID))
             {
                 SetEditMode();
                 return;
             }
+
             if (!ValidateInput())
                 return;
 
             SalesRepo repo = new SalesRepo();
 
-            if (string.IsNullOrEmpty(SalesID)) // ← INSERT
+            try  // ← wrap only the DB operations
             {
-                repo.InsertSales(
-                    dtpSa_lDate.Value,
-                    cmbCustomer.SelectedValue.ToString(),
-                    cmbGoods.SelectedValue.ToString(),
-                    int.Parse(txtQuantity.Text),
-                    int.Parse(txtAmount.Text),
-                    txtRemarks.Text.Trim());
+                if (string.IsNullOrEmpty(SalesID)) // ← INSERT
+                {
+                    repo.InsertSales(
+                        dtpSa_lDate.Value,
+                        cmbCustomer.SelectedValue.ToString(),
+                        cmbGoods.SelectedValue.ToString(),
+                        int.Parse(txtQuantity.Text),
+                        int.Parse(txtAmount.Text),
+                        txtRemarks.Text.Trim());
 
-                MessageBox.Show(
-                    "登録が完了しました。",
-                    "完了",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                    MessageBox.Show("登録が完了しました。", "完了",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else // ← UPDATE
+                {
+                    repo.UpdateSales(
+                        SalesID,
+                        dtpSa_lDate.Value,
+                        cmbCustomer.SelectedValue.ToString(),
+                        cmbGoods.SelectedValue.ToString(),
+                        int.Parse(txtQuantity.Text),
+                        int.Parse(txtAmount.Text),
+                        txtRemarks.Text.Trim());
+
+                    MessageBox.Show("更新が完了しました。", "完了",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }
-            else // ← UPDATE
+            catch (Exception ex)  // ← catches stock error here
             {
-                repo.UpdateSales(
-                    SalesID,
-                    dtpSa_lDate.Value,
-                    cmbCustomer.SelectedValue.ToString(),
-                    cmbGoods.SelectedValue.ToString(),
-                    int.Parse(txtQuantity.Text),
-                    int.Parse(txtAmount.Text),
-                    txtRemarks.Text.Trim());
-
-                MessageBox.Show(
-                    "更新が完了しました。",
-                    "完了",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
+                MessageBox.Show(ex.Message, "エラー",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            this.DialogResult = DialogResult.OK;
-            this.Close();
         }
 
         private void sale_register_Load(object sender, EventArgs e)
@@ -262,6 +267,9 @@ namespace SaleManage
             if (dt.Rows.Count > 0)
             {
                 txtUnitPrice.Text = dt.Rows[0]["goods_price"].ToString();
+                int stock = Convert.ToInt32(dt.Rows[0]["stock"]);
+                lblStock.Text = $"在庫: {stock} 個";              // ← show stock label
+                lblStock.ForeColor = stock == 0 ? Color.Red : Color.Black;
                 CalculateAmount();
             }
 

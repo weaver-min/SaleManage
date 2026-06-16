@@ -293,6 +293,8 @@ namespace SaleManage.Forms {
             
             private global::System.Data.DataColumn columnremarks;
             
+            private global::System.Data.DataColumn columncustomer_name;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public InvoiceTableDataTable() {
@@ -384,6 +386,14 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn customer_nameColumn {
+                get {
+                    return this.columncustomer_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +429,7 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InvoiceTableRow AddInvoiceTableRow(string sales_id, string purchase_date, string goods_name, string goods_price, string units_sold, string amount, string remarks) {
+            public InvoiceTableRow AddInvoiceTableRow(string sales_id, string purchase_date, string goods_name, string goods_price, string units_sold, string amount, string remarks, string customer_name) {
                 InvoiceTableRow rowInvoiceTableRow = ((InvoiceTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         sales_id,
@@ -428,7 +438,8 @@ namespace SaleManage.Forms {
                         goods_price,
                         units_sold,
                         amount,
-                        remarks};
+                        remarks,
+                        customer_name};
                 rowInvoiceTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowInvoiceTableRow);
                 return rowInvoiceTableRow;
@@ -458,6 +469,7 @@ namespace SaleManage.Forms {
                 this.columnunits_sold = base.Columns["units_sold"];
                 this.columnamount = base.Columns["amount"];
                 this.columnremarks = base.Columns["remarks"];
+                this.columncustomer_name = base.Columns["customer_name"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,6 +489,8 @@ namespace SaleManage.Forms {
                 base.Columns.Add(this.columnamount);
                 this.columnremarks = new global::System.Data.DataColumn("remarks", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnremarks);
+                this.columncustomer_name = new global::System.Data.DataColumn("customer_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_name);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -731,6 +745,22 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string customer_name {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.customer_nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_name\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.customer_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool Issales_idNull() {
                 return this.IsNull(this.tableInvoiceTable.sales_idColumn);
             }
@@ -811,6 +841,18 @@ namespace SaleManage.Forms {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetremarksNull() {
                 this[this.tableInvoiceTable.remarksColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscustomer_nameNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcustomer_nameNull() {
+                this[this.tableInvoiceTable.customer_nameColumn] = global::System.Convert.DBNull;
             }
         }
         

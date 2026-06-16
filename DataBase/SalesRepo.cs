@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace SaleManage.DataBase
 {
@@ -9,19 +10,20 @@ namespace SaleManage.DataBase
         public DataTable GetAllSales()
         {
             string sql = @"SELECT 
-                            s.sales_id,
-                            s.purchase_date,
-                            c.customer_name,
-                            g.goods_name,
-                            g.goods_price,
-                            s.units_sold,
-                            s.amount,
-                            s.remarks
-                           FROM sales_information s
-                           INNER JOIN customer_information c
-                                   ON s.customer_id = c.customer_id
-                           INNER JOIN goods_information g
-                                   ON s.goods_id = g.goods_id";
+                s.sales_id,
+                s.purchase_date,
+                c.customer_name,
+                g.goods_name,
+                g.goods_price,
+                s.units_sold,
+                s.amount,
+                s.remarks
+               FROM sales_information s
+               INNER JOIN customer_information c
+                       ON s.customer_id = c.customer_id
+               INNER JOIN goods_information g
+                       ON s.goods_id = g.goods_id
+               WHERE s.delete_flg = 0";
 
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
@@ -135,6 +137,23 @@ namespace SaleManage.DataBase
                 cmd.Parameters.AddWithValue("@salesId", salesId);
                 conn.Open();
                 cmd.ExecuteNonQuery();
+            }
+        }
+        public void DeleteSales(int saleId)
+        {
+            string sql = @"DELETE FROM sales_information
+               WHERE sales_id = @saleid";
+
+            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@saleId", saleId);
+                conn.Open();
+                int rows =  cmd.ExecuteNonQuery();
+                if (rows == 0)
+                {
+                    MessageBox.Show("No row updated! ID not found.");
+                }
             }
         }
         public DataTable GetSalesByCustomerAndMonth(string customerId, DateTime billingMonth)

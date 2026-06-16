@@ -116,5 +116,37 @@ namespace SaleManage
         {
             this.Close();
         }
+
+        private void dgvSale_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            {
+                if (e.RowIndex < 0)
+                    return;
+
+                if (e.ColumnIndex == dgvSale.Columns["colDelete"].Index)
+                {
+                    DialogResult result = MessageBox.Show(
+                        "この商品を削除しますか？",
+                        "削除確認",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        int saleId = Convert.ToInt32(dgvSale.Rows[e.RowIndex].Cells[0].Value);
+
+                        SalesRepo repo = new SalesRepo();
+                        repo.DeleteSales(saleId);
+
+                        MessageBox.Show(
+                            "削除が完了しました。",
+                            "完了",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+
+                        LoadSalesData(); // ← refresh
+                    }
+                }
+            }
+        }
     }
 }

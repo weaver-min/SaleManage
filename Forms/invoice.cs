@@ -7,22 +7,22 @@ namespace SaleManage
 {
     public partial class invoice : Form
     {
-     
-            public invoice()
-            {
-                InitializeComponent();
-            }
 
-            private void invoice_Load(object sender, EventArgs e)
-            {
-                dtpDeliver.Value = DateTime.Today;
-                dtpBillingDate.Value = DateTime.Today;
-                dtpDeadline.Value = DateTime.Today;
+        public invoice()
+        {
+            InitializeComponent();
+        }
 
-                cmbGenerate.Items.Add("全顧客一括");
-                cmbGenerate.Items.Add("顧客ごと");
-                cmbGenerate.SelectedIndex = 0;
-            }
+        private void invoice_Load(object sender, EventArgs e)
+        {
+            dtpDeliver.Value = DateTime.Today;
+            dtpBillingDate.Value = DateTime.Today;
+            dtpDeadline.Value = DateTime.Today;
+
+            cmbGenerate.Items.Add("全顧客一括");
+            cmbGenerate.Items.Add("顧客ごと");
+            cmbGenerate.SelectedIndex = 0;
+        }
 
         private void btnRecipe_Click(object sender, EventArgs e)
         {
@@ -53,7 +53,7 @@ namespace SaleManage
                         MessageBoxIcon.Warning);
                     return;
                 }
-            
+
 
                 // check data exists
                 SalesRepo repo = new SalesRepo();
@@ -128,4 +128,4 @@ namespace SaleManage
             this.Close();
         }
     }
-}  
+}

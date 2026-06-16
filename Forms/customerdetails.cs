@@ -182,40 +182,37 @@ namespace SaleManage
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-                if (string.IsNullOrEmpty(CustomerID))
-                    return;
+            if (string.IsNullOrEmpty(CustomerID))
+                return;
 
-                // ← check if sales exist for this customer
-                CustomerRepo repo = new CustomerRepo();
-                DataTable salesCheck = repo.GetSalesByCustomerId(CustomerID);
+            CustomerRepo repo = new CustomerRepo();
 
-                if (salesCheck.Rows.Count > 0)
-                {
-                    MessageBox.Show(
-                        "この顧客には販売履歴があるため削除できません。",
-                        "削除不可",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    return;
-                }
-
-                DialogResult result = MessageBox.Show(
-                    "この顧客を削除しますか？",
-                    "確認",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question);
-
-                if (result == DialogResult.Yes)
-                {
-                    repo.DeleteCustomer(CustomerID);
-                    MessageBox.Show("削除が完了しました。", "完了",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
-                }
+            if (repo.HasSales(CustomerID))  // ← simple and reliable
+            {
+                MessageBox.Show(
+                    "この顧客には販売履歴があるため削除できません。",
+                    "削除不可",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
             }
 
-            private void btnClose_Click(object sender, EventArgs e)
+            DialogResult result = MessageBox.Show(
+                "この顧客を削除しますか？",
+                "確認",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                repo.DeleteCustomer(CustomerID);
+                MessageBox.Show("削除が完了しました。", "完了",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+        }
+        private void btnClose_Click(object sender, EventArgs e)
         {
             if (_isEditMode && !string.IsNullOrEmpty(CustomerID))
             {

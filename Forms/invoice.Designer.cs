@@ -224,7 +224,7 @@ namespace SaleManage
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbGenerate.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmbGenerate.FormattingEnabled = true;
-            this.cmbGenerate.Location = new System.Drawing.Point(0, 22);
+            this.cmbGenerate.Location = new System.Drawing.Point(5, 27);
             this.cmbGenerate.Name = "cmbGenerate";
             this.cmbGenerate.Size = new System.Drawing.Size(697, 35);
             this.cmbGenerate.TabIndex = 0;

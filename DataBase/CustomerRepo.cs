@@ -66,17 +66,17 @@ namespace SaleManage.DataBase
         public DataTable GetSalesByCustomerId(string customerId)
         {
             string sql = @"SELECT
-                            s.sales_id,
-                            s.purchase_date,
-                            g.goods_name,
-                            g.goods_price,
-                            s.units_sold,
-                            s.amount,
-                            s.remarks
-                           FROM sales_information s
-                           INNER JOIN goods_information g
-                                   ON s.goods_id = g.goods_id
-                           WHERE s.customer_id = @customerId";
+                    s.sales_id,
+                    s.purchase_date,
+                    ISNULL(g.goods_name, '削除済み商品')AS goods_name,  
+                    ISNULL(g.goods_price, 0) AS goods_price,
+                    s.units_sold,
+                    s.amount,
+                    s.remarks
+                   FROM sales_information s
+                   LEFT JOIN goods_information g 
+                          ON s.goods_id = g.goods_id
+                   WHERE s.customer_id = @customerId";
 
             DataTable dt = new DataTable();
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
@@ -126,6 +126,20 @@ namespace SaleManage.DataBase
             }
         }
 
+        public bool HasSales(string customerId)
+        {
+            string sql = @"SELECT COUNT(*) 
+                   FROM sales_information 
+                   WHERE customer_id = @customerId";
+
+            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@customerId", customerId);
+                conn.Open();
+                return (int)cmd.ExecuteScalar() > 0;
+            }
+        }
         public void DeleteCustomer(string id)
         {
             string sql = @"DELETE FROM customer_information 

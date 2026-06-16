@@ -8,6 +8,13 @@ namespace SaleManage
 {
     public partial class productmain : Form
     {
+        private DataTable _allData = new DataTable();
+        private int _currentPage = 1;
+        private int _pageSize = 15;
+
+        private int TotalPages =>
+            (int)Math.Ceiling((double)_allData.Rows.Count / _pageSize);
+
         public productmain()
         {
             InitializeComponent();
@@ -16,15 +23,49 @@ namespace SaleManage
         private void LoadGoodsData()
         {
             product_repo repo = new product_repo();
-            DataTable dt = repo.GetAllGood();
+            _allData = repo.GetAllGood();  // ← store all data
+            _currentPage = 1;
+            ShowPage();
+        }
+
+        private void ShowPage()
+        {
             dgvProduct.Rows.Clear();
-            foreach (DataRow row in dt.Rows)
+
+            int start = (_currentPage - 1) * _pageSize;
+            int end = Math.Min(start + _pageSize, _allData.Rows.Count);
+
+            for (int i = start; i < end; i++)
             {
+                DataRow row = _allData.Rows[i];
                 dgvProduct.Rows.Add(
                     row["goods_id"],
                     row["goods_name"],
-                    row["goods_price"]
+                    row["goods_price"],
+                    row["stock"]
                 );
+            }
+
+            lblPage.Text = $"ページ {_currentPage} / {TotalPages}";
+            btnPrev.Enabled = _currentPage > 1;
+            btnNext.Enabled = _currentPage < TotalPages;
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            if (_currentPage > 1)
+            {
+                _currentPage--;
+                ShowPage();
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (_currentPage < TotalPages)
+            {
+                _currentPage++;
+                ShowPage();
             }
         }
 
@@ -63,7 +104,6 @@ namespace SaleManage
             }
 
             string goodsId = dgvProduct.SelectedRows[0].Cells[0].Value.ToString();
-
             Forms.product_register form = new Forms.product_register(goodsId);
             if (form.ShowDialog() == DialogResult.OK)
             {
@@ -92,17 +132,14 @@ namespace SaleManage
                 if (result == DialogResult.Yes)
                 {
                     int goodsId = Convert.ToInt32(dgvProduct.Rows[e.RowIndex].Cells[0].Value);
-
                     product_repo repo = new product_repo();
                     repo.DeleteGoods(goodsId);
-
                     MessageBox.Show(
                         "削除が完了しました。",
                         "完了",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
-
-                    LoadGoodsData(); // ← refresh
+                    LoadGoodsData();
                 }
             }
         }

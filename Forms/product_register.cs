@@ -24,6 +24,7 @@ namespace SaleManage.Forms
                 {
                     txtGoodsName.Text = dt.Rows[0]["goods_name"].ToString();
                     txtGoodsPrice.Text = dt.Rows[0]["goods_price"].ToString();
+                    txtStock.Text = dt.Rows[0]["stock"].ToString();
                     btnRegister.Text = "更新";
                 }
             }
@@ -36,6 +37,19 @@ namespace SaleManage.Forms
             {
                 MessageBox.Show("商品名を入力してください。");
                 txtGoodsName.Focus();
+                return false;
+            }
+            if (string.IsNullOrWhiteSpace(txtStock.Text))
+            {
+                MessageBox.Show("在庫数を入力してください。");
+                txtStock.Focus();
+                return false;
+            }
+
+            if (!int.TryParse(txtStock.Text, out int s) || s < 0)
+            {
+                MessageBox.Show("在庫数は0以上の数値で入力してください。");
+                txtStock.Focus();
                 return false;
             }
             return true;
@@ -56,13 +70,14 @@ namespace SaleManage.Forms
                 return;
             }
 
+            int stock = int.Parse(txtStock.Text.Trim());
             product_repo repo = new product_repo();
 
             if (string.IsNullOrEmpty(GoodsID)) // ← INSERT
             {
                 repo.InsertGoods(
                     txtGoodsName.Text.Trim(),
-                    price);
+                    price,stock);
 
                 MessageBox.Show(
                     "登録が完了しました。",
@@ -75,7 +90,7 @@ namespace SaleManage.Forms
                 repo.UpdateGoods(
                     int.Parse(GoodsID),
                     txtGoodsName.Text.Trim(),
-                    price);
+                    price,stock);
 
                 MessageBox.Show(
                     "更新が完了しました。",

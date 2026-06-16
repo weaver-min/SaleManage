@@ -23,7 +23,7 @@ namespace SaleManage
             _issueDate = issueDate;
             _billingMonth = billingMonth;
             _paymentDeadline = paymentDeadline;
-            
+
             if (string.IsNullOrEmpty(_customerId))
                 return;
 
@@ -46,7 +46,7 @@ namespace SaleManage
                 (sysRepo.GetSetting("company_bank") ?? "") + "\n" +
                 (sysRepo.GetSetting("company_AccountData") ?? "");
             string taxRate = sysRepo.GetSetting("tax") ?? "0";
-           
+
 
             int subTotal = CalculateTotal(salesDt);
             int tax = string.IsNullOrEmpty(taxRate) ? 0 : (int)(subTotal * int.Parse(taxRate) / 100.0);
@@ -54,9 +54,9 @@ namespace SaleManage
 
             reportViewer1.LocalReport.ReportEmbeddedResource = "SaleManage.Forms.invoice1.rdlc";
             reportViewer1.LocalReport.Refresh();
-          
-             reportViewer1.LocalReport.SetParameters(new ReportParameter[]
-                {
+
+            reportViewer1.LocalReport.SetParameters(new ReportParameter[]
+               {
         new ReportParameter("CustomerName",    customerDt.Rows[0]["customer_name"].ToString() ?? ""),
         new ReportParameter("IssueDate",       issueDate.ToShortDateString()),
         new ReportParameter("CompanyInfo",     companyInfo ?? ""),
@@ -64,8 +64,8 @@ namespace SaleManage
         new ReportParameter("PaymentDeadline", paymentDeadline.ToShortDateString()),
         new ReportParameter("BankInfo",        bankInfo ?? ""),
         new ReportParameter("TaxRate",         taxRate ?? "0"),
-                });
-            
+               });
+
 
             ReportDataSource rds = new ReportDataSource("InvoiceDataset", salesDt);
             reportViewer1.LocalReport.DataSources.Add(rds);
