@@ -75,7 +75,6 @@ C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.Forms.systemsetti
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.Properties.Resources.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.sale_list.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.sale_register.resources
-C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.user_register.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.GenerateResource.cache
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\RdlCompile.cache
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\RdlCompile.compiled
@@ -83,3 +82,4 @@ C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CoreCompil
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CopyComplete
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.exe
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.pdb
+C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.AssemblyReference.cache

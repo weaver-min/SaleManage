@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SaleManage
+namespace SaleManage.Forms
 {
-    public partial class user_register : Form
+    public partial class Form1 : Form
     {
-        public user_register()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void pnUserInfo_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

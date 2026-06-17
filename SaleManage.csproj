@@ -112,7 +112,6 @@
     <Compile Include="Forms\systemsetting.Designer.cs">
       <DependentUpon>systemsetting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Customer.cs" />
     <Compile Include="DataBase\connection.cs" />
     <Compile Include="Forms\customerdetails.cs">
       <SubType>Form</SubType>
@@ -161,13 +160,6 @@
       <DependentUpon>sale_register.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\UserRepository.cs" />
-    <Compile Include="Models\Users.cs" />
-    <Compile Include="Forms\user_register.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\user_register.Designer.cs">
-      <DependentUpon>user_register.cs</DependentUpon>
-    </Compile>
     <Compile Include="Sale_ManagementDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -217,9 +209,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\sale_register.resx">
       <DependentUpon>sale_register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\user_register.resx">
-      <DependentUpon>user_register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Forms\InvoiceDataSet.xsc">
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>

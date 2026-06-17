@@ -1,7 +1,7 @@
 ﻿
-namespace SaleManage
+namespace SaleManage.Forms
 {
-    partial class user_register
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,10 @@ namespace SaleManage
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // user_register
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 553);
-            this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(900, 600);
-            this.Name = "user_register";
-            this.Text = "user_register";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
         }
 
         #endregion

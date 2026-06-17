@@ -101,15 +101,30 @@ namespace SaleManage.DataBase
 
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
             {
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@date", date);
-                cmd.Parameters.AddWithValue("@customerId", customerId);
-                cmd.Parameters.AddWithValue("@goodsId", goodsId);
-                cmd.Parameters.AddWithValue("@unitsSold", unitsSold);
-                cmd.Parameters.AddWithValue("@amount", amount);
-                cmd.Parameters.AddWithValue("@remarks", remarks);
                 conn.Open();
-                cmd.ExecuteNonQuery();
+                using (SqlTransaction tx = conn.BeginTransaction())
+                {
+                    try
+                    {
+                        SqlCommand cmd = new SqlCommand(sql, conn, tx);
+                        cmd.Parameters.AddWithValue("@date", date);
+                        cmd.Parameters.AddWithValue("@customerId", customerId);
+                        cmd.Parameters.AddWithValue("@goodsId", goodsId);
+                        cmd.Parameters.AddWithValue("@unitsSold", unitsSold);
+                        cmd.Parameters.AddWithValue("@amount", amount);
+                        cmd.Parameters.AddWithValue("@remarks", remarks);
+                        cmd.ExecuteNonQuery();
+                        product_repo productRepo = new product_repo();
+                        productRepo.DeductStock(goodsId, unitsSold, conn, tx);
+                        tx.Commit();
+                    }
+                    catch
+                    {
+                        tx.Rollback();
+                        throw;
+                    }
+                }
+                
             }
         }
 
@@ -127,36 +142,102 @@ namespace SaleManage.DataBase
 
             using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
             {
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@date", date);
-                cmd.Parameters.AddWithValue("@customerId", customerId);
-                cmd.Parameters.AddWithValue("@goodsId", goodsId);
-                cmd.Parameters.AddWithValue("@unitsSold", unitsSold);
-                cmd.Parameters.AddWithValue("@amount", amount);
-                cmd.Parameters.AddWithValue("@remarks", remarks);
-                cmd.Parameters.AddWithValue("@salesId", salesId);
-                conn.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
-        public void DeleteSales(int saleId)
-        {
-            string sql = @"DELETE FROM sales_information
-               WHERE sales_id = @saleid";
-
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
-            {
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@saleId", saleId);
-                conn.Open();
-                int rows =  cmd.ExecuteNonQuery();
-                if (rows == 0)
+                conn.Open();  // ← only here, once
+                using (SqlTransaction tx = conn.BeginTransaction())
                 {
-                    MessageBox.Show("No row updated! ID not found.");
+                    try
+                    {
+                        string selectSql = "SELECT units_sold FROM sales_information WHERE sales_id = @salesId";
+                        SqlCommand selectCmd = new SqlCommand(selectSql, conn, tx);
+                        selectCmd.Parameters.AddWithValue("@salesId", salesId);
+                        int oldUnitsSold = Convert.ToInt32(selectCmd.ExecuteScalar());
+
+                        SqlCommand cmd = new SqlCommand(sql, conn, tx);
+                        cmd.Parameters.AddWithValue("@date", date);
+                        cmd.Parameters.AddWithValue("@customerId", customerId);
+                        cmd.Parameters.AddWithValue("@goodsId", goodsId);
+                        cmd.Parameters.AddWithValue("@unitsSold", unitsSold);
+                        cmd.Parameters.AddWithValue("@amount", amount);
+                        cmd.Parameters.AddWithValue("@remarks", remarks);
+                        cmd.Parameters.AddWithValue("@salesId", salesId);
+                        // ← removed conn.Open() here
+                        cmd.ExecuteNonQuery();
+
+                        int diff = unitsSold - oldUnitsSold;
+                        product_repo productRepo = new product_repo();
+                        if (diff > 0)
+                            productRepo.DeductStock(goodsId, diff, conn, tx);
+                        else if (diff < 0)
+                        {
+                            string restoreSql = "UPDATE goods_information SET stock = stock + @qty WHERE goods_id = @goodsId";
+                            SqlCommand restoreCmd = new SqlCommand(restoreSql, conn, tx);
+                            restoreCmd.Parameters.AddWithValue("@qty", Math.Abs(diff));
+                            restoreCmd.Parameters.AddWithValue("@goodsId", goodsId);
+                            restoreCmd.ExecuteNonQuery();
+                        }
+
+                        tx.Commit();
+                    }
+                    catch
+                    {
+                        tx.Rollback();
+                        throw;
+                    }
                 }
             }
         }
-        public DataTable GetSalesByCustomerAndMonth(string customerId, DateTime billingMonth)
+            public void DeleteSales(int saleId)
+            {
+                using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+                {
+                    conn.Open(); // ← only once here
+                    using (SqlTransaction tx = conn.BeginTransaction())
+                    {
+                        try
+                        {
+                            // 1. Get goods_id and units_sold before deleting
+                            string selectSql = "SELECT goods_id, units_sold FROM sales_information WHERE sales_id = @saleId";
+                            SqlCommand selectCmd = new SqlCommand(selectSql, conn, tx);
+                            selectCmd.Parameters.AddWithValue("@saleId", saleId);
+
+                            string goodsId = "";
+                            int unitsSold = 0;
+                            using (SqlDataReader reader = selectCmd.ExecuteReader())
+                            {
+                                if (reader.Read())
+                                {
+                                    goodsId = reader["goods_id"].ToString();
+                                    unitsSold = Convert.ToInt32(reader["units_sold"]);
+                                }
+                            }
+
+                            // 2. Delete the sale
+                            string deleteSql = "DELETE FROM sales_information WHERE sales_id = @saleId";
+                            SqlCommand deleteCmd = new SqlCommand(deleteSql, conn, tx);
+                            deleteCmd.Parameters.AddWithValue("@saleId", saleId);
+                            int rows = deleteCmd.ExecuteNonQuery();
+
+                            if (rows == 0)
+                                throw new Exception("No row deleted. ID not found.");
+
+                            // 3. Restore stock
+                            string restoreSql = "UPDATE goods_information SET stock = stock + @qty WHERE goods_id = @goodsId";
+                            SqlCommand restoreCmd = new SqlCommand(restoreSql, conn, tx);
+                            restoreCmd.Parameters.AddWithValue("@qty", unitsSold);
+                            restoreCmd.Parameters.AddWithValue("@goodsId", goodsId);
+                            restoreCmd.ExecuteNonQuery();
+
+                            tx.Commit();
+                        }
+                        catch
+                        {
+                            tx.Rollback();
+                            throw;
+                        }
+                    }
+                }
+            }
+       public DataTable GetSalesByCustomerAndMonth(string customerId, DateTime billingMonth)
         {
             string sql = @"SELECT 
                     s.sales_id,

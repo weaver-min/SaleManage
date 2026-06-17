@@ -70,7 +70,7 @@
                         <Value>顧客名</Value>
                         <Style>
                           <FontFamily>yu Gothic UI</FontFamily>
-                          <FontSize>18pt</FontSize>
+                          <FontSize>16pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -84,7 +84,7 @@
                         <Value>=Parameters!CustomerName.Value</Value>
                         <Style>
                           <FontFamily>yu Gothic UI</FontFamily>
-                          <FontSize>18pt</FontSize>
+                          <FontSize>16pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -94,10 +94,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox13</rd:DefaultName>
-                <Top>2.22104cm</Top>
+                <Top>2.15754cm</Top>
                 <Left>1.5549cm</Left>
-                <Height>1.10067cm</Height>
-                <Width>4.5085cm</Width>
+                <Height>1.69334cm</Height>
+                <Width>5.28635cm</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -118,7 +118,7 @@
                         <Value>発行日</Value>
                         <Style>
                           <FontFamily>yu Gothic UI</FontFamily>
-                          <FontSize>14pt</FontSize>
+                          <FontSize>12pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -132,7 +132,7 @@
                         <Value>=Parameters!IssueDate.Value</Value>
                         <Style>
                           <FontFamily>yu Gothic UI</FontFamily>
-                          <FontSize>14pt</FontSize>
+                          <FontSize>12pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -142,10 +142,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox14</rd:DefaultName>
-                <Top>2.22104cm</Top>
-                <Left>13.31998cm</Left>
-                <Height>0.93134cm</Height>
-                <Width>3.5065cm</Width>
+                <Top>1.90354cm</Top>
+                <Left>10.14499cm</Left>
+                <Height>1.27001cm</Height>
+                <Width>4.24732cm</Width>
                 <ZIndex>1</ZIndex>
                 <Style>
                   <Border>
@@ -167,7 +167,7 @@
                         <Value>合計金額：</Value>
                         <Style>
                           <FontFamily>yu Gothic UI</FontFamily>
-                          <FontSize>18pt</FontSize>
+                          <FontSize>16pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -181,7 +181,7 @@
                         <Value />
                         <Style>
                           <FontFamily>yu Gothic UI</FontFamily>
-                          <FontSize>18pt</FontSize>
+                          <FontSize>16pt</FontSize>
                         </Style>
                       </TextRun>
                     </TextRuns>
@@ -191,10 +191,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox16</rd:DefaultName>
-                <Top>6.32688cm</Top>
-                <Left>1.8724cm</Left>
-                <Height>1.10067cm</Height>
-                <Width>3.54981cm</Width>
+                <Top>6.83488cm</Top>
+                <Left>1.55489cm</Left>
+                <Height>0.9525cm</Height>
+                <Width>3.08823cm</Width>
                 <ZIndex>2</ZIndex>
                 <Style>
                   <Border>
@@ -240,9 +240,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox17</rd:DefaultName>
-                <Top>13.66296cm</Top>
-                <Left>1.8724cm</Left>
-                <Height>0.70583cm</Height>
+                <Top>13.85346cm</Top>
+                <Left>1.55489cm</Left>
+                <Height>1.89116cm</Height>
                 <Width>4.8349cm</Width>
                 <ZIndex>3</ZIndex>
                 <Style>
@@ -291,7 +291,7 @@
                 <rd:DefaultName>Textbox19</rd:DefaultName>
                 <Top>0.3175cm</Top>
                 <Height>1.41111cm</Height>
-                <Width>21cm</Width>
+                <Width>19.75117cm</Width>
                 <ZIndex>4</ZIndex>
                 <Style>
                   <Border>
@@ -337,10 +337,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox23</rd:DefaultName>
-                <Top>4.80289cm</Top>
-                <Left>12.96016cm</Left>
+                <Top>4.95106cm</Top>
+                <Left>10.46249cm</Left>
                 <Height>2.62466cm</Height>
-                <Width>4.62833cm</Width>
+                <Width>5.221cm</Width>
                 <ZIndex>5</ZIndex>
                 <Style>
                   <Border>
@@ -386,9 +386,9 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox24</rd:DefaultName>
-                <Top>16.76205cm</Top>
-                <Left>1.8724cm</Left>
-                <Height>0.889cm</Height>
+                <Top>16.91022cm</Top>
+                <Left>1.55489cm</Left>
+                <Height>1.92617cm</Height>
                 <Width>4.8349cm</Width>
                 <ZIndex>6</ZIndex>
                 <Style>
@@ -405,27 +405,27 @@
                 <TablixBody>
                   <TablixColumns>
                     <TablixColumn>
-                      <Width>2.83015cm</Width>
+                      <Width>2.23043cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.83015cm</Width>
+                      <Width>3.5982cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.83015cm</Width>
+                      <Width>2.48443cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.59732cm</Width>
+                      <Width>2.2516cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.59732cm</Width>
+                      <Width>2.2516cm</Width>
                     </TablixColumn>
                     <TablixColumn>
-                      <Width>2.59732cm</Width>
+                      <Width>2.2516cm</Width>
                     </TablixColumn>
                   </TablixColumns>
                   <TablixRows>
                     <TablixRow>
-                      <Height>1.54484cm</Height>
+                      <Height>1.11092cm</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -654,7 +654,7 @@
                       </TablixCells>
                     </TablixRow>
                     <TablixRow>
-                      <Height>1.7441cm</Height>
+                      <Height>2.05102cm</Height>
                       <TablixCells>
                         <TablixCell>
                           <CellContents>
@@ -666,7 +666,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!sales_id.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>14pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -699,6 +701,7 @@
                                     <TextRun>
                                       <Value>=Fields!purchase_date.Value</Value>
                                       <Style>
+                                        <FontSize>14pt</FontSize>
                                         <Format>D</Format>
                                       </Style>
                                     </TextRun>
@@ -732,7 +735,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!goods_name.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>14pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -764,7 +769,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!goods_price.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>14pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -796,7 +803,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!units_sold.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>14pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -828,7 +837,9 @@
                                   <TextRuns>
                                     <TextRun>
                                       <Value>=Fields!amount.Value</Value>
-                                      <Style />
+                                      <Style>
+                                        <FontSize>14pt</FontSize>
+                                      </Style>
                                     </TextRun>
                                   </TextRuns>
                                   <Style>
@@ -873,10 +884,10 @@
                   </TablixMembers>
                 </TablixRowHierarchy>
                 <DataSetName>InvoiceDataset</DataSetName>
-                <Top>8.13189cm</Top>
-                <Left>1.8724cm</Left>
-                <Height>3.28894cm</Height>
-                <Width>16.28241cm</Width>
+                <Top>8.78806cm</Top>
+                <Left>1.87239cm</Left>
+                <Height>3.16194cm</Height>
+                <Width>15.06786cm</Width>
                 <ZIndex>7</ZIndex>
                 <Style>
                   <Border>
@@ -903,10 +914,10 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox1</rd:DefaultName>
-                <Top>6.32688cm</Top>
-                <Left>5.87377cm</Left>
-                <Height>1.10067cm</Height>
-                <Width>5.07767cm</Width>
+                <Top>6.83488cm</Top>
+                <Left>4.8195cm</Left>
+                <Height>0.9525cm</Height>
+                <Width>4.18867cm</Width>
                 <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
@@ -923,8 +934,8 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Height>19.81005cm</Height>
-            <Width>21cm</Width>
+            <Height>19.475cm</Height>
+            <Width>20.64017cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -932,10 +943,10 @@
             </Style>
           </Rectangle>
         </ReportItems>
-        <Height>19.81005cm</Height>
+        <Height>19.475cm</Height>
         <Style />
       </Body>
-      <Width>21cm</Width>
+      <Width>20.6825cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
