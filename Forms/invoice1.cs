@@ -15,7 +15,7 @@ namespace SaleManage
         private readonly DateTime _billingMonth;
         private readonly DateTime _paymentDeadline;
 
-        private const string RdlcResource = "SaleManage.invoice1.rdlc";
+        private const string RdlcResource = "SaleManage.Forms.invoice1.rdlc";
         private const string DatasetName = "InvoiceDataset";
         private const int LinesPerPage = 10;
 
@@ -140,7 +140,7 @@ namespace SaleManage
                         row["page_end_index"] = pageEnd;
                         row["continued_text"] = isLastCustomerPage
                             ? string.Empty
-                            : "→ 次のページに続く / continued on next page";
+                            : "→ 次のページに続く";
                         row["invoice_title"] = pageIndex == 0 ? "請 求 書" : "請 求 書（続き）";
                         result.Rows.Add(row);
                     }
@@ -190,6 +190,9 @@ namespace SaleManage
 
         private void BindReport(DataTable dt, SystemSettings settings)
         {
+            if (reportViewer1 == null)
+                throw new InvalidOperationException("ReportViewer が初期化されていません。");
+
             reportViewer1.LocalReport.ReportEmbeddedResource = RdlcResource;
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(new ReportDataSource(DatasetName, dt));

@@ -73,4 +73,14 @@ C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CoreCompil
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.exe
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.pdb
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.AssemblyReference.cache
-C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.Up2Date
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\RdlCompile.cache
+C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\RdlCompile.compiled
+C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CopyComplete

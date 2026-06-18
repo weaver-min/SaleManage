@@ -279,6 +279,38 @@ namespace SaleManage.Forms {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class InvoiceTableDataTable : global::System.Data.TypedTableBase<InvoiceTableRow> {
             
+            private global::System.Data.DataColumn columnpage_key;
+            
+            private global::System.Data.DataColumn columnpage_number;
+            
+            private global::System.Data.DataColumn columntotal_pages;
+            
+            private global::System.Data.DataColumn columncustomer_page_number;
+            
+            private global::System.Data.DataColumn columncustomer_total_pages;
+            
+            private global::System.Data.DataColumn columnis_last_customer_page;
+            
+            private global::System.Data.DataColumn columncustomer_id;
+            
+            private global::System.Data.DataColumn columncustomer_name;
+            
+            private global::System.Data.DataColumn columncustomer_address;
+            
+            private global::System.Data.DataColumn columncompany_name;
+            
+            private global::System.Data.DataColumn columncompany_address;
+            
+            private global::System.Data.DataColumn columncompany_phone;
+            
+            private global::System.Data.DataColumn columnbank_name;
+            
+            private global::System.Data.DataColumn columnbank_account;
+            
+            private global::System.Data.DataColumn columntax_rate;
+            
+            private global::System.Data.DataColumn columnline_no;
+            
             private global::System.Data.DataColumn columnsales_id;
             
             private global::System.Data.DataColumn columnpurchase_date;
@@ -291,11 +323,21 @@ namespace SaleManage.Forms {
             
             private global::System.Data.DataColumn columnamount;
             
-            private global::System.Data.DataColumn columncustomer_name;
+            private global::System.Data.DataColumn columnpage_subtotal;
             
-            private global::System.Data.DataColumn columncustomer_id;
+            private global::System.Data.DataColumn columncustomer_subtotal;
             
-            private global::System.Data.DataColumn columntax_rate;
+            private global::System.Data.DataColumn columncustomer_total_with_tax;
+            
+            private global::System.Data.DataColumn columntotal_order_count;
+            
+            private global::System.Data.DataColumn columnpage_start_index;
+            
+            private global::System.Data.DataColumn columnpage_end_index;
+            
+            private global::System.Data.DataColumn columncontinued_text;
+            
+            private global::System.Data.DataColumn columninvoice_title;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -328,6 +370,134 @@ namespace SaleManage.Forms {
             protected InvoiceTableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn page_keyColumn {
+                get {
+                    return this.columnpage_key;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn page_numberColumn {
+                get {
+                    return this.columnpage_number;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn total_pagesColumn {
+                get {
+                    return this.columntotal_pages;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn customer_page_numberColumn {
+                get {
+                    return this.columncustomer_page_number;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn customer_total_pagesColumn {
+                get {
+                    return this.columncustomer_total_pages;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn is_last_customer_pageColumn {
+                get {
+                    return this.columnis_last_customer_page;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn customer_idColumn {
+                get {
+                    return this.columncustomer_id;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn customer_nameColumn {
+                get {
+                    return this.columncustomer_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn customer_addressColumn {
+                get {
+                    return this.columncustomer_address;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn company_nameColumn {
+                get {
+                    return this.columncompany_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn company_addressColumn {
+                get {
+                    return this.columncompany_address;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn company_phoneColumn {
+                get {
+                    return this.columncompany_phone;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn bank_nameColumn {
+                get {
+                    return this.columnbank_name;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn bank_accountColumn {
+                get {
+                    return this.columnbank_account;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn tax_rateColumn {
+                get {
+                    return this.columntax_rate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn line_noColumn {
+                get {
+                    return this.columnline_no;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -380,25 +550,65 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn customer_nameColumn {
+            public global::System.Data.DataColumn page_subtotalColumn {
                 get {
-                    return this.columncustomer_name;
+                    return this.columnpage_subtotal;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn customer_idColumn {
+            public global::System.Data.DataColumn customer_subtotalColumn {
                 get {
-                    return this.columncustomer_id;
+                    return this.columncustomer_subtotal;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn tax_rateColumn {
+            public global::System.Data.DataColumn customer_total_with_taxColumn {
                 get {
-                    return this.columntax_rate;
+                    return this.columncustomer_total_with_tax;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn total_order_countColumn {
+                get {
+                    return this.columntotal_order_count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn page_start_indexColumn {
+                get {
+                    return this.columnpage_start_index;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn page_end_indexColumn {
+                get {
+                    return this.columnpage_end_index;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn continued_textColumn {
+                get {
+                    return this.columncontinued_text;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn invoice_titleColumn {
+                get {
+                    return this.columninvoice_title;
                 }
             }
             
@@ -439,18 +649,69 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InvoiceTableRow AddInvoiceTableRow(string sales_id, string purchase_date, string goods_name, string goods_price, string units_sold, string amount, string customer_name, string customer_id, string tax_rate) {
+            public InvoiceTableRow AddInvoiceTableRow(
+                        string page_key, 
+                        int page_number, 
+                        int total_pages, 
+                        int customer_page_number, 
+                        int customer_total_pages, 
+                        bool is_last_customer_page, 
+                        string customer_id, 
+                        string customer_name, 
+                        string customer_address, 
+                        string company_name, 
+                        string company_address, 
+                        string company_phone, 
+                        string bank_name, 
+                        string bank_account, 
+                        int tax_rate, 
+                        int line_no, 
+                        string sales_id, 
+                        string purchase_date, 
+                        string goods_name, 
+                        int goods_price, 
+                        int units_sold, 
+                        int amount, 
+                        int page_subtotal, 
+                        int customer_subtotal, 
+                        int customer_total_with_tax, 
+                        int total_order_count, 
+                        int page_start_index, 
+                        int page_end_index, 
+                        string continued_text, 
+                        string invoice_title) {
                 InvoiceTableRow rowInvoiceTableRow = ((InvoiceTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
+                        page_key,
+                        page_number,
+                        total_pages,
+                        customer_page_number,
+                        customer_total_pages,
+                        is_last_customer_page,
+                        customer_id,
+                        customer_name,
+                        customer_address,
+                        company_name,
+                        company_address,
+                        company_phone,
+                        bank_name,
+                        bank_account,
+                        tax_rate,
+                        line_no,
                         sales_id,
                         purchase_date,
                         goods_name,
                         goods_price,
                         units_sold,
                         amount,
-                        customer_name,
-                        customer_id,
-                        tax_rate};
+                        page_subtotal,
+                        customer_subtotal,
+                        customer_total_with_tax,
+                        total_order_count,
+                        page_start_index,
+                        page_end_index,
+                        continued_text,
+                        invoice_title};
                 rowInvoiceTableRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowInvoiceTableRow);
                 return rowInvoiceTableRow;
@@ -473,38 +734,101 @@ namespace SaleManage.Forms {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
+                this.columnpage_key = base.Columns["page_key"];
+                this.columnpage_number = base.Columns["page_number"];
+                this.columntotal_pages = base.Columns["total_pages"];
+                this.columncustomer_page_number = base.Columns["customer_page_number"];
+                this.columncustomer_total_pages = base.Columns["customer_total_pages"];
+                this.columnis_last_customer_page = base.Columns["is_last_customer_page"];
+                this.columncustomer_id = base.Columns["customer_id"];
+                this.columncustomer_name = base.Columns["customer_name"];
+                this.columncustomer_address = base.Columns["customer_address"];
+                this.columncompany_name = base.Columns["company_name"];
+                this.columncompany_address = base.Columns["company_address"];
+                this.columncompany_phone = base.Columns["company_phone"];
+                this.columnbank_name = base.Columns["bank_name"];
+                this.columnbank_account = base.Columns["bank_account"];
+                this.columntax_rate = base.Columns["tax_rate"];
+                this.columnline_no = base.Columns["line_no"];
                 this.columnsales_id = base.Columns["sales_id"];
                 this.columnpurchase_date = base.Columns["purchase_date"];
                 this.columngoods_name = base.Columns["goods_name"];
                 this.columngoods_price = base.Columns["goods_price"];
                 this.columnunits_sold = base.Columns["units_sold"];
                 this.columnamount = base.Columns["amount"];
-                this.columncustomer_name = base.Columns["customer_name"];
-                this.columncustomer_id = base.Columns["customer_id"];
-                this.columntax_rate = base.Columns["tax_rate"];
+                this.columnpage_subtotal = base.Columns["page_subtotal"];
+                this.columncustomer_subtotal = base.Columns["customer_subtotal"];
+                this.columncustomer_total_with_tax = base.Columns["customer_total_with_tax"];
+                this.columntotal_order_count = base.Columns["total_order_count"];
+                this.columnpage_start_index = base.Columns["page_start_index"];
+                this.columnpage_end_index = base.Columns["page_end_index"];
+                this.columncontinued_text = base.Columns["continued_text"];
+                this.columninvoice_title = base.Columns["invoice_title"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
+                this.columnpage_key = new global::System.Data.DataColumn("page_key", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpage_key);
+                this.columnpage_number = new global::System.Data.DataColumn("page_number", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpage_number);
+                this.columntotal_pages = new global::System.Data.DataColumn("total_pages", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotal_pages);
+                this.columncustomer_page_number = new global::System.Data.DataColumn("customer_page_number", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_page_number);
+                this.columncustomer_total_pages = new global::System.Data.DataColumn("customer_total_pages", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_total_pages);
+                this.columnis_last_customer_page = new global::System.Data.DataColumn("is_last_customer_page", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnis_last_customer_page);
+                this.columncustomer_id = new global::System.Data.DataColumn("customer_id", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_id);
+                this.columncustomer_name = new global::System.Data.DataColumn("customer_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_name);
+                this.columncustomer_address = new global::System.Data.DataColumn("customer_address", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_address);
+                this.columncompany_name = new global::System.Data.DataColumn("company_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncompany_name);
+                this.columncompany_address = new global::System.Data.DataColumn("company_address", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncompany_address);
+                this.columncompany_phone = new global::System.Data.DataColumn("company_phone", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncompany_phone);
+                this.columnbank_name = new global::System.Data.DataColumn("bank_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnbank_name);
+                this.columnbank_account = new global::System.Data.DataColumn("bank_account", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnbank_account);
+                this.columntax_rate = new global::System.Data.DataColumn("tax_rate", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntax_rate);
+                this.columnline_no = new global::System.Data.DataColumn("line_no", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnline_no);
                 this.columnsales_id = new global::System.Data.DataColumn("sales_id", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnsales_id);
                 this.columnpurchase_date = new global::System.Data.DataColumn("purchase_date", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpurchase_date);
                 this.columngoods_name = new global::System.Data.DataColumn("goods_name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columngoods_name);
-                this.columngoods_price = new global::System.Data.DataColumn("goods_price", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columngoods_price = new global::System.Data.DataColumn("goods_price", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columngoods_price);
-                this.columnunits_sold = new global::System.Data.DataColumn("units_sold", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnunits_sold = new global::System.Data.DataColumn("units_sold", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnunits_sold);
-                this.columnamount = new global::System.Data.DataColumn("amount", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnamount = new global::System.Data.DataColumn("amount", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnamount);
-                this.columncustomer_name = new global::System.Data.DataColumn("customer_name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncustomer_name);
-                this.columncustomer_id = new global::System.Data.DataColumn("customer_id", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncustomer_id);
-                this.columntax_rate = new global::System.Data.DataColumn("tax_rate", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntax_rate);
+                this.columnpage_subtotal = new global::System.Data.DataColumn("page_subtotal", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpage_subtotal);
+                this.columncustomer_subtotal = new global::System.Data.DataColumn("customer_subtotal", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_subtotal);
+                this.columncustomer_total_with_tax = new global::System.Data.DataColumn("customer_total_with_tax", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncustomer_total_with_tax);
+                this.columntotal_order_count = new global::System.Data.DataColumn("total_order_count", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntotal_order_count);
+                this.columnpage_start_index = new global::System.Data.DataColumn("page_start_index", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpage_start_index);
+                this.columnpage_end_index = new global::System.Data.DataColumn("page_end_index", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpage_end_index);
+                this.columncontinued_text = new global::System.Data.DataColumn("continued_text", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncontinued_text);
+                this.columninvoice_title = new global::System.Data.DataColumn("invoice_title", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columninvoice_title);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -647,6 +971,262 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string page_key {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.page_keyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'page_key\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.page_keyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int page_number {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.page_numberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'page_number\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.page_numberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int total_pages {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.total_pagesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'total_pages\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.total_pagesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int customer_page_number {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.customer_page_numberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_page_number\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.customer_page_numberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int customer_total_pages {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.customer_total_pagesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_total_pages\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.customer_total_pagesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool is_last_customer_page {
+                get {
+                    try {
+                        return ((bool)(this[this.tableInvoiceTable.is_last_customer_pageColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'is_last_customer_page\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.is_last_customer_pageColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string customer_id {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.customer_idColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_id\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.customer_idColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string customer_name {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.customer_nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_name\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.customer_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string customer_address {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.customer_addressColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_address\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.customer_addressColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string company_name {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.company_nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'company_name\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.company_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string company_address {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.company_addressColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'company_address\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.company_addressColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string company_phone {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.company_phoneColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'company_phone\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.company_phoneColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string bank_name {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.bank_nameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'bank_name\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.bank_nameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string bank_account {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.bank_accountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'bank_account\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.bank_accountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int tax_rate {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.tax_rateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'tax_rate\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.tax_rateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int line_no {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.line_noColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'line_no\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.line_noColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public string sales_id {
                 get {
                     try {
@@ -695,10 +1275,10 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string goods_price {
+            public int goods_price {
                 get {
                     try {
-                        return ((string)(this[this.tableInvoiceTable.goods_priceColumn]));
+                        return ((int)(this[this.tableInvoiceTable.goods_priceColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'goods_price\' in table \'InvoiceTable\' is DBNull.", e);
@@ -711,10 +1291,10 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string units_sold {
+            public int units_sold {
                 get {
                     try {
-                        return ((string)(this[this.tableInvoiceTable.units_soldColumn]));
+                        return ((int)(this[this.tableInvoiceTable.units_soldColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'units_sold\' in table \'InvoiceTable\' is DBNull.", e);
@@ -727,10 +1307,10 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string amount {
+            public int amount {
                 get {
                     try {
-                        return ((string)(this[this.tableInvoiceTable.amountColumn]));
+                        return ((int)(this[this.tableInvoiceTable.amountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'amount\' in table \'InvoiceTable\' is DBNull.", e);
@@ -743,50 +1323,323 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string customer_name {
+            public int page_subtotal {
                 get {
                     try {
-                        return ((string)(this[this.tableInvoiceTable.customer_nameColumn]));
+                        return ((int)(this[this.tableInvoiceTable.page_subtotalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'customer_name\' in table \'InvoiceTable\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'page_subtotal\' in table \'InvoiceTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableInvoiceTable.customer_nameColumn] = value;
+                    this[this.tableInvoiceTable.page_subtotalColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string customer_id {
+            public int customer_subtotal {
                 get {
                     try {
-                        return ((string)(this[this.tableInvoiceTable.customer_idColumn]));
+                        return ((int)(this[this.tableInvoiceTable.customer_subtotalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'customer_id\' in table \'InvoiceTable\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_subtotal\' in table \'InvoiceTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableInvoiceTable.customer_idColumn] = value;
+                    this[this.tableInvoiceTable.customer_subtotalColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string tax_rate {
+            public int customer_total_with_tax {
                 get {
                     try {
-                        return ((string)(this[this.tableInvoiceTable.tax_rateColumn]));
+                        return ((int)(this[this.tableInvoiceTable.customer_total_with_taxColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'tax_rate\' in table \'InvoiceTable\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'customer_total_with_tax\' in table \'InvoiceTable\' is DBNull." +
+                                "", e);
                     }
                 }
                 set {
-                    this[this.tableInvoiceTable.tax_rateColumn] = value;
+                    this[this.tableInvoiceTable.customer_total_with_taxColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int total_order_count {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.total_order_countColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'total_order_count\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.total_order_countColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int page_start_index {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.page_start_indexColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'page_start_index\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.page_start_indexColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int page_end_index {
+                get {
+                    try {
+                        return ((int)(this[this.tableInvoiceTable.page_end_indexColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'page_end_index\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.page_end_indexColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string continued_text {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.continued_textColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'continued_text\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.continued_textColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string invoice_title {
+                get {
+                    try {
+                        return ((string)(this[this.tableInvoiceTable.invoice_titleColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'invoice_title\' in table \'InvoiceTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableInvoiceTable.invoice_titleColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ispage_keyNull() {
+                return this.IsNull(this.tableInvoiceTable.page_keyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setpage_keyNull() {
+                this[this.tableInvoiceTable.page_keyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ispage_numberNull() {
+                return this.IsNull(this.tableInvoiceTable.page_numberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setpage_numberNull() {
+                this[this.tableInvoiceTable.page_numberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Istotal_pagesNull() {
+                return this.IsNull(this.tableInvoiceTable.total_pagesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Settotal_pagesNull() {
+                this[this.tableInvoiceTable.total_pagesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscustomer_page_numberNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_page_numberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcustomer_page_numberNull() {
+                this[this.tableInvoiceTable.customer_page_numberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscustomer_total_pagesNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_total_pagesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcustomer_total_pagesNull() {
+                this[this.tableInvoiceTable.customer_total_pagesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isis_last_customer_pageNull() {
+                return this.IsNull(this.tableInvoiceTable.is_last_customer_pageColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setis_last_customer_pageNull() {
+                this[this.tableInvoiceTable.is_last_customer_pageColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscustomer_idNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_idColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcustomer_idNull() {
+                this[this.tableInvoiceTable.customer_idColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscustomer_nameNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcustomer_nameNull() {
+                this[this.tableInvoiceTable.customer_nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscustomer_addressNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_addressColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcustomer_addressNull() {
+                this[this.tableInvoiceTable.customer_addressColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscompany_nameNull() {
+                return this.IsNull(this.tableInvoiceTable.company_nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcompany_nameNull() {
+                this[this.tableInvoiceTable.company_nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscompany_addressNull() {
+                return this.IsNull(this.tableInvoiceTable.company_addressColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcompany_addressNull() {
+                this[this.tableInvoiceTable.company_addressColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscompany_phoneNull() {
+                return this.IsNull(this.tableInvoiceTable.company_phoneColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcompany_phoneNull() {
+                this[this.tableInvoiceTable.company_phoneColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isbank_nameNull() {
+                return this.IsNull(this.tableInvoiceTable.bank_nameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setbank_nameNull() {
+                this[this.tableInvoiceTable.bank_nameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isbank_accountNull() {
+                return this.IsNull(this.tableInvoiceTable.bank_accountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setbank_accountNull() {
+                this[this.tableInvoiceTable.bank_accountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Istax_rateNull() {
+                return this.IsNull(this.tableInvoiceTable.tax_rateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Settax_rateNull() {
+                this[this.tableInvoiceTable.tax_rateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isline_noNull() {
+                return this.IsNull(this.tableInvoiceTable.line_noColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setline_noNull() {
+                this[this.tableInvoiceTable.line_noColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -863,38 +1716,98 @@ namespace SaleManage.Forms {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Iscustomer_nameNull() {
-                return this.IsNull(this.tableInvoiceTable.customer_nameColumn);
+            public bool Ispage_subtotalNull() {
+                return this.IsNull(this.tableInvoiceTable.page_subtotalColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setcustomer_nameNull() {
-                this[this.tableInvoiceTable.customer_nameColumn] = global::System.Convert.DBNull;
+            public void Setpage_subtotalNull() {
+                this[this.tableInvoiceTable.page_subtotalColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Iscustomer_idNull() {
-                return this.IsNull(this.tableInvoiceTable.customer_idColumn);
+            public bool Iscustomer_subtotalNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_subtotalColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setcustomer_idNull() {
-                this[this.tableInvoiceTable.customer_idColumn] = global::System.Convert.DBNull;
+            public void Setcustomer_subtotalNull() {
+                this[this.tableInvoiceTable.customer_subtotalColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Istax_rateNull() {
-                return this.IsNull(this.tableInvoiceTable.tax_rateColumn);
+            public bool Iscustomer_total_with_taxNull() {
+                return this.IsNull(this.tableInvoiceTable.customer_total_with_taxColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Settax_rateNull() {
-                this[this.tableInvoiceTable.tax_rateColumn] = global::System.Convert.DBNull;
+            public void Setcustomer_total_with_taxNull() {
+                this[this.tableInvoiceTable.customer_total_with_taxColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Istotal_order_countNull() {
+                return this.IsNull(this.tableInvoiceTable.total_order_countColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Settotal_order_countNull() {
+                this[this.tableInvoiceTable.total_order_countColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ispage_start_indexNull() {
+                return this.IsNull(this.tableInvoiceTable.page_start_indexColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setpage_start_indexNull() {
+                this[this.tableInvoiceTable.page_start_indexColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Ispage_end_indexNull() {
+                return this.IsNull(this.tableInvoiceTable.page_end_indexColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setpage_end_indexNull() {
+                this[this.tableInvoiceTable.page_end_indexColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Iscontinued_textNull() {
+                return this.IsNull(this.tableInvoiceTable.continued_textColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setcontinued_textNull() {
+                this[this.tableInvoiceTable.continued_textColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isinvoice_titleNull() {
+                return this.IsNull(this.tableInvoiceTable.invoice_titleColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setinvoice_titleNull() {
+                this[this.tableInvoiceTable.invoice_titleColumn] = global::System.Convert.DBNull;
             }
         }
         

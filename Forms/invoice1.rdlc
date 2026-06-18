@@ -17,36 +17,126 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="page_key"><DataField>page_key</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="page_number"><DataField>page_number</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="total_pages"><DataField>total_pages</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="customer_page_number"><DataField>customer_page_number</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="customer_total_pages"><DataField>customer_total_pages</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="is_last_customer_page"><DataField>is_last_customer_page</DataField><rd:TypeName>System.Boolean</rd:TypeName></Field>
-        <Field Name="customer_id"><DataField>customer_id</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="customer_name"><DataField>customer_name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="customer_address"><DataField>customer_address</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="company_name"><DataField>company_name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="company_address"><DataField>company_address</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="company_phone"><DataField>company_phone</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="bank_name"><DataField>bank_name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="bank_account"><DataField>bank_account</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="tax_rate"><DataField>tax_rate</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="line_no"><DataField>line_no</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="sales_id"><DataField>sales_id</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="purchase_date"><DataField>purchase_date</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="goods_name"><DataField>goods_name</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="goods_price"><DataField>goods_price</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="units_sold"><DataField>units_sold</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="amount"><DataField>amount</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="page_subtotal"><DataField>page_subtotal</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="customer_subtotal"><DataField>customer_subtotal</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="customer_total_with_tax"><DataField>customer_total_with_tax</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="total_order_count"><DataField>total_order_count</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="page_start_index"><DataField>page_start_index</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="page_end_index"><DataField>page_end_index</DataField><rd:TypeName>System.Int32</rd:TypeName></Field>
-        <Field Name="continued_text"><DataField>continued_text</DataField><rd:TypeName>System.String</rd:TypeName></Field>
-        <Field Name="invoice_title"><DataField>invoice_title</DataField><rd:TypeName>System.String</rd:TypeName></Field>
+        <Field Name="page_key">
+          <DataField>page_key</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="page_number">
+          <DataField>page_number</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="total_pages">
+          <DataField>total_pages</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="customer_page_number">
+          <DataField>customer_page_number</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="customer_total_pages">
+          <DataField>customer_total_pages</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="is_last_customer_page">
+          <DataField>is_last_customer_page</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="customer_id">
+          <DataField>customer_id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="customer_name">
+          <DataField>customer_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="customer_address">
+          <DataField>customer_address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="company_name">
+          <DataField>company_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="company_address">
+          <DataField>company_address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="company_phone">
+          <DataField>company_phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bank_name">
+          <DataField>bank_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="bank_account">
+          <DataField>bank_account</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tax_rate">
+          <DataField>tax_rate</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="line_no">
+          <DataField>line_no</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sales_id">
+          <DataField>sales_id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="purchase_date">
+          <DataField>purchase_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="goods_name">
+          <DataField>goods_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="goods_price">
+          <DataField>goods_price</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="units_sold">
+          <DataField>units_sold</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="amount">
+          <DataField>amount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="page_subtotal">
+          <DataField>page_subtotal</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="customer_subtotal">
+          <DataField>customer_subtotal</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="customer_total_with_tax">
+          <DataField>customer_total_with_tax</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="total_order_count">
+          <DataField>total_order_count</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="page_start_index">
+          <DataField>page_start_index</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="page_end_index">
+          <DataField>page_end_index</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="continued_text">
+          <DataField>continued_text</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="invoice_title">
+          <DataField>invoice_title</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>InvoiceDataSet</rd:DataSetName>
@@ -62,21 +152,87 @@
           <Tablix Name="InvoicePages">
             <TablixBody>
               <TablixColumns>
-                <TablixColumn><Width>1.7cm</Width></TablixColumn>
-                <TablixColumn><Width>2.2cm</Width></TablixColumn>
-                <TablixColumn><Width>6.5cm</Width></TablixColumn>
-                <TablixColumn><Width>2.6cm</Width></TablixColumn>
-                <TablixColumn><Width>2cm</Width></TablixColumn>
-                <TablixColumn><Width>3cm</Width></TablixColumn>
+                <TablixColumn>
+                  <Width>1.7cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.2cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>6.5cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.6cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3cm</Width>
+                </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
                   <Height>0.65cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="CustomerPageName"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!customer_name.Value)</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun><TextRun><Value>=IIF(First(Fields!customer_page_number.Value) &gt; 1, "　続き / continued", "")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style /></Paragraph></Paragraphs><Style /></Textbox><ColSpan>3</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CustomerPageName">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!customer_name.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=IIF(First(Fields!customer_page_number.Value) &gt; 1, "　続き / continued", "")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
-                    <TablixCell><CellContents><Textbox Name="ReportPageNo"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>="Page " &amp; First(Fields!page_number.Value) &amp; " / " &amp; First(Fields!total_pages.Value)</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style /></Textbox><ColSpan>3</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ReportPageNo">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="Page " &amp; First(Fields!page_number.Value) &amp; " / " &amp; First(Fields!total_pages.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                   </TablixCells>
@@ -84,7 +240,32 @@
                 <TablixRow>
                   <Height>1cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="InvoiceTitle"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!invoice_title.Value)</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>22pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style /></Textbox><ColSpan>6</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="InvoiceTitle">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!invoice_title.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>22pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>6</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -95,10 +276,55 @@
                 <TablixRow>
                   <Height>2.15cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="CustomerBlock"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!customer_name.Value) &amp; vbCrLf &amp; First(Fields!customer_address.Value) &amp; vbCrLf &amp; "御中"</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>11pt</FontSize></Style></TextRun></TextRuns><Style /></Paragraph></Paragraphs><Style /></Textbox><ColSpan>3</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CustomerBlock">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!customer_name.Value) &amp; vbCrLf &amp; First(Fields!customer_address.Value) &amp; vbCrLf &amp; "御中"</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>11pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
-                    <TablixCell><CellContents><Textbox Name="CompanyBlock"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!company_name.Value) &amp; vbCrLf &amp; First(Fields!company_address.Value) &amp; vbCrLf &amp; "Tel: " &amp; First(Fields!company_phone.Value) &amp; vbCrLf &amp; "発行日: " &amp; Parameters!IssueDate.Value</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>10pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style /></Textbox><ColSpan>3</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CompanyBlock">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!company_name.Value) &amp; vbCrLf &amp; First(Fields!company_address.Value) &amp; vbCrLf &amp; "Tel: " &amp; First(Fields!company_phone.Value) &amp; vbCrLf &amp; "発行日: " &amp; Parameters!IssueDate.Value</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                   </TablixCells>
@@ -106,51 +332,537 @@
                 <TablixRow>
                   <Height>1.2cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="TaxTotal"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）" &amp; IIF(First(Fields!customer_page_number.Value) = 1, "— 全ページ合計", "— 全" &amp; First(Fields!total_order_count.Value) &amp; "件") &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>13pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style /></Paragraph></Paragraphs><Style /></Textbox><ColSpan>4</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TaxTotal">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）" &amp; IIF(First(Fields!customer_page_number.Value) = 1, "— 全ページ合計", "— 全" &amp; First(Fields!total_order_count.Value) &amp; "件") &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>13pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>4</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
-                    <TablixCell><CellContents><Textbox Name="CustomerPageNo"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>="（" &amp; First(Fields!customer_page_number.Value) &amp; " of " &amp; First(Fields!customer_total_pages.Value) &amp; " for this customer）"</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style /></Textbox><ColSpan>2</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CustomerPageNo">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="（" &amp; First(Fields!customer_page_number.Value) &amp; " of " &amp; First(Fields!customer_total_pages.Value) &amp; " for this customer）"</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
                   <Height>0.62cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="HeaderId"><Paragraphs><Paragraph><TextRuns><TextRun><Value>ID</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><BackgroundColor>#E6EEF8</BackgroundColor><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="HeaderDate"><Paragraphs><Paragraph><TextRuns><TextRun><Value>日付</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><BackgroundColor>#E6EEF8</BackgroundColor><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="HeaderGoods"><Paragraphs><Paragraph><TextRuns><TextRun><Value>商品名</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><BackgroundColor>#E6EEF8</BackgroundColor><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="HeaderPrice"><Paragraphs><Paragraph><TextRuns><TextRun><Value>単価</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><BackgroundColor>#E6EEF8</BackgroundColor><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="HeaderQty"><Paragraphs><Paragraph><TextRuns><TextRun><Value>個数</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><BackgroundColor>#E6EEF8</BackgroundColor><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="HeaderAmount"><Paragraphs><Paragraph><TextRuns><TextRun><Value>金額</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><BackgroundColor>#E6EEF8</BackgroundColor><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight><PaddingTop>2pt</PaddingTop><PaddingBottom>2pt</PaddingBottom></Style></Textbox></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HeaderId">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ID</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e6eef8</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HeaderDate">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>日付</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e6eef8</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HeaderGoods">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>商品名</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e6eef8</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HeaderPrice">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>単価</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e6eef8</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HeaderQty">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>個数</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e6eef8</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="HeaderAmount">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>金額</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#e6eef8</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
                   <Height>0.55cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="LineNo"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Format(Fields!line_no.Value, "000")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="PurchaseDate"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!purchase_date.Value</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Center</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="GoodsName"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!goods_name.Value</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style /></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="GoodsPrice"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Format(Fields!goods_price.Value, "¥#,0")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="UnitsSold"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Fields!units_sold.Value</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
-                    <TablixCell><CellContents><Textbox Name="Amount"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Format(Fields!amount.Value, "¥#,0")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="LineNo">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!line_no.Value, "000")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="PurchaseDate">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!purchase_date.Value</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="GoodsName">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!goods_name.Value</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="GoodsPrice">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!goods_price.Value, "¥#,0")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="UnitsSold">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!units_sold.Value</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Amount">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(Fields!amount.Value, "¥#,0")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
                   <Height>0.7cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="PageSubtotalLabel"><Paragraphs><Paragraph><TextRuns><TextRun><Value>="このページの小計 (" &amp; First(Fields!page_start_index.Value) &amp; "〜" &amp; First(Fields!page_end_index.Value) &amp; "件)"</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>10pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox><ColSpan>5</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="PageSubtotalLabel">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="このページの小計 (" &amp; First(Fields!page_start_index.Value) &amp; "〜" &amp; First(Fields!page_end_index.Value) &amp; "件)"</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>5</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
-                    <TablixCell><CellContents><Textbox Name="PageSubtotal"><Paragraphs><Paragraph><TextRuns><TextRun><Value>=Format(First(Fields!page_subtotal.Value), "¥#,0")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>10pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style><Border><Style>Solid</Style></Border><PaddingLeft>2pt</PaddingLeft><PaddingRight>2pt</PaddingRight></Style></Textbox></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="PageSubtotal">
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Format(First(Fields!page_subtotal.Value), "¥#,0")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
                   <Height>0.65cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="ContinuedText"><CanGrow>true</CanGrow><Paragraphs><Paragraph><TextRuns><TextRun><Value>=First(Fields!continued_text.Value)</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>9pt</FontSize><FontStyle>Italic</FontStyle></Style></TextRun></TextRuns><Style /></Paragraph></Paragraphs><Style /></Textbox><ColSpan>6</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ContinuedText">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!continued_text.Value)</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>6</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -161,10 +873,62 @@
                 <TablixRow>
                   <Height>1.25cm</Height>
                   <TablixCells>
-                    <TablixCell><CellContents><Textbox Name="FinalTotal"><CanGrow>true</CanGrow><Visibility><Hidden>=Not(CBool(First(Fields!is_last_customer_page.Value)))</Hidden></Visibility><Paragraphs><Paragraph><TextRuns><TextRun><Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）— 全" &amp; First(Fields!total_order_count.Value) &amp; "件" &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>13pt</FontSize><FontWeight>Bold</FontWeight></Style></TextRun></TextRuns><Style /></Paragraph></Paragraphs><Style /></Textbox><ColSpan>3</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="FinalTotal">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）— 全" &amp; First(Fields!total_order_count.Value) &amp; "件" &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                    <FontSize>13pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Visibility>
+                            <Hidden>=Not(CBool(First(Fields!is_last_customer_page.Value)))</Hidden>
+                          </Visibility>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
-                    <TablixCell><CellContents><Textbox Name="PaymentAndBank"><CanGrow>true</CanGrow><Visibility><Hidden>=Not(CBool(First(Fields!is_last_customer_page.Value)))</Hidden></Visibility><Paragraphs><Paragraph><TextRuns><TextRun><Value>="お支払期限" &amp; vbCrLf &amp; Parameters!PaymentDeadline.Value &amp; vbCrLf &amp; "振込先" &amp; vbCrLf &amp; First(Fields!bank_name.Value) &amp; vbCrLf &amp; First(Fields!bank_account.Value)</Value><Style><FontFamily>Yu Gothic UI</FontFamily><FontSize>10pt</FontSize></Style></TextRun></TextRuns><Style><TextAlign>Right</TextAlign></Style></Paragraph></Paragraphs><Style /></Textbox><ColSpan>3</ColSpan></CellContents></TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="PaymentAndBank">
+                          <CanGrow>true</CanGrow>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="お支払期限" &amp; vbCrLf &amp; Parameters!PaymentDeadline.Value &amp; vbCrLf &amp; "振込先" &amp; vbCrLf &amp; First(Fields!bank_name.Value) &amp; vbCrLf &amp; First(Fields!bank_account.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Yu Gothic UI</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Visibility>
+                            <Hidden>=Not(CBool(First(Fields!is_last_customer_page.Value)))</Hidden>
+                          </Visibility>
+                          <Style />
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell />
                     <TablixCell />
                   </TablixCells>
@@ -194,7 +958,7 @@
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=First(Fields!page_number.Value)</Value>
+                      <Value>=Fields!page_number.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
@@ -259,6 +1023,12 @@
       <Prompt>TaxRate</Prompt>
     </ReportParameter>
   </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>f1a28e1b-3572-4fed-8cbf-377db5825729</rd:ReportID>
 </Report>
