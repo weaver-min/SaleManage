@@ -188,7 +188,6 @@
     <EmbeddedResource Include="Forms\invoice.resx">
       <DependentUpon>invoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\invoice_all.rdlc" />
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>

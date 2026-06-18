@@ -4,6 +4,7 @@ using System;
 using System.Data;
 using System.Globalization;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace SaleManage
@@ -43,7 +44,7 @@ namespace SaleManage
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    "請求書プレビューの表示に失敗しました。\n\n" + ex.Message,
+                    "請求書プレビューの表示に失敗しました。\n\n" + ex,
                     "エラー",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
@@ -193,18 +194,39 @@ namespace SaleManage
             if (reportViewer1 == null)
                 throw new InvalidOperationException("ReportViewer が初期化されていません。");
 
-            reportViewer1.LocalReport.ReportEmbeddedResource = RdlcResource;
-            reportViewer1.LocalReport.DataSources.Clear();
-            reportViewer1.LocalReport.DataSources.Add(new ReportDataSource(DatasetName, dt));
+            LocalReport report = reportViewer1.LocalReport;
+            if (report == null)
+                throw new InvalidOperationException("LocalReport が初期化されていません。");
 
-            reportViewer1.LocalReport.SetParameters(new[]
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            using (var stream = assembly.GetManifestResourceStream(RdlcResource))
             {
-                new ReportParameter("IssueDate", _issueDate.ToString("yyyy年M月d日")),
-                new ReportParameter("BillingMonth", _billingMonth.ToString("yyyy年M月")),
-                new ReportParameter("PaymentDeadline", _paymentDeadline.ToString("yyyy年M月d日")),
-                new ReportParameter("TaxRate", settings.TaxRateStr),
-            });
+                if (stream == null)
+                {
+                    string resources = string.Join(Environment.NewLine, assembly.GetManifestResourceNames());
+                    throw new InvalidOperationException(
+                        "請求書レポートの埋め込みリソースが見つかりません。" +
+                        Environment.NewLine + RdlcResource +
+                        Environment.NewLine + Environment.NewLine +
+                        "利用可能なリソース:" + Environment.NewLine + resources);
+                }
 
+                report.LoadReportDefinition(stream);
+            }
+
+            report.EnableExternalImages = false;
+            report.DataSources.Clear();
+            report.DataSources.Add(new ReportDataSource(DatasetName, dt));
+
+            var parameters = new[]
+            {
+                new ReportParameter("IssueDate", _issueDate.ToString("yyyy年M月d日"), false),
+                new ReportParameter("BillingMonth", _billingMonth.ToString("yyyy年M月"), false),
+                new ReportParameter("PaymentDeadline", _paymentDeadline.ToString("yyyy年M月d日"), false),
+                new ReportParameter("TaxRate", settings.TaxRateStr ?? "0", false),
+            };
+
+            report.SetParameters(parameters);
             reportViewer1.RefreshReport();
         }
 
