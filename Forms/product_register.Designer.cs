@@ -74,8 +74,8 @@ namespace SaleManage.Forms
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.727273F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.636364F));
-            this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.14466F));
-            this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.40145F));
+            this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.47648F));
+            this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.13961F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.07936F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.712477F));
             this.TableLayoutPanel1.Size = new System.Drawing.Size(947, 659);
@@ -87,9 +87,9 @@ namespace SaleManage.Forms
             this.lblTitle.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblTitle.Location = new System.Drawing.Point(3, 18);
+            this.lblTitle.Location = new System.Drawing.Point(3, 17);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(941, 60);
+            this.lblTitle.Size = new System.Drawing.Size(941, 59);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "商品登録";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,7 +108,7 @@ namespace SaleManage.Forms
             this.TableLayoutPanel2.Controls.Add(this.TableLayoutPanel5, 2, 0);
             this.TableLayoutPanel2.Controls.Add(this.txtGoodsName, 2, 2);
             this.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 105);
+            this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 102);
             this.TableLayoutPanel2.Name = "TableLayoutPanel2";
             this.TableLayoutPanel2.RowCount = 5;
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.16384F));
@@ -116,7 +116,7 @@ namespace SaleManage.Forms
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.75141F));
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.88889F));
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.94444F));
-            this.TableLayoutPanel2.Size = new System.Drawing.Size(941, 259);
+            this.TableLayoutPanel2.Size = new System.Drawing.Size(941, 353);
             this.TableLayoutPanel2.TabIndex = 1;
             // 
             // Label1
@@ -126,7 +126,7 @@ namespace SaleManage.Forms
             this.Label1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label1.Location = new System.Drawing.Point(50, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(126, 59);
+            this.Label1.Size = new System.Drawing.Size(126, 80);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "商品ID　：";
             this.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,9 +136,9 @@ namespace SaleManage.Forms
             this.lblGoodsName.AutoSize = true;
             this.lblGoodsName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblGoodsName.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblGoodsName.Location = new System.Drawing.Point(50, 85);
+            this.lblGoodsName.Location = new System.Drawing.Point(50, 116);
             this.lblGoodsName.Name = "lblGoodsName";
-            this.lblGoodsName.Size = new System.Drawing.Size(126, 55);
+            this.lblGoodsName.Size = new System.Drawing.Size(126, 75);
             this.lblGoodsName.TabIndex = 1;
             this.lblGoodsName.Text = "商品名　：";
             this.lblGoodsName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,9 +148,9 @@ namespace SaleManage.Forms
             this.Label3.AutoSize = true;
             this.Label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Label3.Location = new System.Drawing.Point(50, 175);
+            this.Label3.Location = new System.Drawing.Point(50, 239);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(126, 84);
+            this.Label3.Size = new System.Drawing.Size(126, 114);
             this.Label3.TabIndex = 2;
             this.Label3.Text = "単価　：";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,11 +163,11 @@ namespace SaleManage.Forms
             this.TableLayoutPanel3.Controls.Add(this.Label2, 1, 0);
             this.TableLayoutPanel3.Controls.Add(this.panel2, 0, 0);
             this.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel3.Location = new System.Drawing.Point(182, 178);
+            this.TableLayoutPanel3.Location = new System.Drawing.Point(182, 242);
             this.TableLayoutPanel3.Name = "TableLayoutPanel3";
             this.TableLayoutPanel3.RowCount = 1;
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel3.Size = new System.Drawing.Size(669, 78);
+            this.TableLayoutPanel3.Size = new System.Drawing.Size(669, 108);
             this.TableLayoutPanel3.TabIndex = 3;
             // 
             // Label2
@@ -177,7 +177,7 @@ namespace SaleManage.Forms
             this.Label2.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label2.Location = new System.Drawing.Point(456, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(210, 78);
+            this.Label2.Size = new System.Drawing.Size(210, 108);
             this.Label2.TabIndex = 2;
             this.Label2.Text = "円";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,14 +188,14 @@ namespace SaleManage.Forms
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(447, 72);
+            this.panel2.Size = new System.Drawing.Size(447, 102);
             this.panel2.TabIndex = 3;
             // 
             // txtGoodsPrice
             // 
             this.txtGoodsPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGoodsPrice.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtGoodsPrice.Location = new System.Drawing.Point(12, 12);
+            this.txtGoodsPrice.Location = new System.Drawing.Point(6, 30);
             this.txtGoodsPrice.Name = "txtGoodsPrice";
             this.txtGoodsPrice.Size = new System.Drawing.Size(372, 34);
             this.txtGoodsPrice.TabIndex = 0;
@@ -212,7 +212,7 @@ namespace SaleManage.Forms
             this.TableLayoutPanel5.Name = "TableLayoutPanel5";
             this.TableLayoutPanel5.RowCount = 1;
             this.TableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel5.Size = new System.Drawing.Size(669, 53);
+            this.TableLayoutPanel5.Size = new System.Drawing.Size(669, 74);
             this.TableLayoutPanel5.TabIndex = 4;
             // 
             // txtGoodsId
@@ -223,7 +223,7 @@ namespace SaleManage.Forms
             this.txtGoodsId.Multiline = true;
             this.txtGoodsId.Name = "txtGoodsId";
             this.txtGoodsId.ReadOnly = true;
-            this.txtGoodsId.Size = new System.Drawing.Size(194, 47);
+            this.txtGoodsId.Size = new System.Drawing.Size(194, 68);
             this.txtGoodsId.TabIndex = 0;
             this.txtGoodsId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -232,10 +232,10 @@ namespace SaleManage.Forms
             this.txtGoodsName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGoodsName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtGoodsName.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtGoodsName.Location = new System.Drawing.Point(182, 88);
+            this.txtGoodsName.Location = new System.Drawing.Point(182, 119);
             this.txtGoodsName.Multiline = true;
             this.txtGoodsName.Name = "txtGoodsName";
-            this.txtGoodsName.Size = new System.Drawing.Size(669, 49);
+            this.txtGoodsName.Size = new System.Drawing.Size(669, 69);
             this.txtGoodsName.TabIndex = 5;
             this.txtGoodsName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -250,7 +250,7 @@ namespace SaleManage.Forms
             this.TableLayoutPanel4.Controls.Add(this.btnClose, 1, 0);
             this.TableLayoutPanel4.Controls.Add(this.btnRegister, 3, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 544);
+            this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 541);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
             this.TableLayoutPanel4.RowCount = 1;
             this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -289,16 +289,16 @@ namespace SaleManage.Forms
             this.panel1.Controls.Add(this.txtStock);
             this.panel1.Controls.Add(this.lblStock);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 370);
+            this.panel1.Location = new System.Drawing.Point(3, 461);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(941, 168);
+            this.panel1.Size = new System.Drawing.Size(941, 74);
             this.panel1.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(655, 42);
+            this.label4.Location = new System.Drawing.Point(565, 29);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 30);
             this.label4.TabIndex = 2;
@@ -308,7 +308,7 @@ namespace SaleManage.Forms
             // 
             this.txtStock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtStock.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtStock.Location = new System.Drawing.Point(184, 37);
+            this.txtStock.Location = new System.Drawing.Point(186, 24);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(339, 34);
             this.txtStock.TabIndex = 1;
@@ -318,7 +318,7 @@ namespace SaleManage.Forms
             // 
             this.lblStock.AutoSize = true;
             this.lblStock.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblStock.Location = new System.Drawing.Point(54, 42);
+            this.lblStock.Location = new System.Drawing.Point(54, 29);
             this.lblStock.Name = "lblStock";
             this.lblStock.Size = new System.Drawing.Size(87, 24);
             this.lblStock.TabIndex = 0;

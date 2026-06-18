@@ -29,30 +29,29 @@ namespace SaleManage
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbltitle = new System.Windows.Forms.Label();
             this.TableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.colGoodsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGoodsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.TableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPrev = new System.Windows.Forms.Button();
-            this.lblPage = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
+            this.lblPage = new System.Windows.Forms.Label();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.colGoodsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGoodsName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
@@ -113,90 +112,41 @@ namespace SaleManage
             // dgvProduct
             // 
             this.dgvProduct.AllowUserToAddRows = false;
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black;
-            this.dgvProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            this.dgvProduct.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvProduct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("MS UI Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colGoodsId,
             this.colGoodsName,
             this.colPrice,
-            this.colStock,
             this.colDelete});
             this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProduct.Location = new System.Drawing.Point(34, 3);
             this.dgvProduct.MultiSelect = false;
             this.dgvProduct.Name = "dgvProduct";
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle35.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle35.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle35.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("MS UI Gothic", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvProduct.RowHeadersWidth = 51;
             this.dgvProduct.RowTemplate.Height = 24;
             this.dgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvProduct.Size = new System.Drawing.Size(985, 501);
             this.dgvProduct.TabIndex = 0;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
-            // 
-            // colGoodsId
-            // 
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colGoodsId.DefaultCellStyle = dataGridViewCellStyle31;
-            this.colGoodsId.FillWeight = 93.58287F;
-            this.colGoodsId.HeaderText = "商品ID";
-            this.colGoodsId.MinimumWidth = 6;
-            this.colGoodsId.Name = "colGoodsId";
-            // 
-            // colGoodsName
-            // 
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colGoodsName.DefaultCellStyle = dataGridViewCellStyle32;
-            this.colGoodsName.FillWeight = 95.01478F;
-            this.colGoodsName.HeaderText = "商品名";
-            this.colGoodsName.MinimumWidth = 6;
-            this.colGoodsName.Name = "colGoodsName";
-            // 
-            // colPrice
-            // 
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colPrice.DefaultCellStyle = dataGridViewCellStyle33;
-            this.colPrice.FillWeight = 119.1854F;
-            this.colPrice.HeaderText = "単価";
-            this.colPrice.MinimumWidth = 6;
-            this.colPrice.Name = "colPrice";
-            // 
-            // colStock
-            // 
-            this.colStock.FillWeight = 88.71504F;
-            this.colStock.HeaderText = "在庫";
-            this.colStock.MinimumWidth = 6;
-            this.colStock.Name = "colStock";
-            // 
-            // colDelete
-            // 
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle34.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.Red;
-            this.colDelete.DefaultCellStyle = dataGridViewCellStyle34;
-            this.colDelete.FillWeight = 103.5018F;
-            this.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colDelete.HeaderText = "削除";
-            this.colDelete.MinimumWidth = 6;
-            this.colDelete.Name = "colDelete";
-            this.colDelete.Text = "削除";
-            this.colDelete.UseColumnTextForButtonValue = true;
             // 
             // TableLayoutPanel3
             // 
@@ -216,7 +166,7 @@ namespace SaleManage
             this.TableLayoutPanel3.Name = "TableLayoutPanel3";
             this.TableLayoutPanel3.RowCount = 1;
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
             this.TableLayoutPanel3.Size = new System.Drawing.Size(1055, 72);
             this.TableLayoutPanel3.TabIndex = 2;
             // 
@@ -270,16 +220,16 @@ namespace SaleManage
             this.panel1.Size = new System.Drawing.Size(1055, 60);
             this.panel1.TabIndex = 3;
             // 
-            // btnPrev
+            // btnNext
             // 
-            this.btnPrev.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnPrev.Location = new System.Drawing.Point(308, 3);
-            this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(103, 46);
-            this.btnPrev.TabIndex = 1;
-            this.btnPrev.Text = "◀ 前へ";
-            this.btnPrev.UseVisualStyleBackColor = true;
-            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
+            this.btnNext.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnNext.Location = new System.Drawing.Point(572, 3);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(94, 46);
+            this.btnNext.TabIndex = 4;
+            this.btnNext.Text = "次へ ▶";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // lblPage
             // 
@@ -291,16 +241,57 @@ namespace SaleManage
             this.lblPage.TabIndex = 3;
             this.lblPage.Text = "ページ 1 / 1";
             // 
-            // btnNext
+            // btnPrev
             // 
-            this.btnNext.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnNext.Location = new System.Drawing.Point(572, 3);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(94, 46);
-            this.btnNext.TabIndex = 4;
-            this.btnNext.Text = "次へ ▶";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            this.btnPrev.Font = new System.Drawing.Font("MS UI Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btnPrev.Location = new System.Drawing.Point(308, 3);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(103, 46);
+            this.btnPrev.TabIndex = 1;
+            this.btnPrev.Text = "◀ 前へ";
+            this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
+            // 
+            // colGoodsId
+            // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colGoodsId.DefaultCellStyle = dataGridViewCellStyle10;
+            this.colGoodsId.FillWeight = 93.58287F;
+            this.colGoodsId.HeaderText = "商品ID";
+            this.colGoodsId.MinimumWidth = 6;
+            this.colGoodsId.Name = "colGoodsId";
+            // 
+            // colGoodsName
+            // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colGoodsName.DefaultCellStyle = dataGridViewCellStyle11;
+            this.colGoodsName.FillWeight = 95.01478F;
+            this.colGoodsName.HeaderText = "商品名";
+            this.colGoodsName.MinimumWidth = 6;
+            this.colGoodsName.Name = "colGoodsName";
+            // 
+            // colPrice
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colPrice.DefaultCellStyle = dataGridViewCellStyle12;
+            this.colPrice.FillWeight = 119.1854F;
+            this.colPrice.HeaderText = "単価";
+            this.colPrice.MinimumWidth = 6;
+            this.colPrice.Name = "colPrice";
+            // 
+            // colDelete
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Red;
+            this.colDelete.DefaultCellStyle = dataGridViewCellStyle13;
+            this.colDelete.FillWeight = 103.5018F;
+            this.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.colDelete.HeaderText = "削除";
+            this.colDelete.MinimumWidth = 6;
+            this.colDelete.Name = "colDelete";
+            this.colDelete.Text = "削除";
+            this.colDelete.UseColumnTextForButtonValue = true;
             // 
             // productmain
             // 
@@ -334,14 +325,13 @@ namespace SaleManage
         internal System.Windows.Forms.Button btnClose;
         internal System.Windows.Forms.Button btnEdit;
         internal System.Windows.Forms.Button btnRegister;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGoodsId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colGoodsName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colStock;
-        private System.Windows.Forms.DataGridViewButtonColumn colDelete;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Label lblPage;
         private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGoodsId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGoodsName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrice;
+        private System.Windows.Forms.DataGridViewButtonColumn colDelete;
     }
 }

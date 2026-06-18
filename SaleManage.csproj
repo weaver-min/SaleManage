@@ -80,6 +80,12 @@
     <Compile Include="DataBase\product_repo.cs" />
     <Compile Include="DataBase\SalesRepo.cs" />
     <Compile Include="DataBase\SystemRepo.cs" />
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\invoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,7 +150,6 @@
     <Compile Include="Forms\productmain.Designer.cs">
       <DependentUpon>productmain.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\sale_list.cs">
@@ -165,12 +170,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Sale_ManagementDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Sale_ManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sale_ManagementDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Forms\customerdetails.resx">
       <DependentUpon>customerdetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\customermain.resx">
       <DependentUpon>customermain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\invoice.resx">
       <DependentUpon>invoice.cs</DependentUpon>
@@ -222,7 +235,63 @@
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\customerdetails.datasource" />
+    <None Include="Properties\DataSources\customermain.datasource" />
+    <None Include="Properties\DataSources\invoice.datasource" />
+    <None Include="Properties\DataSources\invoice1.datasource" />
+    <None Include="Properties\DataSources\login.datasource" />
+    <None Include="Properties\DataSources\mainmenu.datasource" />
+    <None Include="Properties\DataSources\productmain.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\DataSources\SaleManage.Forms.InvoiceDataSet.datasource" />
+    <None Include="Properties\DataSources\sale_list.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.company_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.company_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.company_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.company_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.country_testDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.country_testRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.country_testRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.country_testRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.customer_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.customer_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.customer_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.customer_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.goods_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.goods_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.goods_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.goods_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.sales_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.sales_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.sales_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.sales_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.system_settingsDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.system_settingsRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.system_settingsRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.system_settingsRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.user_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.user_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.user_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet.user_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.company_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.company_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.company_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.company_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.customer_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.customer_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.customer_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.customer_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.goods_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.goods_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.goods_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.goods_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.sales_informationDataTable.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.sales_informationRow.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.sales_informationRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\Sale_ManagementDataSet1.sales_informationRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\sale_register.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -243,6 +312,17 @@
     </None>
     <None Include="Sale_ManagementDataSet.xss">
       <DependentUpon>Sale_ManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Sale_ManagementDataSet1.xsc">
+      <DependentUpon>Sale_ManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sale_ManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sale_ManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sale_ManagementDataSet1.xss">
+      <DependentUpon>Sale_ManagementDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -41,7 +41,7 @@ namespace SaleManage
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.Label4 = new System.Windows.Forms.Label();
             this.Panel4 = new System.Windows.Forms.Panel();
-            this.cmbGenerate = new System.Windows.Forms.ComboBox();
+            this.cmbIssueType = new System.Windows.Forms.ComboBox();
             this.TableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Label1 = new System.Windows.Forms.Label();
             this.Panel1 = new System.Windows.Forms.Panel();
@@ -116,7 +116,7 @@ namespace SaleManage
             this.TableLayoutPanel3.Name = "TableLayoutPanel3";
             this.TableLayoutPanel3.RowCount = 1;
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.TableLayoutPanel3.Size = new System.Drawing.Size(880, 101);
             this.TableLayoutPanel3.TabIndex = 2;
             // 
@@ -155,8 +155,9 @@ namespace SaleManage
             // 
             // dtpBillingDate
             // 
-            this.dtpBillingDate.CustomFormat = "yyyy/MM/dd";
+            this.dtpBillingDate.CustomFormat = "yyyy年MM月";
             this.dtpBillingDate.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dtpBillingDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpBillingDate.Location = new System.Drawing.Point(5, 29);
             this.dtpBillingDate.Name = "dtpBillingDate";
             this.dtpBillingDate.Size = new System.Drawing.Size(222, 30);
@@ -193,7 +194,7 @@ namespace SaleManage
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
             this.TableLayoutPanel4.RowCount = 1;
             this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.TableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.TableLayoutPanel4.Size = new System.Drawing.Size(880, 101);
             this.TableLayoutPanel4.TabIndex = 3;
             // 
@@ -211,23 +212,23 @@ namespace SaleManage
             // 
             // Panel4
             // 
-            this.Panel4.Controls.Add(this.cmbGenerate);
+            this.Panel4.Controls.Add(this.cmbIssueType);
             this.Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel4.Location = new System.Drawing.Point(167, 3);
             this.Panel4.Name = "Panel4";
             this.Panel4.Size = new System.Drawing.Size(665, 95);
             this.Panel4.TabIndex = 1;
             // 
-            // cmbGenerate
+            // cmbIssueType
             // 
-            this.cmbGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbIssueType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbGenerate.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.cmbGenerate.FormattingEnabled = true;
-            this.cmbGenerate.Location = new System.Drawing.Point(5, 27);
-            this.cmbGenerate.Name = "cmbGenerate";
-            this.cmbGenerate.Size = new System.Drawing.Size(653, 35);
-            this.cmbGenerate.TabIndex = 0;
+            this.cmbIssueType.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.cmbIssueType.FormattingEnabled = true;
+            this.cmbIssueType.Location = new System.Drawing.Point(5, 27);
+            this.cmbIssueType.Name = "cmbIssueType";
+            this.cmbIssueType.Size = new System.Drawing.Size(653, 35);
+            this.cmbIssueType.TabIndex = 0;
             // 
             // TableLayoutPanel2
             // 
@@ -242,7 +243,7 @@ namespace SaleManage
             this.TableLayoutPanel2.Name = "TableLayoutPanel2";
             this.TableLayoutPanel2.RowCount = 1;
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 101F));
             this.TableLayoutPanel2.Size = new System.Drawing.Size(880, 101);
             this.TableLayoutPanel2.TabIndex = 4;
             // 
@@ -361,7 +362,7 @@ namespace SaleManage
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel4;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Panel Panel4;
-        internal System.Windows.Forms.ComboBox cmbGenerate;
+        internal System.Windows.Forms.ComboBox cmbIssueType;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Panel Panel1;

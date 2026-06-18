@@ -40,20 +40,21 @@ namespace SaleManage
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.PageCountMode = Microsoft.Reporting.WinForms.PageCountMode.Actual;
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1091, 869);
+            this.reportViewer1.Size = new System.Drawing.Size(907, 747);
             this.reportViewer1.TabIndex = 0;
             // 
             // invoice1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 869);
+            this.ClientSize = new System.Drawing.Size(907, 747);
             this.Controls.Add(this.reportViewer1);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "invoice1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "invoice1";
+            this.Load += new System.EventHandler(this.invoice1_Load);
             this.ResumeLayout(false);
 
         }

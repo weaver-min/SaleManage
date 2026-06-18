@@ -41,8 +41,7 @@ namespace SaleManage
                 dgvProduct.Rows.Add(
                     row["goods_id"],
                     row["goods_name"],
-                    row["goods_price"],
-                    row["stock"]
+                    row["goods_price"]
                 );
             }
 

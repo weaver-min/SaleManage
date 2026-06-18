@@ -96,7 +96,7 @@ namespace SaleManage
             }
             SalesRepo repo = new SalesRepo();
             DataTable dt = repo.SearchSales(
-                dtpSa_lDate.Value,
+                dtpSa_lDate.Checked ? (DateTime?)dtpSa_lDate.Value : null,
                 txtCustomerName.Text.Trim());
 
             if (dt.Rows.Count == 0)
