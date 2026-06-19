@@ -20,12 +20,12 @@ namespace SaleManage
        
         private void invoice_Load(object sender, EventArgs e)
         {
-            // Default dates
+           
             dtpDeliver.Value = DateTime.Today;
             dtpBillingDate.Value = DateTime.Today;
             dtpDeadline.Value = DateTime.Today;
 
-            // ── Build customer picker in code ──
+            
             BuildCustomerPicker();
 
             cmbIssueType.SelectedIndexChanged -= cmbIssueType_SelectedIndexChanged;
@@ -35,17 +35,14 @@ namespace SaleManage
             cmbIssueType.Items.Add("顧客ごと");
             cmbIssueType.SelectedIndex = 0;
 
-            // ── Load customer list ──
+            
             LoadCustomerList();
         }
 
-        // ─────────────────────────────────────────
-        //  Build customer label + combobox in code
-        //  Positioned below 発行区分 row
-        // ─────────────────────────────────────────
+      
         private void BuildCustomerPicker()
         {
-            // Label
+            
             lblCustomer = new Label
             {
                 Text = "顧客名：",
@@ -72,9 +69,7 @@ namespace SaleManage
             this.Controls.Add(cmbCustomer);
         }
 
-        // ─────────────────────────────────────────
-        //  Load customer list from DB
-        // ─────────────────────────────────────────
+    
         private void LoadCustomerList()
         {
             try
@@ -93,19 +88,15 @@ namespace SaleManage
             }
         }
 
-        // ─────────────────────────────────────────
-        //  発行区分 changed — show/hide customer picker
-        // ─────────────────────────────────────────
+    
         private void cmbIssueType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bool isPerCustomer = cmbIssueType.SelectedIndex == 1; // 顧客ごと
+            bool isPerCustomer = cmbIssueType.SelectedIndex == 1; 
             cmbCustomer.Visible = isPerCustomer;
             lblCustomer.Visible = isPerCustomer;
         }
 
-        // ─────────────────────────────────────────
-        //  出力ボタン
-        // ─────────────────────────────────────────
+      
         private void btnRecipe_Click(object sender, EventArgs e)
         {
             if (cmbIssueType.SelectedIndex == -1)
@@ -125,13 +116,13 @@ namespace SaleManage
 
                 if (cmbIssueType.SelectedIndex == 0)
                 {
-                    // ── 全顧客一括 ──
+                   
                     salesData = repo.GetAllSalesByMonth(dtpBillingDate.Value);
                 }
                 else
                 {
                     // ── 顧客ごと ──
-                    if (cmbCustomer.SelectedValue == null)
+                    if (cmbCustomer.SelectedValue == "")
                     {
                         MessageBox.Show(
                             "顧客を選択してください。",
@@ -147,7 +138,7 @@ namespace SaleManage
                                     dtpBillingDate.Value);
                 }
 
-                // ── 対象データなし ──
+                
                 if (salesData == null || salesData.Rows.Count == 0)
                 {
                     MessageBox.Show(
