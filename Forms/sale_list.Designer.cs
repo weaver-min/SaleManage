@@ -201,7 +201,7 @@ namespace SaleManage
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnSearch.BackColor = System.Drawing.Color.LimeGreen;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSearch.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnSearch.Location = new System.Drawing.Point(674, 3);
@@ -214,7 +214,7 @@ namespace SaleManage
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btnClose.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnClose.Location = new System.Drawing.Point(1101, 3);
@@ -363,8 +363,8 @@ namespace SaleManage
             // colDelete
             // 
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Tomato;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Tomato;
             this.colDelete.DefaultCellStyle = dataGridViewCellStyle3;
             this.colDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.colDelete.HeaderText = "削除";

@@ -73,7 +73,7 @@ namespace SaleManage.Forms
             int stock = int.Parse(txtStock.Text.Trim());
             product_repo repo = new product_repo();
 
-            if (string.IsNullOrEmpty(GoodsID)) // ← INSERT
+            if (string.IsNullOrEmpty(GoodsID))
             {
                 repo.InsertGoods(
                     txtGoodsName.Text.Trim(),

@@ -297,7 +297,7 @@ namespace SaleManage
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.btnClose.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnClose.Location = new System.Drawing.Point(619, 3);
@@ -310,7 +310,7 @@ namespace SaleManage
             // 
             // btnRecipe
             // 
-            this.btnRecipe.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnRecipe.BackColor = System.Drawing.Color.SkyBlue;
             this.btnRecipe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRecipe.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnRecipe.Location = new System.Drawing.Point(750, 3);

@@ -8,10 +8,7 @@ namespace SaleManage
 {
     public partial class invoice : Form
     {
-        // ─────────────────────────────────────────
-        //  Customer combobox — added in code
-        //  so you do NOT need to touch the designer
-        // ─────────────────────────────────────────
+        
         private ComboBox cmbCustomer;
         private Label lblCustomer;
 
@@ -20,9 +17,7 @@ namespace SaleManage
             InitializeComponent();
         }
 
-        // ─────────────────────────────────────────
-        //  Load
-        // ─────────────────────────────────────────
+       
         private void invoice_Load(object sender, EventArgs e)
         {
             // Default dates

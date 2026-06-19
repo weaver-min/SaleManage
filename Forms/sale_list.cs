@@ -62,7 +62,7 @@ namespace SaleManage
             }
         }
 
-        // ← DoubleClick to open detail
+        
         private void dgvSale_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
@@ -72,7 +72,7 @@ namespace SaleManage
             OpenSalesDetail(salesId);
         }
 
-        // ← Enter key to open detail
+        
         private void dgvSale_KeyDown_1(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -82,11 +82,11 @@ namespace SaleManage
 
                 string salesId = dgvSale.SelectedRows[0].Cells[0].Value.ToString();
                 OpenSalesDetail(salesId);
-                e.Handled = true; // ← prevent default enter behavior
+                e.Handled = true; 
             }
         }
 
-        // ← search button
+        
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtCustomerName.Text) && !dtpSa_lDate.Checked)
@@ -143,7 +143,7 @@ namespace SaleManage
                             MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
 
-                        LoadSalesData(); // ← refresh
+                        LoadSalesData(); 
                     }
                 }
             }

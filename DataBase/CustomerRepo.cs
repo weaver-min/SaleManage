@@ -62,7 +62,7 @@ namespace SaleManage.DataBase
             return dt;
         }
 
-        // ← new method
+   
         public DataTable GetSalesByCustomerId(string customerId)
         {
             string sql = @"SELECT

@@ -65,6 +65,7 @@ namespace SaleManage
             this.TableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
@@ -78,6 +79,7 @@ namespace SaleManage
             this.TableLayoutPanel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.TableLayoutPanel8.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // TableLayoutPanel1
@@ -217,7 +219,7 @@ namespace SaleManage
             this.dtpSa_lDate.CalendarFont = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpSa_lDate.CustomFormat = "yyyy/MM/dd";
             this.dtpSa_lDate.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.dtpSa_lDate.Location = new System.Drawing.Point(7, 7);
+            this.dtpSa_lDate.Location = new System.Drawing.Point(8, 8);
             this.dtpSa_lDate.Name = "dtpSa_lDate";
             this.dtpSa_lDate.Size = new System.Drawing.Size(230, 30);
             this.dtpSa_lDate.TabIndex = 0;
@@ -232,7 +234,7 @@ namespace SaleManage
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.07117F));
             this.TableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.270463F));
             this.TableLayoutPanel4.Controls.Add(this.Label3, 1, 0);
-            this.TableLayoutPanel4.Controls.Add(this.cmbCustomer, 2, 0);
+            this.TableLayoutPanel4.Controls.Add(this.panel6, 2, 0);
             this.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel4.Location = new System.Drawing.Point(3, 277);
             this.TableLayoutPanel4.Name = "TableLayoutPanel4";
@@ -255,12 +257,11 @@ namespace SaleManage
             // 
             // cmbCustomer
             // 
-            this.cmbCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbCustomer.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmbCustomer.FormattingEnabled = true;
-            this.cmbCustomer.Location = new System.Drawing.Point(147, 3);
+            this.cmbCustomer.Location = new System.Drawing.Point(10, 11);
             this.cmbCustomer.Name = "cmbCustomer";
-            this.cmbCustomer.Size = new System.Drawing.Size(730, 31);
+            this.cmbCustomer.Size = new System.Drawing.Size(592, 31);
             this.cmbCustomer.TabIndex = 1;
             // 
             // TableLayoutPanel5
@@ -270,9 +271,9 @@ namespace SaleManage
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.45652F));
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.02174F));
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.21922F));
-            this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.06522F));
-            this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.28261F));
-            this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.695652F));
+            this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.95652F));
+            this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.15217F));
+            this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.934783F));
             this.TableLayoutPanel5.Controls.Add(this.Label4, 1, 0);
             this.TableLayoutPanel5.Controls.Add(this.Panel2, 2, 0);
             this.TableLayoutPanel5.Controls.Add(this.Label7, 4, 0);
@@ -314,7 +315,7 @@ namespace SaleManage
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbGoods.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.cmbGoods.FormattingEnabled = true;
-            this.cmbGoods.Location = new System.Drawing.Point(5, 9);
+            this.cmbGoods.Location = new System.Drawing.Point(10, 9);
             this.cmbGoods.Name = "cmbGoods";
             this.cmbGoods.Size = new System.Drawing.Size(225, 31);
             this.cmbGoods.TabIndex = 0;
@@ -327,7 +328,7 @@ namespace SaleManage
             this.Label7.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label7.Location = new System.Drawing.Point(618, 0);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(105, 56);
+            this.Label7.Size = new System.Drawing.Size(104, 56);
             this.Label7.TabIndex = 2;
             this.Label7.Text = "単価　：";
             this.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -337,10 +338,10 @@ namespace SaleManage
             this.txtUnitPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUnitPrice.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtUnitPrice.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtUnitPrice.Location = new System.Drawing.Point(729, 3);
+            this.txtUnitPrice.Location = new System.Drawing.Point(728, 3);
             this.txtUnitPrice.Multiline = true;
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(107, 50);
+            this.txtUnitPrice.Size = new System.Drawing.Size(115, 50);
             this.txtUnitPrice.TabIndex = 3;
             this.txtUnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -349,9 +350,9 @@ namespace SaleManage
             this.Label8.AutoSize = true;
             this.Label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Label8.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Label8.Location = new System.Drawing.Point(842, 0);
+            this.Label8.Location = new System.Drawing.Point(849, 0);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(75, 56);
+            this.Label8.Size = new System.Drawing.Size(68, 56);
             this.Label8.TabIndex = 4;
             this.Label8.Text = "円";
             this.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -381,8 +382,8 @@ namespace SaleManage
             this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.36957F));
             this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.95652F));
             this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.934783F));
-            this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.70776F));
-            this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.98174F));
+            this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.91304F));
+            this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.82609F));
             this.TableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.990868F));
             this.TableLayoutPanel6.Controls.Add(this.panel3, 2, 0);
             this.TableLayoutPanel6.Controls.Add(this.Label5, 1, 0);
@@ -410,7 +411,7 @@ namespace SaleManage
             // 
             this.txtQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtQuantity.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtQuantity.Location = new System.Drawing.Point(3, 12);
+            this.txtQuantity.Location = new System.Drawing.Point(15, 12);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(168, 30);
             this.txtQuantity.TabIndex = 1;
@@ -458,10 +459,10 @@ namespace SaleManage
             this.txtAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAmount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAmount.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtAmount.Location = new System.Drawing.Point(700, 3);
+            this.txtAmount.Location = new System.Drawing.Point(729, 3);
             this.txtAmount.Multiline = true;
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(141, 54);
+            this.txtAmount.Size = new System.Drawing.Size(112, 54);
             this.txtAmount.TabIndex = 4;
             this.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -472,7 +473,7 @@ namespace SaleManage
             this.Label11.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label11.Location = new System.Drawing.Point(417, 0);
             this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(277, 60);
+            this.Label11.Size = new System.Drawing.Size(306, 60);
             this.Label11.TabIndex = 5;
             this.Label11.Text = "金額　：";
             this.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -569,6 +570,15 @@ namespace SaleManage
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.cmbCustomer);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(147, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(730, 54);
+            this.panel6.TabIndex = 1;
+            // 
             // sale_register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -604,6 +614,7 @@ namespace SaleManage
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.TableLayoutPanel8.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -646,5 +657,6 @@ namespace SaleManage
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }

@@ -65,7 +65,6 @@ C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHS\Microsoft.ReportViewe
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.customerdetails.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.customermain.resources
-C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.Forms.Form1.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.invoice.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.login.resources
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.mainmenu.resources
@@ -83,3 +82,4 @@ C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CoreCompil
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CopyComplete
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.exe
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.pdb
+C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.AssemblyReference.cache

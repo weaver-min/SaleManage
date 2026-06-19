@@ -7,10 +7,7 @@ namespace SaleManage.DataBase
 {
     public class SalesRepo
     {
-        // ─────────────────────────────────────────
-        //  Existing methods (unchanged)
-        // ─────────────────────────────────────────
-
+  
         public DataTable GetAllSales()
         {
             string sql = @"
@@ -147,7 +144,7 @@ namespace SaleManage.DataBase
                 {
                     try
                     {
-                        // Read old units_sold before update
+                        
                         int oldUnitsSold;
                         string oldGoodsId;
                         using (SqlCommand sel = new SqlCommand(
@@ -277,9 +274,7 @@ namespace SaleManage.DataBase
             }
         }
 
-        // ─────────────────────────────────────────
-        //  Invoice — all customers for billing month
-        // ─────────────────────────────────────────
+        
         public DataTable GetAllSalesByMonth(DateTime billingMonth)
         {
             string sql = @"
@@ -313,9 +308,7 @@ namespace SaleManage.DataBase
             }
         }
 
-        // ─────────────────────────────────────────
-        //  Invoice — single customer for billing month
-        // ─────────────────────────────────────────
+       
         public DataTable GetSalesByCustomerAndMonth(string customerId, DateTime billingMonth)
         {
             string sql = @"
@@ -351,9 +344,7 @@ namespace SaleManage.DataBase
             }
         }
 
-        // ─────────────────────────────────────────
-        //  Invoice combobox — all active customers
-        // ─────────────────────────────────────────
+        
         public DataTable GetAllCustomers()
         {
             string sql = @"
@@ -365,9 +356,7 @@ namespace SaleManage.DataBase
             return Fill(sql);
         }
 
-        // ─────────────────────────────────────────
-        //  Private helper — parameterless fill
-        // ─────────────────────────────────────────
+        
         private static DataTable Fill(string sql)
         {
             DataTable dt = new DataTable();

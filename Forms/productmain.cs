@@ -23,7 +23,7 @@ namespace SaleManage
         private void LoadGoodsData()
         {
             product_repo repo = new product_repo();
-            _allData = repo.GetAllGood();  // ← store all data
+            _allData = repo.GetAllGood(); 
             _currentPage = 1;
             ShowPage();
         }

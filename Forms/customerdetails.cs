@@ -148,7 +148,7 @@ namespace SaleManage
 
             CustomerRepo repo = new CustomerRepo();
 
-            if (string.IsNullOrEmpty(CustomerID)) // ← INSERT
+            if (string.IsNullOrEmpty(CustomerID)) 
             {
                 repo.InsertCustomer(
                     txtCustomerName.Text.Trim(),
@@ -187,7 +187,7 @@ namespace SaleManage
 
             CustomerRepo repo = new CustomerRepo();
 
-            if (repo.HasSales(CustomerID))  // ← simple and reliable
+            if (repo.HasSales(CustomerID))  
             {
                 MessageBox.Show(
                     "この顧客には販売履歴があるため削除できません。",

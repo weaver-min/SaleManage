@@ -29,8 +29,8 @@ namespace SaleManage
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@ namespace SaleManage
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.TableLayoutPanel1.Size = new System.Drawing.Size(1007, 686);
+            this.TableLayoutPanel1.Size = new System.Drawing.Size(991, 726);
             this.TableLayoutPanel1.TabIndex = 1;
             // 
             // Panel1
@@ -94,7 +94,7 @@ namespace SaleManage
             this.Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel1.Location = new System.Drawing.Point(3, 3);
             this.Panel1.Name = "Panel1";
-            this.Panel1.Size = new System.Drawing.Size(1001, 74);
+            this.Panel1.Size = new System.Drawing.Size(985, 74);
             this.Panel1.TabIndex = 0;
             // 
             // lblTitle
@@ -104,7 +104,7 @@ namespace SaleManage
             this.lblTitle.Font = new System.Drawing.Font("MS UI Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1001, 74);
+            this.lblTitle.Size = new System.Drawing.Size(985, 74);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "顧客詳細、登録";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,7 +136,7 @@ namespace SaleManage
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.TableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.TableLayoutPanel2.Size = new System.Drawing.Size(1001, 175);
+            this.TableLayoutPanel2.Size = new System.Drawing.Size(985, 187);
             this.TableLayoutPanel2.TabIndex = 1;
             // 
             // lblCustomerId
@@ -146,7 +146,7 @@ namespace SaleManage
             this.lblCustomerId.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.lblCustomerId.Location = new System.Drawing.Point(3, 0);
             this.lblCustomerId.Name = "lblCustomerId";
-            this.lblCustomerId.Size = new System.Drawing.Size(144, 43);
+            this.lblCustomerId.Size = new System.Drawing.Size(141, 46);
             this.lblCustomerId.TabIndex = 0;
             this.lblCustomerId.Text = "顧客ID  ：";
             this.lblCustomerId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -156,9 +156,9 @@ namespace SaleManage
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCustomerName.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblCustomerName.Location = new System.Drawing.Point(3, 43);
+            this.lblCustomerName.Location = new System.Drawing.Point(3, 46);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(144, 43);
+            this.lblCustomerName.Size = new System.Drawing.Size(141, 46);
             this.lblCustomerName.TabIndex = 1;
             this.lblCustomerName.Text = "顧客名　：";
             this.lblCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,9 +168,9 @@ namespace SaleManage
             this.lblFurigana.AutoSize = true;
             this.lblFurigana.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblFurigana.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblFurigana.Location = new System.Drawing.Point(3, 86);
+            this.lblFurigana.Location = new System.Drawing.Point(3, 92);
             this.lblFurigana.Name = "lblFurigana";
-            this.lblFurigana.Size = new System.Drawing.Size(144, 43);
+            this.lblFurigana.Size = new System.Drawing.Size(141, 46);
             this.lblFurigana.TabIndex = 2;
             this.lblFurigana.Text = "フリガナ　：";
             this.lblFurigana.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,21 +180,21 @@ namespace SaleManage
             this.lblAddress.AutoSize = true;
             this.lblAddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAddress.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lblAddress.Location = new System.Drawing.Point(3, 129);
+            this.lblAddress.Location = new System.Drawing.Point(3, 138);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(144, 46);
+            this.lblAddress.Size = new System.Drawing.Size(141, 49);
             this.lblAddress.TabIndex = 3;
             this.lblAddress.Text = "住所　：";
             this.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnDelete.BackColor = System.Drawing.Color.Tomato;
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDelete.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnDelete.Location = new System.Drawing.Point(853, 3);
+            this.btnDelete.Location = new System.Drawing.Point(838, 3);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(145, 37);
+            this.btnDelete.Size = new System.Drawing.Size(144, 40);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "削除";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -202,12 +202,12 @@ namespace SaleManage
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.YellowGreen;
+            this.btnEdit.BackColor = System.Drawing.Color.LimeGreen;
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEdit.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnEdit.Location = new System.Drawing.Point(853, 132);
+            this.btnEdit.Location = new System.Drawing.Point(838, 141);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(145, 40);
+            this.btnEdit.Size = new System.Drawing.Size(144, 43);
             this.btnEdit.TabIndex = 9;
             this.btnEdit.Text = "編集";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -218,9 +218,9 @@ namespace SaleManage
             this.btnClose.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnClose.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClose.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btnClose.Location = new System.Drawing.Point(703, 132);
+            this.btnClose.Location = new System.Drawing.Point(691, 141);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(144, 40);
+            this.btnClose.Size = new System.Drawing.Size(141, 43);
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "閉じる";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -230,9 +230,9 @@ namespace SaleManage
             // 
             this.Panel2.Controls.Add(this.txtCustomerId);
             this.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel2.Location = new System.Drawing.Point(153, 3);
+            this.Panel2.Location = new System.Drawing.Point(150, 3);
             this.Panel2.Name = "Panel2";
-            this.Panel2.Size = new System.Drawing.Size(444, 37);
+            this.Panel2.Size = new System.Drawing.Size(437, 40);
             this.Panel2.TabIndex = 11;
             // 
             // txtCustomerId
@@ -244,7 +244,7 @@ namespace SaleManage
             this.txtCustomerId.Multiline = true;
             this.txtCustomerId.Name = "txtCustomerId";
             this.txtCustomerId.ReadOnly = true;
-            this.txtCustomerId.Size = new System.Drawing.Size(444, 37);
+            this.txtCustomerId.Size = new System.Drawing.Size(437, 40);
             this.txtCustomerId.TabIndex = 0;
             this.txtCustomerId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -252,9 +252,9 @@ namespace SaleManage
             // 
             this.Panel3.Controls.Add(this.txtCustomerName);
             this.Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel3.Location = new System.Drawing.Point(153, 46);
+            this.Panel3.Location = new System.Drawing.Point(150, 49);
             this.Panel3.Name = "Panel3";
-            this.Panel3.Size = new System.Drawing.Size(444, 37);
+            this.Panel3.Size = new System.Drawing.Size(437, 40);
             this.Panel3.TabIndex = 12;
             // 
             // txtCustomerName
@@ -266,7 +266,7 @@ namespace SaleManage
             this.txtCustomerName.Multiline = true;
             this.txtCustomerName.Name = "txtCustomerName";
             this.txtCustomerName.ReadOnly = true;
-            this.txtCustomerName.Size = new System.Drawing.Size(444, 37);
+            this.txtCustomerName.Size = new System.Drawing.Size(437, 40);
             this.txtCustomerName.TabIndex = 1;
             this.txtCustomerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -274,9 +274,9 @@ namespace SaleManage
             // 
             this.Panel4.Controls.Add(this.txtFurigana);
             this.Panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel4.Location = new System.Drawing.Point(153, 89);
+            this.Panel4.Location = new System.Drawing.Point(150, 95);
             this.Panel4.Name = "Panel4";
-            this.Panel4.Size = new System.Drawing.Size(444, 37);
+            this.Panel4.Size = new System.Drawing.Size(437, 40);
             this.Panel4.TabIndex = 13;
             // 
             // txtFurigana
@@ -288,7 +288,7 @@ namespace SaleManage
             this.txtFurigana.Multiline = true;
             this.txtFurigana.Name = "txtFurigana";
             this.txtFurigana.ReadOnly = true;
-            this.txtFurigana.Size = new System.Drawing.Size(444, 37);
+            this.txtFurigana.Size = new System.Drawing.Size(437, 40);
             this.txtFurigana.TabIndex = 2;
             this.txtFurigana.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -296,9 +296,9 @@ namespace SaleManage
             // 
             this.Panel5.Controls.Add(this.txtAddress);
             this.Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Panel5.Location = new System.Drawing.Point(153, 132);
+            this.Panel5.Location = new System.Drawing.Point(150, 141);
             this.Panel5.Name = "Panel5";
-            this.Panel5.Size = new System.Drawing.Size(444, 40);
+            this.Panel5.Size = new System.Drawing.Size(437, 43);
             this.Panel5.TabIndex = 14;
             // 
             // txtAddress
@@ -310,7 +310,7 @@ namespace SaleManage
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
-            this.txtAddress.Size = new System.Drawing.Size(444, 40);
+            this.txtAddress.Size = new System.Drawing.Size(437, 43);
             this.txtAddress.TabIndex = 3;
             this.txtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -321,12 +321,12 @@ namespace SaleManage
             this.TableLayoutPanel3.Controls.Add(this.Label1, 0, 0);
             this.TableLayoutPanel3.Controls.Add(this.dgvCustomerDetails, 0, 1);
             this.TableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TableLayoutPanel3.Location = new System.Drawing.Point(3, 264);
+            this.TableLayoutPanel3.Location = new System.Drawing.Point(3, 276);
             this.TableLayoutPanel3.Name = "TableLayoutPanel3";
             this.TableLayoutPanel3.RowCount = 2;
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.54717F));
             this.TableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.45283F));
-            this.TableLayoutPanel3.Size = new System.Drawing.Size(1001, 419);
+            this.TableLayoutPanel3.Size = new System.Drawing.Size(985, 447);
             this.TableLayoutPanel3.TabIndex = 2;
             // 
             // Label1
@@ -336,7 +336,7 @@ namespace SaleManage
             this.Label1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Label1.Location = new System.Drawing.Point(3, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(995, 20);
+            this.Label1.Size = new System.Drawing.Size(979, 20);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "販売履歴：";
             // 
@@ -345,14 +345,14 @@ namespace SaleManage
             this.dgvCustomerDetails.AllowUserToAddRows = false;
             this.dgvCustomerDetails.AllowUserToDeleteRows = false;
             this.dgvCustomerDetails.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCustomerDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomerDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
@@ -363,22 +363,22 @@ namespace SaleManage
             this.colAmount,
             this.colRemark});
             this.dgvCustomerDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCustomerDetails.Location = new System.Drawing.Point(3, 34);
+            this.dgvCustomerDetails.Location = new System.Drawing.Point(3, 36);
             this.dgvCustomerDetails.MultiSelect = false;
             this.dgvCustomerDetails.Name = "dgvCustomerDetails";
             this.dgvCustomerDetails.ReadOnly = true;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCustomerDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCustomerDetails.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCustomerDetails.RowHeadersWidth = 51;
             this.dgvCustomerDetails.RowTemplate.Height = 24;
             this.dgvCustomerDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCustomerDetails.Size = new System.Drawing.Size(995, 382);
+            this.dgvCustomerDetails.Size = new System.Drawing.Size(979, 408);
             this.dgvCustomerDetails.TabIndex = 1;
             // 
             // colID
@@ -437,7 +437,7 @@ namespace SaleManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 686);
+            this.ClientSize = new System.Drawing.Size(991, 726);
             this.Controls.Add(this.TableLayoutPanel1);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(900, 600);

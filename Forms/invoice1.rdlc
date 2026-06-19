@@ -191,7 +191,7 @@
                                   </Style>
                                 </TextRun>
                                 <TextRun>
-                                  <Value>=IIF(First(Fields!customer_page_number.Value) &gt; 1, "　続き / continued", "")</Value>
+                                  <Value>=IIF(First(Fields!customer_page_number.Value) &gt; 1, "　続き ", "")</Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -340,7 +340,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）" &amp; IIF(First(Fields!customer_page_number.Value) = 1, "— 全ページ合計", "— 全" &amp; First(Fields!total_order_count.Value) &amp; "件") &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
+                                    <Value></Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                     <FontSize>13pt</FontSize>
@@ -367,7 +367,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="（" &amp; First(Fields!customer_page_number.Value) &amp; " of " &amp; First(Fields!customer_total_pages.Value) &amp; " for this customer）"</Value>
+                                  <Value>="（" &amp; First(Fields!customer_page_number.Value) &amp; " of " &amp; First(Fields!customer_total_pages.Value) &amp; " ）"</Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -778,7 +778,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="このページの小計 (" &amp; First(Fields!page_start_index.Value) &amp; "〜" &amp; First(Fields!page_end_index.Value) &amp; "件)"</Value>
+                                  <Value>="小計 "</Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -881,7 +881,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）— 全" &amp; First(Fields!total_order_count.Value) &amp; "件" &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
+                                  <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）"  &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                     <FontSize>13pt</FontSize>

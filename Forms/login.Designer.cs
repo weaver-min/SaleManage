@@ -173,7 +173,7 @@ namespace SaleManage
             // 
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLogin.BackColor = System.Drawing.Color.SkyBlue;
             this.btnLogin.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnLogin.Location = new System.Drawing.Point(372, 0);
             this.btnLogin.Name = "btnLogin";
@@ -186,7 +186,7 @@ namespace SaleManage
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnClear.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnClear.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnClear.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnClear.Location = new System.Drawing.Point(68, 3);
             this.btnClear.Name = "btnClear";

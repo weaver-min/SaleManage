@@ -39,7 +39,7 @@ namespace SaleManage
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "パスワード";
-                txtPassword.PasswordChar = '\0'; // remove password mask
+                txtPassword.PasswordChar = '\0';
                 txtPassword.ForeColor = Color.Gray;
             }
         }

@@ -80,12 +80,6 @@
     <Compile Include="DataBase\product_repo.cs" />
     <Compile Include="DataBase\SalesRepo.cs" />
     <Compile Include="DataBase\SystemRepo.cs" />
-    <Compile Include="Forms\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\invoice.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,12 +176,10 @@
     <EmbeddedResource Include="Forms\customermain.resx">
       <DependentUpon>customermain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\invoice.resx">
       <DependentUpon>invoice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\invoice1.rdlc" />
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,7 +192,6 @@
     <EmbeddedResource Include="Forms\product_register.resx">
       <DependentUpon>product_register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\invoice1.rdlc" />
     <EmbeddedResource Include="Forms\invoice1.resx">
       <DependentUpon>invoice1.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,7 +219,6 @@
     <None Include="Forms\InvoiceDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>InvoiceDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="Forms\InvoiceDataSet.xss">
       <DependentUpon>InvoiceDataSet.xsd</DependentUpon>

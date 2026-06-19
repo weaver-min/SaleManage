@@ -66,7 +66,7 @@ namespace SaleManage
         {
             SalesRepo repo = new SalesRepo();
             DataTable dt = repo.GetSalesById(SalesID);
-
+            
             if (dt.Rows.Count > 0)
             {
                 txtID.Text = dt.Rows[0]["sales_id"].ToString();
@@ -79,7 +79,6 @@ namespace SaleManage
                 txtRemarks.Text = dt.Rows[0]["remarks"].ToString();
 
 
-                // ← save original values for cancel
                 _originalCustomerID = dt.Rows[0]["customer_id"].ToString();
                 _originalGoodsID = dt.Rows[0]["goods_id"].ToString();
                 _originalDate = Convert.ToDateTime(dt.Rows[0]["purchase_date"]);
@@ -100,7 +99,7 @@ namespace SaleManage
             txtRemarks.ReadOnly = true;
         }
 
-        // ← edit mode: 登録→完了, 閉じる→キャンセル
+       
         private void SetEditMode()
         {
             _isEditMode = true;
@@ -114,7 +113,7 @@ namespace SaleManage
             txtRemarks.ReadOnly = false;
         }
 
-        // ← new registration mode
+        
         private void SetNewMode()
         {
             _isEditMode = true;
@@ -177,7 +176,7 @@ namespace SaleManage
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            // ← this stays at the top, outside try/catch
+        
             if (!_isEditMode && !string.IsNullOrEmpty(SalesID))
             {
                 SetEditMode();
@@ -189,9 +188,9 @@ namespace SaleManage
 
             SalesRepo repo = new SalesRepo();
 
-            try  // ← wrap only the DB operations
+            try
             {
-                if (string.IsNullOrEmpty(SalesID)) // ← INSERT
+                if (string.IsNullOrEmpty(SalesID)) 
                 {
                     repo.InsertSales(
                         dtpSa_lDate.Value,
@@ -204,7 +203,7 @@ namespace SaleManage
                     MessageBox.Show("登録が完了しました。", "完了",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else // ← UPDATE
+                else 
                 {
                     repo.UpdateSales(
                         SalesID,
@@ -222,7 +221,7 @@ namespace SaleManage
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
-            catch (Exception ex)  // ← catches stock error here
+            catch (Exception ex) 
             {
                 MessageBox.Show(ex.Message, "エラー",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -268,7 +267,7 @@ namespace SaleManage
             {
                 txtUnitPrice.Text = dt.Rows[0]["goods_price"].ToString();
                 int stock = Convert.ToInt32(dt.Rows[0]["stock"]);
-                lblStock.Text = $"在庫: {stock} 個";              // ← show stock label
+                lblStock.Text = $"在庫: {stock} 個";              
                 lblStock.ForeColor = stock == 0 ? Color.Red : Color.Black;
                 CalculateAmount();
             }
@@ -284,7 +283,7 @@ namespace SaleManage
         {
             if (_isEditMode && !string.IsNullOrEmpty(SalesID))
             {
-                // ← restore original values
+               
                 cmbCustomer.SelectedValue = _originalCustomerID;
                 cmbGoods.SelectedValue = _originalGoodsID;
                 dtpSa_lDate.Value = _originalDate;

@@ -23,7 +23,7 @@ namespace SaleManage
         private void LoadCustomer()
         {
             CustomerRepo repo = new CustomerRepo();
-            _allData = repo.GetAllCustomers();  // ← store all data
+            _allData = repo.GetAllCustomers();  
             _currentPage = 1;
             ShowPage();
         }

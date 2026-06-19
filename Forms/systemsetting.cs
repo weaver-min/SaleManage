@@ -28,7 +28,7 @@ namespace SaleManage.Forms
         {
             SystemRepo repo = new SystemRepo();
 
-            // ← company info
+            
             DataTable dt = repo.GetSettings();
             if (dt.Rows.Count > 0)
             {
@@ -40,7 +40,7 @@ namespace SaleManage.Forms
                 txtTax.Text = dt.Rows[0]["tax"].ToString();
             }
 
-            // ← user info
+            
             DataTable userDt = repo.GetUserSettings();
             if (userDt.Rows.Count > 0)
             {
@@ -48,7 +48,7 @@ namespace SaleManage.Forms
                 txtPassword.Text = userDt.Rows[0]["login_password"].ToString();
             }
 
-            // ← save original values
+            
             _originalCompanyName = txtCompanyName.Text;
             _originalAddress = txtAddress.Text;
             _originalPhone = txtPhone.Text;
@@ -187,7 +187,7 @@ namespace SaleManage.Forms
 
             SystemRepo repo = new SystemRepo();
 
-            // ← update company info
+            
             repo.UpdateSettings(
                 txtCompanyName.Text.Trim(),
                 txtAddress.Text.Trim(),
@@ -196,7 +196,7 @@ namespace SaleManage.Forms
                 txtBankNo.Text.Trim(),
                 int.Parse(txtTax.Text.Trim()));
 
-            // ← update user info
+            
             repo.UpdateUserSettings(
                 txtId.Text.Trim(),
                 txtPassword.Text.Trim());
