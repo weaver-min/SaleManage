@@ -340,7 +340,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                    <Value></Value>
+                                    <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）"  &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                     <FontSize>13pt</FontSize>
@@ -881,12 +881,12 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）"  &amp; vbCrLf &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
-                                  <Style>
-                                    <FontFamily>Yu Gothic UI</FontFamily>
-                                    <FontSize>13pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
+                                    <Value>="お支払期限" &amp; vbCrLf &amp; Parameters!PaymentDeadline.Value &amp; vbCrLf &amp; "振込先" &amp; vbCrLf &amp; First(Fields!bank_name.Value) &amp; vbCrLf &amp; First(Fields!bank_account.Value)</Value>
+                                    <Style>
+                                        <FontFamily>Yu Gothic UI</FontFamily>
+                                        <FontSize>13pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>   
+                                    </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -910,7 +910,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="お支払期限" &amp; vbCrLf &amp; Parameters!PaymentDeadline.Value &amp; vbCrLf &amp; "振込先" &amp; vbCrLf &amp; First(Fields!bank_name.Value) &amp; vbCrLf &amp; First(Fields!bank_account.Value)</Value>
+                                  <Value></Value>
                                   <Style>
                                     <FontFamily>Yu Gothic UI</FontFamily>
                                   </Style>
