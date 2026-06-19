@@ -82,4 +82,3 @@ C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CoreCompil
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CopyComplete
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.exe
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.pdb
-C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.AssemblyReference.cache

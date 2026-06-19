@@ -350,7 +350,7 @@ namespace SaleManage.DataBase
             string sql = @"
                 SELECT customer_id, customer_name
                 FROM   customer_information
-                WHERE  delete_flg = 0
+                WHERE  ISNULL(delete_flg,0) = 0
                 ORDER BY customer_id";
 
             return Fill(sql);
