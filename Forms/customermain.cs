@@ -73,7 +73,7 @@ namespace SaleManage
             dgvCustomer.EnableHeadersVisualStyles = false;
             dgvCustomer.Font = new Font("Yu Gothic UI", 10);
             dgvCustomer.ColumnHeadersDefaultCellStyle.Font =
-                new Font("Yu Gothic UI", 14, FontStyle.Bold);
+            new Font("Yu Gothic UI", 14, FontStyle.Bold);
             dgvCustomer.ColumnHeadersHeight = 35;
             dgvCustomer.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCustomer.MultiSelect = false;

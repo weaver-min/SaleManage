@@ -42,7 +42,7 @@ namespace SaleManage
             dgvSale.EnableHeadersVisualStyles = false;
             dgvSale.Font = new Font("Yu Gothic UI", 10);
             dgvSale.ColumnHeadersDefaultCellStyle.Font =
-                new Font("Yu Gothic UI", 14, FontStyle.Bold);
+            new Font("Yu Gothic UI", 14, FontStyle.Bold);
             dgvSale.ColumnHeadersHeight = 35;
             dgvSale.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvSale.MultiSelect = false;

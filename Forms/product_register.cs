@@ -22,6 +22,7 @@ namespace SaleManage.Forms
 
                 if (dt.Rows.Count > 0)
                 {
+                    txtGoodsId.Text = dt.Rows[0]["goods_id"].ToString();
                     txtGoodsName.Text = dt.Rows[0]["goods_name"].ToString();
                     txtGoodsPrice.Text = dt.Rows[0]["goods_price"].ToString();
                     txtStock.Text = dt.Rows[0]["stock"].ToString();
@@ -85,7 +86,7 @@ namespace SaleManage.Forms
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
-            else // ← UPDATE
+            else 
             {
                 repo.UpdateGoods(
                     int.Parse(GoodsID),

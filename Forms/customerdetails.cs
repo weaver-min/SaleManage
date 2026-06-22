@@ -161,7 +161,7 @@ namespace SaleManage
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
-            else // ← UPDATE
+            else
             {
                 repo.UpdateCustomer(
                     CustomerID,
@@ -216,7 +216,6 @@ namespace SaleManage
         {
             if (_isEditMode && !string.IsNullOrEmpty(CustomerID))
             {
-                // ← restore original values
                 txtCustomerName.Text = _originalName;
                 txtFurigana.Text = _originalFurigana;
                 txtAddress.Text = _originalAddress;

@@ -99,7 +99,7 @@ namespace SaleManage.DataBase
             int rows = cmd.ExecuteNonQuery();
 
             if (rows == 0)
-                throw new Exception("在庫が不足しています。");  // ← stock insufficient
+                throw new Exception("在庫が不足しています。");
         }
         public void DeleteGoods(int goodsId)
         {

@@ -41,6 +41,7 @@ namespace SaleManage.Forms
             this.txtGoodsPrice = new System.Windows.Forms.TextBox();
             this.TableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.txtGoodsId = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.txtGoodsName = new System.Windows.Forms.TextBox();
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
@@ -49,15 +50,16 @@ namespace SaleManage.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.lblStock = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.TableLayoutPanel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.TableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // TableLayoutPanel1
@@ -208,7 +210,7 @@ namespace SaleManage.Forms
             this.TableLayoutPanel5.ColumnCount = 2;
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.TableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.TableLayoutPanel5.Controls.Add(this.txtGoodsId, 0, 0);
+            this.TableLayoutPanel5.Controls.Add(this.panel4, 0, 0);
             this.TableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel5.Location = new System.Drawing.Point(173, 3);
             this.TableLayoutPanel5.Name = "TableLayoutPanel5";
@@ -220,14 +222,22 @@ namespace SaleManage.Forms
             // txtGoodsId
             // 
             this.txtGoodsId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGoodsId.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGoodsId.Location = new System.Drawing.Point(3, 3);
-            this.txtGoodsId.Multiline = true;
+            this.txtGoodsId.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtGoodsId.Location = new System.Drawing.Point(10, 21);
             this.txtGoodsId.Name = "txtGoodsId";
             this.txtGoodsId.ReadOnly = true;
-            this.txtGoodsId.Size = new System.Drawing.Size(197, 68);
+            this.txtGoodsId.Size = new System.Drawing.Size(177, 30);
             this.txtGoodsId.TabIndex = 0;
             this.txtGoodsId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.txtGoodsName);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(173, 119);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(678, 69);
+            this.panel3.TabIndex = 5;
             // 
             // txtGoodsName
             // 
@@ -324,14 +334,14 @@ namespace SaleManage.Forms
             this.lblStock.TabIndex = 0;
             this.lblStock.Text = "在庫数:";
             // 
-            // panel3
+            // panel4
             // 
-            this.panel3.Controls.Add(this.txtGoodsName);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(173, 119);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(678, 69);
-            this.panel3.TabIndex = 5;
+            this.panel4.Controls.Add(this.txtGoodsId);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(197, 68);
+            this.panel4.TabIndex = 1;
             // 
             // product_register
             // 
@@ -352,12 +362,13 @@ namespace SaleManage.Forms
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.TableLayoutPanel5.ResumeLayout(false);
-            this.TableLayoutPanel5.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.TableLayoutPanel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -385,5 +396,6 @@ namespace SaleManage.Forms
         private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

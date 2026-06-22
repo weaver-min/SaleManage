@@ -40,6 +40,7 @@ namespace SaleManage
             this.dtpSa_lDate = new System.Windows.Forms.DateTimePicker();
             this.TableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.Label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.cmbCustomer = new System.Windows.Forms.ComboBox();
             this.TableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.Label4 = new System.Windows.Forms.Label();
@@ -65,12 +66,13 @@ namespace SaleManage
             this.TableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.TableLayoutPanel1.SuspendLayout();
             this.TableLayoutPanel2.SuspendLayout();
             this.TableLayoutPanel3.SuspendLayout();
             this.Panel1.SuspendLayout();
             this.TableLayoutPanel4.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.TableLayoutPanel5.SuspendLayout();
             this.Panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -79,7 +81,7 @@ namespace SaleManage
             this.TableLayoutPanel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.TableLayoutPanel8.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // TableLayoutPanel1
@@ -139,7 +141,7 @@ namespace SaleManage
             this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.85388F));
             this.TableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 56.05023F));
             this.TableLayoutPanel2.Controls.Add(this.Label1, 1, 0);
-            this.TableLayoutPanel2.Controls.Add(this.txtID, 2, 0);
+            this.TableLayoutPanel2.Controls.Add(this.panel7, 2, 0);
             this.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TableLayoutPanel2.Location = new System.Drawing.Point(3, 107);
             this.TableLayoutPanel2.Name = "TableLayoutPanel2";
@@ -163,12 +165,11 @@ namespace SaleManage
             // 
             // txtID
             // 
-            this.txtID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtID.Font = new System.Drawing.Font("MS UI Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txtID.Location = new System.Drawing.Point(149, 3);
-            this.txtID.Multiline = true;
+            this.txtID.Location = new System.Drawing.Point(8, 12);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(250, 54);
+            this.txtID.Size = new System.Drawing.Size(205, 30);
             this.txtID.TabIndex = 1;
             this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -254,6 +255,15 @@ namespace SaleManage
             this.Label3.TabIndex = 0;
             this.Label3.Text = "顧客名　：";
             this.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.cmbCustomer);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(147, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(730, 54);
+            this.panel6.TabIndex = 1;
             // 
             // cmbCustomer
             // 
@@ -570,14 +580,14 @@ namespace SaleManage
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // panel6
+            // panel7
             // 
-            this.panel6.Controls.Add(this.cmbCustomer);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(147, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(730, 54);
-            this.panel6.TabIndex = 1;
+            this.panel7.Controls.Add(this.txtID);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(149, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(250, 54);
+            this.panel7.TabIndex = 2;
             // 
             // sale_register
             // 
@@ -600,6 +610,7 @@ namespace SaleManage
             this.Panel1.ResumeLayout(false);
             this.TableLayoutPanel4.ResumeLayout(false);
             this.TableLayoutPanel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.TableLayoutPanel5.ResumeLayout(false);
             this.TableLayoutPanel5.PerformLayout();
             this.Panel2.ResumeLayout(false);
@@ -614,7 +625,8 @@ namespace SaleManage
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.TableLayoutPanel8.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -624,8 +636,6 @@ namespace SaleManage
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel1;
         internal System.Windows.Forms.Label lblTitle;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel2;
-        internal System.Windows.Forms.Label Label1;
-        internal System.Windows.Forms.TextBox txtID;
         internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel3;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Panel Panel1;
@@ -658,5 +668,8 @@ namespace SaleManage
         private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        internal System.Windows.Forms.Label Label1;
+        internal System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Panel panel7;
     }
 }

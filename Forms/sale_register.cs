@@ -36,6 +36,7 @@ namespace SaleManage
             else
             {   
                 dtpSa_lDate.Value = DateTime.Today;
+                txtID.Text = "(自動採番)";
                 SetNewMode();
             }
         }
