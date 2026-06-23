@@ -5,14 +5,6 @@ C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\SqlServerTypes\x86\SqlServer
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\SaleManage.exe.config
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\SaleManage.exe
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\SaleManage.pdb
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\EntityFramework.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.ReportViewer.Common.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.ReportViewer.Design.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\EnvDTE.dll
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
 C:\Users\zawkhant\source\repos\SaleManage\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
@@ -82,3 +74,4 @@ C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CoreCompil
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.CopyComplete
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.exe
 C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.pdb
+C:\Users\zawkhant\source\repos\SaleManage\obj\Debug\SaleManage.csproj.AssemblyReference.cache

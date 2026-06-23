@@ -14,7 +14,7 @@ namespace SaleManage.Database
               AND login_password = @login_password";
 
             using (SqlConnection conn =
-                   new SqlConnection(connection.ConnectionString))
+                   new SqlConnection(connection.GetDBPass()))
             {
                 conn.Open();
 

@@ -18,7 +18,7 @@ namespace SaleManage.DataBase
                            WHERE delete_flg = 0";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                 da.Fill(dt);
@@ -38,7 +38,7 @@ namespace SaleManage.DataBase
                            AND goods_id = @goodsId";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@goodsId", goodsId);
@@ -54,7 +54,7 @@ namespace SaleManage.DataBase
                            (goods_name, goods_price,stock)
                            VALUES(@name, @price,@stock)";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@name", name);
@@ -73,7 +73,7 @@ namespace SaleManage.DataBase
                                stock = @stock
                            WHERE goods_id  = @goodsId";
             
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@name", name);
@@ -107,7 +107,7 @@ namespace SaleManage.DataBase
                    SET delete_flg = 1
                    WHERE goods_id = @goodsId";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@goodsId", goodsId);

@@ -18,7 +18,7 @@ namespace SaleManage.DataBase
                            FROM company_information";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                 da.Fill(dt);
@@ -34,7 +34,7 @@ namespace SaleManage.DataBase
                            FROM user_information";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                 da.Fill(dt);
@@ -58,7 +58,7 @@ namespace SaleManage.DataBase
                                company_AccountData = @accountData,
                                tax                 = @tax";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@companyName", companyName);
@@ -78,7 +78,7 @@ namespace SaleManage.DataBase
                            SET login_id       = @loginId,
                                login_password = @loginPassword";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@loginId", loginId);
@@ -92,7 +92,7 @@ namespace SaleManage.DataBase
         {
             string sql = $"SELECT {key} FROM company_information";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();

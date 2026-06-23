@@ -15,7 +15,7 @@ namespace SaleManage.DataBase
                            FROM customer_information";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                 da.Fill(dt);
@@ -34,7 +34,7 @@ namespace SaleManage.DataBase
                            WHERE customer_id = @id";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                 da.SelectCommand.Parameters.AddWithValue("@id", customerId);
@@ -53,7 +53,7 @@ namespace SaleManage.DataBase
                            WHERE customer_name LIKE @customer_name";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlDataAdapter da = new SqlDataAdapter(sql, conn);
                 da.SelectCommand.Parameters.AddWithValue("@customer_name", "%" + customerName + "%");
@@ -79,7 +79,7 @@ namespace SaleManage.DataBase
                    WHERE s.customer_id = @customerId";
 
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@customerId", customerId);
@@ -95,7 +95,7 @@ namespace SaleManage.DataBase
                            (customer_name, customer_furigana, customer_address)
                            VALUES(@name, @furigana, @address)";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@name", name);
@@ -114,7 +114,7 @@ namespace SaleManage.DataBase
                                customer_address  = @address
                            WHERE customer_id = @id";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@id", id);
@@ -132,7 +132,7 @@ namespace SaleManage.DataBase
                    FROM sales_information 
                    WHERE customer_id = @customerId";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@customerId", customerId);
@@ -145,7 +145,7 @@ namespace SaleManage.DataBase
             string sql = @"DELETE FROM customer_information 
                            WHERE customer_id = @id";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@id", id);

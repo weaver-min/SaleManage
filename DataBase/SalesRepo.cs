@@ -47,7 +47,7 @@ namespace SaleManage.DataBase
                   AND (@date IS NULL OR CAST(s.purchase_date AS DATE) = CAST(@date AS DATE))
                   AND c.customer_name LIKE @customerName";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
                 cmd.Parameters.Add("@date", SqlDbType.Date).Value =
@@ -75,7 +75,7 @@ namespace SaleManage.DataBase
                 INNER JOIN goods_information g ON s.goods_id = g.goods_id
                 WHERE s.sales_id = @salesId";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
                 cmd.Parameters.AddWithValue("@salesId", salesId);
@@ -94,7 +94,7 @@ namespace SaleManage.DataBase
                 VALUES
                     (@date, @customerId, @goodsId, @unitsSold, @amount, @remarks)";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 conn.Open();
                 using (SqlTransaction tx = conn.BeginTransaction())
@@ -137,7 +137,7 @@ namespace SaleManage.DataBase
                     remarks       = @remarks
                 WHERE sales_id = @salesId";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 conn.Open();
                 using (SqlTransaction tx = conn.BeginTransaction())
@@ -220,7 +220,7 @@ namespace SaleManage.DataBase
 
         public void DeleteSales(int saleId)
         {
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             {
                 conn.Open();
                 using (SqlTransaction tx = conn.BeginTransaction())
@@ -297,7 +297,7 @@ namespace SaleManage.DataBase
                   AND MONTH(s.purchase_date) = @month
                 ORDER BY c.customer_id, s.purchase_date";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
                 cmd.Parameters.AddWithValue("@year", billingMonth.Year);
@@ -332,7 +332,7 @@ namespace SaleManage.DataBase
                   AND MONTH(s.purchase_date)   = @month
                 ORDER BY s.purchase_date";
 
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
             using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
                 cmd.Parameters.AddWithValue("@customerId", customerId);
@@ -360,7 +360,7 @@ namespace SaleManage.DataBase
         private static DataTable Fill(string sql)
         {
             DataTable dt = new DataTable();
-            using (SqlConnection conn = new SqlConnection(Database.connection.ConnectionString))
+            using (SqlConnection conn = new SqlConnection(Database.connection.GetDBPass()))
                 new SqlDataAdapter(sql, conn).Fill(dt);
             return dt;
         }

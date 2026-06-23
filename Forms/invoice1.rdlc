@@ -216,11 +216,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="Page " &amp; First(Fields!page_number.Value) &amp; " / " &amp; First(Fields!total_pages.Value)</Value>
-                                  <Style>
-                                    <FontFamily>Yu Gothic UI</FontFamily>
-                                    <FontSize>9pt</FontSize>
-                                  </Style>
+                                  <Value></Value>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -913,13 +909,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                    <Value>="合計金額（税込" &amp; Parameters!TaxRate.Value &amp; "%）"  &amp; ":" &amp; Format(First(Fields!customer_total_with_tax.Value), "¥ #,0")</Value>
-                                    <Style>
-                                        <FontFamily>Yu Gothic UI</FontFamily>
-                                        <FontSize>13pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                        <PaddingLeft>15pt</PaddingLeft>
-                                    </Style>
+                                    <Value></Value>
                                 </TextRun>
                               </TextRuns>
                               <Style>
